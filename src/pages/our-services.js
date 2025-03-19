@@ -1,8 +1,11 @@
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import ScrollingText from "../components/TextOpacity";
+import dynamic from "next/dynamic";
 import Link from "next/link";
+
+// Dynamically import the ScrollingText component
+const ScrollingText = dynamic(() => import("../components/TextOpacity"));
 
 function Services() {
   const [activeTab, setActiveTab] = useState(1);

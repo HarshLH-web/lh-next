@@ -1,12 +1,27 @@
 'use client';
 import { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import dynamic from "next/dynamic";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 import PropTypes from "prop-types";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
+const gsap = dynamic(() => import('gsap'), { ssr: false });
+const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 
 const ScrollingText = ({ text, className }) => {
+  useEffect(() => {
+    // Ensure gsap and ScrollTrigger are only used on the client side
+    gsap.then((gsapModule) => {
+      const gsap = gsapModule.default;
+      ScrollTrigger.then((ScrollTriggerModule) => {
+        const ScrollTrigger = ScrollTriggerModule.default;
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Your gsap and ScrollTrigger logic here
+      });
+    });
+  }, []);
   useEffect(() => {
     // Select the element after the component mounts
     const splitTypes = document.querySelectorAll('.reveal-type');
