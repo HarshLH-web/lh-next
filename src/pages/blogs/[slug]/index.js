@@ -5,7 +5,8 @@ import { useParams, useSearchParams } from "next/navigation";
 import DOMPurify from 'dompurify';
 // import BlogForm from "../components/BlogForm";
 import Head from "next/head";
-function BlogDetailPage() {
+
+function BlogDetailPage({ blogData }) {
     const { slug } = useParams();
     const searchParams = useSearchParams();
     const [blog, setBlog] = useState(null);
@@ -14,9 +15,11 @@ function BlogDetailPage() {
     const [isTocOpen, setIsTocOpen] = useState(false);
 
     useEffect(() => {
+        if (!slug) return;
+
         const fetchBlog = async () => {
             try {
-                const someQueryParam = searchParams.get('someQueryParam'); // Example of getting a query parameter
+                const someQueryParam = searchParams.get('someQueryParam');
                 const response = await axios.get(`https://webpanel.store/api/blogs/${slug}`);
                 setBlog(response.data);
                 
@@ -186,6 +189,23 @@ function BlogDetailPage() {
             </div>
         </> 
     );
+}
+
+export async function getServerSideProps(context) {
+    const { slug } = context.params;
+    try {
+        const response = await axios.get(`https://webpanel.store/api/blogs/${slug}`);
+        return {
+            props: {
+                blogData: response.data,
+            },
+        };
+    } catch (error) {
+        console.error('Error fetching blog data:', error);
+        return {
+            notFound: true,
+        };
+    }
 }
 
 export default BlogDetailPage
