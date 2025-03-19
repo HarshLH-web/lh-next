@@ -5,7 +5,7 @@ import ScrollUpButton from "../components/ScrollUp";
 import Testimonials from "../components/Testimonial";
 import AppsAccordion from "../components/Accordion";
 import CountUp from "react-countup";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 // import groupAnimation from '@/app/assets/Group-5.json';
 import { InView } from 'react-intersection-observer';
 
@@ -344,7 +344,7 @@ export default function Home() {
         {/* Section 7 */}
         <section>
         <div className="mx-auto w-[90%] max-w-6xl py-12 md:py-24">
-          {/* <Testimonials /> */}
+          <Testimonials />
         </div>
         </section>
 
