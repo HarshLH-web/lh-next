@@ -61,6 +61,23 @@ export default function Home() {
         <title>LH Talent Agency | Connecting Talent with Top Streaming Opportunities</title>
         <meta name="description" content="Discover LH Talent Agency, a leading live-streaming talent agency, connects talented streamers with top streaming opportunities. Join us today!" />
         <meta name="keywords" content="LH Talent Agency, Live Streaming Agency, Live Streaming Talent Agency" />
+
+        
+    {/* <!-- Facebook Meta Tags --> */}
+<meta property="og:url" content="https://lhtalentagency.com" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="LH Talent Agency | Connecting Talent with Top Streaming Opportunities" />
+<meta property="og:description" content="Discover LH Talent Agency, a leading live-streaming talent agency, connects talented streamers with top streaming opportunities. Join us today!" />
+<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
+{/* <!-- Twitter Meta Tags --> */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain" content="lhtalentagency.com" />
+<meta property="twitter:url" content="https://lhtalentagency.com" />
+<meta name="twitter:title" content="LH Talent Agency | Connecting Talent with Top Streaming Opportunities" />
+<meta name="twitter:description" content="Discover LH Talent Agency, a leading live-streaming talent agency, connects talented streamers with top streaming opportunities. Join us today!" />
+<meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
         <link rel="canonical" href="https://lhtalentagency.com/" />
         <link rel="preload" href="/live-hosting.gif" as="image" type="image/gif" />
         <meta name="robots" content="index, follow" />
