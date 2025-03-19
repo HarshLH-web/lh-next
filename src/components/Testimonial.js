@@ -49,6 +49,8 @@ const Testimonials = () => {
                     src={testimonial.image}
                     alt={`${testimonial.name} - Host`}
                     className="w-full h-full object-cover rounded-full"
+                    width={1000}
+                    height={80}
                   />
                 ) : (
                   <span className="block w-full h-full"></span>
