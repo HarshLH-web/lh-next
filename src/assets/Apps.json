@@ -1,0 +1,109 @@
+[
+    {
+      "name": "Poppo Live",
+      "logo": "/Apply-nowPage/poppo-logo.png",
+      "description": [
+          [
+              "Live Streaming App.",
+              "All Hosts can Apply.",
+              "Host from all Countries.",
+              "Agencies from all Countries."
+          ]
+      ],
+      "buttons": [
+        {
+          "text": "Apply Hosting",
+          "url": "https://poppoagencyregistration.com/register/poppo-host-registration"
+        },
+        {
+          "text": "Start Agency",
+          "url": "https://poppoagencyregistration.com/register/become-poppo-agent"
+        }
+      ]
+    },
+    {
+      "name": "Tango Live",
+      "logo": "/Apply-nowPage/tango-logo.png",
+      "description": [
+          [
+              "Live Streaming App.",
+              "All Hosts can Apply.",
+              "Host from all Countries.",
+              "Agencies from all Countries."
+          ]
+      ],
+      "buttons": [
+        {
+          "text": "Start Agency",
+          "url": "/blogs/tango-agency-registration"
+        }
+      ]
+    },
+    {
+      "name": "Chamet",
+      "logo": "/Apply-nowPage/chamet-logo.png",
+      "description": [
+        [
+          "Video Streaming & Live Streaming App.",
+          "Only Female Hosts can Apply.",
+          "Host from all Countries.",
+          "Agencies from all Countries."
+      ]
+      ],
+      "buttons": [
+        {
+          "text": "Apply Hosting",
+          "url": "https://chametappagency.com/#host"
+        },
+        {
+          "text": "Start Agency",
+          "url": "https://chametappagency.com/#agent"
+        }
+      ]
+    },
+    {
+      "name": "Niki Live",
+      "logo": "/Apply-nowPage/niki-logo.png",
+      "description": [
+        [
+          "Live Streaming App.",
+          "All Hosts can Apply.",
+          "Host from all Countries.",
+          "Agencies from all Countries."
+      ]
+      ],
+      "buttons": [
+        {
+          "text": "Apply Hosting",
+          "url": "https://nikiliveagent.com/#host"
+        },
+        {
+          "text": "Start Agency",
+          "url": "https://nikiliveagent.com/#agent"
+        }
+      ]
+    },
+    {
+      "name": "Mimi Live",
+      "logo": "/Apply-nowPage/mimi-logo.png",
+      "description": [
+        [
+          "Live Streaming & Video Calling",
+          "Only Female Hosts can Apply.",
+          "Host from all Countries.",
+          "Agencies from all Countries."
+      ]
+      ],
+      "buttons": [
+        {
+          "text": "Apply Hosting",
+          "url": "https://mimiliveagent.com/host/"
+        },
+        {
+          "text": "Start Agency",
+          "url": "https://mimiliveagent.com/#agent"
+        }
+      ]
+    }
+  ]
+  
