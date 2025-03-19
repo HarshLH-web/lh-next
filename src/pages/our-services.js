@@ -67,6 +67,17 @@ function Services() {
     }));
   };
 
+  if (typeof window !== 'undefined') {
+    import('gsap/ScrollTrigger')
+      .then((module) => {
+        const ScrollTrigger = module.default;
+        // Use ScrollTrigger here
+      })
+      .catch((error) => {
+        console.error('Error loading ScrollTrigger:', error);
+      });
+  }
+
   return (
     <>
       <Head>
