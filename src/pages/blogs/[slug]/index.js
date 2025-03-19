@@ -91,7 +91,7 @@ function BlogDetailPage({ blogData }) {
                 <meta name="keywords" content={blog.metaKeywords.join(', ')} />
                     {/* <!-- Facebook Meta Tags --> */}
                 <meta property="og:url" content={`https://lhtalentagency.com/blogs/${blog.slug}`} />
-                <meta property="og:type" content="website" />
+                <meta property="og:type" content="webpage" />
                 <meta property="og:title" content={blog.metaTitle} />
                 <meta property="og:description" content={blog.metaDescription} />
                 <meta property="og:image" content={blog.coverImage} />
