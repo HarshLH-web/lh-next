@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BlogForm from "../components/BlogForm";
 import Head from "next/head";
+import Link from "next/link";
 function BecomeLiveStreamer() {
     const fields = [
         {
@@ -90,8 +91,8 @@ function BecomeLiveStreamer() {
                     <p className="text-[#363636] text-base lg:text-xl mb-4">A Streamer is a person who shares their talent on live platforms like Poppo Live, Niki Live, Mimi Live, Chamet, etc. Whether it is dancing, music, comedy, cooking, or simply chatting, streamers make the experience memorable for the audience. </p>
                     <p className="text-[#363636] text-base lg:text-xl mb-8">If you love entertainment and engaging with people, streaming might be the right fit for you.</p>
                     <div className="gap-6">
-                    <a href="/apply-now" className="bg-[#DE0400] text-base lg:text-lg text-white px-6 py-2 rounded-full cursor-pointer hover:bg-[#DE0400]/80 transition-all duration-300 inline-block mr-4">Currently Hiring</a>
-                    <a href="/live-streaming-tips" className="bg-[#DE0400] text-base lg:text-lg text-white px-6 py-2 rounded-full cursor-pointer hover:bg-[#DE0400]/80 transition-all duration-300 inline-block">Get More Tips</a>
+                    <Link href="/apply-now" className="bg-[#DE0400] text-base lg:text-lg text-white px-6 py-2 rounded-full cursor-pointer hover:bg-[#DE0400]/80 transition-all duration-300 inline-block mr-4">Currently Hiring</Link>
+                    <Link href="/live-streaming-tips" className="bg-[#DE0400] text-base lg:text-lg text-white px-6 py-2 rounded-full cursor-pointer hover:bg-[#DE0400]/80 transition-all duration-300 inline-block">Get More Tips</Link>
                     </div>
                 </div>
             </div>
@@ -181,7 +182,7 @@ function BecomeLiveStreamer() {
                     <p className="text-[#363636] text-base lg:text-[19px] mb-4">At LH Talent Agency, we understand the unique needs of every streamer. We offer personalized support and guidance according to your queries. We help you increase your audience and enhance your engaging skills, leading to increased income. With our expertise, you can focus on the most important thing-streaming. We will take care of the rest for you.</p>
                     <p className="text-[#363636] text-base lg:text-[19px] font-semibold">Ready to start the journey? </p>
 
-                    <p className="text-[#363636] text-base lg:text-[19px] font-semibold">Fill out the <a href="/become-live-streamer" className="text-[#DE0400] underline hover:text-[#363636]">registration form</a> above and join our live-streaming world!</p>
+                    <p className="text-[#363636] text-base lg:text-[19px] font-semibold">Fill out the <Link href="/become-live-streamer" className="text-[#DE0400] underline hover:text-[#363636]">registration form</Link> above and join our live-streaming world!</p>
                 </div>
             </div>
         </div>

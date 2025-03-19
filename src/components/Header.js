@@ -171,19 +171,19 @@ function Header() {
           variants={dropdownVariants}
 
         >
-          <a
+          <Link
             href="/become-live-streamer"
             className="block px-4 py-2 text-base hover:text-gray-400 font-semibold whitespace-nowrap"
           >
             Become Live Streamer
-          </a>
+          </Link>
           <div className="h-px w-40 mx-auto bg-gray-300"></div>
-          <a
+          <Link
             href="/become-an-agent"
             className="block px-4 py-2 text-base hover:text-gray-400 font-semibold"
           >
             Become Agent
-          </a>
+          </Link>
         </motion.div>
       </div>
 
@@ -291,12 +291,12 @@ function Header() {
                 isRegistrationOpen ? 'block' : 'hidden'
               } absolute top-9 -left-10 w-56 bg-gradient-to-b from-[#FEFEFC] to-[#F9F6E3] mt-2 text-black rounded-[0rem_0rem_1rem_1rem] overflow-hidden text-center z-10`}
             >
-              <a href="/become-live-streamer" className="block px-4 py-3 text-base hover:text-white font-semibold hover:bg-[#DE0402] transition-all duration-300">
+              <Link href="/become-live-streamer" className="block px-4 py-3 text-base hover:text-white font-semibold hover:bg-[#DE0402] transition-all duration-300">
                 Become Live Streamer
-              </a>
-              <a href="/become-an-agent" className="block px-4 py-3 text-base hover:text-white font-semibold hover:bg-[#DE0402] transition-all duration-300">
+              </Link>
+              <Link href="/become-an-agent" className="block px-4 py-3 text-base hover:text-white font-semibold hover:bg-[#DE0402] transition-all duration-300">
                 Become An Agent
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -332,19 +332,19 @@ function Header() {
                 isSupportOpen ? 'block' : 'hidden'
               } absolute top-9 -left-14 w-48 bg-gradient-to-b from-[#FEFEFC] to-[#F9F6E3] rounded-[0rem_0rem_1rem_1rem] mt-2 text-black overflow-hidden z-10`}
             >
-              <a href="/customer-support" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap">
+              <Link href="/customer-support" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap">
                 Customer Support
-              </a>
-              <a href="/asked-questions" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap">
+              </Link>
+              <Link href="/asked-questions" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap">
                 FAQ
-              </a>
+              </Link>
             </div>
           </div>
 
 
           
           {/* Apply Now Button */}
-          <a href="/apply-now">
+          <Link href="/apply-now">
             <button className="bg-[#DE0402] hover:bg-white text-white hover:text-[#DE0402] py-2 xl:py-3 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402]">
             Apply Now
             <svg
@@ -362,7 +362,7 @@ function Header() {
               />
             </svg>
           </button>
-          </a>
+        </Link>
 
         </nav>
       </div>

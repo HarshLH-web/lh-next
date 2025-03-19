@@ -5,9 +5,10 @@ import ScrollUpButton from "../components/ScrollUp";
 import Testimonials from "../components/Testimonial";
 import AppsAccordion from "../components/Accordion";
 import CountUp from "react-countup";
-// import Lottie from "lottie-react";
-// import groupAnimation from '@/app/assets/Group-5.json';
+import Lottie from "lottie-react";
+import groupAnimation from '../assets/Group-5.json';
 import { InView } from 'react-intersection-observer';
+import Link from "next/link";
 
 const HomeSchema = 
   {
@@ -97,7 +98,7 @@ export default function Home() {
             <h1 className="text-[35px] max-w-[300px] mx-auto sm:mx-0 sm:max-w-none sm:text-[3rem] xl:text-6xl 2xl:text-[4.25rem] leading-[1.15] sm:leading-tight uppercase font-black">
               LH Talent Agency <span className="sm:hidden">where</span> <br />
               <span className="inline-flex items-center gap-4"><span className="hidden sm:block">where</span> talent 
-                <span><Image src="/live-hosting.gif" alt="Live Icon" className="w-auto h-12 sm:h-16 xl:h-20 2xl:h-24 object-contain sm:mt-1" loading="eager" width="50" height="24" />
+                <span><Image src="/live-hosting.gif" alt="Live Icon" unoptimized className="w-auto h-12 sm:h-16 xl:h-20 2xl:h-24 object-contain sm:mt-1" loading="eager" width="50" height="24" />
                 </span>
               </span> <br />
               meets opportunity
@@ -108,7 +109,7 @@ export default function Home() {
             <p className="text-base lg:text-xl lg:pr-24 font-semibold mt-2">Ready to take your streaming journey to the next level? Let us help you shine on the world&apos;s leading platforms.</p>
             </div>
 
-       <a href="/apply-now">
+       <Link href="/apply-now">
        <button
           className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 py-3 px-6 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto mt-2 lg:m-0"
           aria-label="Discover Now"
@@ -132,7 +133,7 @@ export default function Home() {
           </span>
         </button>
 
-       </a>
+       </Link>
           </div>
           {/* Banner Image */}
           <div className="w-full lg:w-2/5 flex items-end">
@@ -205,7 +206,7 @@ export default function Home() {
           <div className="w-full lg:w-1/2 text-white flex items-center mx-auto px-6 lg:px-12 py-6 lg:py-4 wwa-gradient lg:my-8 mb-4 text-lg text-center lg:text-left">
           <p className="text-base lg:text-lg leading-snug">Our journey began with a vision, and today, we are the top recruiter for most of our collaborated apps. Every milestone reflects our dedication to reaching new heights, from recruiting new talent to shaping careers.</p>
           </div>
-          {/* <InView>
+          <InView>
             {({ref, inView}) => (
               <div ref={ref} className="w-full lg:w-1/2 my-4 flex items-center justify-center">
               <Lottie 
@@ -216,7 +217,7 @@ export default function Home() {
             </div>
             )
           }
-          </InView> */}
+          </InView>
           
         </div>
 
@@ -286,7 +287,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
               <h2 className="uppercase text-center text-black font-extrabold text-4xl lg:text-6xl 2xl:text-7xl leading-snug">Our Apps</h2>
               <p className="text-base font-medium max-w-[36rem] text-center lg:text-left ">Explore our top collaborations with live streaming applications, where talent meets opportunity. Your success story begins here- let&apos;s create something big together.</p>
-              <a href="/apply-now" className="rounded-full mt-4 lg:mt-0">
+              <Link href="/apply-now" className="rounded-full mt-4 lg:mt-0">
               <button
         className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 py-3 px-6 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto lg:m-0"
         aria-label="View All"
@@ -308,7 +309,8 @@ export default function Home() {
             />
           </svg>
         </span>
-              </button></a>
+              </button>
+              </Link>
             </div>
             {/* app container */}
             <div>

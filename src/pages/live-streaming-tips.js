@@ -2,6 +2,7 @@ import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import Image from "next/image"
 import Head from "next/head"
+import Link from "next/link"
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger)
@@ -112,14 +113,14 @@ function StreamingTips() {
             <p className="text-base lg:text-lg text-black/80 mt-2 lg:mt-4 mb-2 leading-[1.375]">When setting up your profile, choose a clear profile picture and wear comfortable clothing. Before streaming, check your background settings and always keep the set-up neat and clean. You can also include a few aesthetic elements in the background (if desired). Greet your viewers by name to create a welcoming atmosphere.
             </p>
             <p className="text-base lg:text-lg text-black/80 font-semibold">Stay updated on app policies and occasional events to maximize income.</p>
-            <a href="/become-live-streamer">
+            <Link href="/become-live-streamer">
    <button
       className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 py-2 px-6 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto mt-2 lg:mt-4 lg:ml-0"
     >
       <span>Get Started</span>
     </button>
 
-   </a>
+   </Link>
           </div>
           <div className="w-full max-w-[28rem]">
             <Image src="/Be a Successful Streamer.png" alt="Become a Successful Streamer with LH Talent Agency! Join Today" className="w-full h-full object-cover rounded-lg" width={1000} height={100} />

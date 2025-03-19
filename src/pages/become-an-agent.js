@@ -2,6 +2,7 @@ import Image from "next/image";
 import BlogForm from "../components/BlogForm";
 import dynamic from 'next/dynamic';
 import Head from "next/head";
+import Link from "next/link";
 
 const ScrollingText = dynamic(() => import('../components/TextOpacity'), { ssr: false });
 
@@ -85,7 +86,7 @@ function BecomeAnAgent() {
                 <h2 className="text-[#1C1B1B] text-3xl lg:text-[42px] lg:leading-[1.15] font-semibold pl-4 lg:pl-0 mb-2">Who are Agents?</h2>
                 <ScrollingText className="text-[#1C1B1B] text-xl lg:text-2xl" text="The agents act as a bridge between talented streamers and live-streaming platforms. This opportunity will allow you to work with various talented individuals." />
             </div>
-            <a href="/apply-now" className="bg-[#DE0402] w-fit text-white py-2 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto mt-4 lg:mt-6 hover:bg-transparent hover:text-[#DE0402]">Join Us</a>
+            <Link href="/apply-now" className="bg-[#DE0402] w-fit text-white py-2 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto mt-4 lg:mt-6 hover:bg-transparent hover:text-[#DE0402]">Join Us</Link>
         </div>
 
         {/* Section 3 */}
@@ -111,7 +112,7 @@ function BecomeAnAgent() {
                     <p className="text-[#363636] text-base lg:text-[19px] mb-4">At LH Talent Agency, we understand the challenges agents face, and we are here to support you at every step. We offer you valuable tips and resources that will help you succeed. By joining our team, you will gain access to the vast network of industry connections.</p>
 
                     <p className="text-[#363636] text-base lg:text-[19px] font-semibold">Ready to take the next step? </p>
-                    <p className="text-[#363636] text-base lg:text-[19px] font-semibold">Fill out the <a href="/become-an-agent" className="text-[#DE0402] underline hover:text-[#363636]">registration form</a> above and start your journey as a talent agent with us today!</p>
+                    <p className="text-[#363636] text-base lg:text-[19px] font-semibold">Fill out the <Link href="/become-an-agent" className="text-[#DE0402] underline hover:text-[#363636]">registration form</Link> above and start your journey as a talent agent with us today!</p>
                 </div>
             </div>
         </div>

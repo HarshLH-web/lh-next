@@ -2,6 +2,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import ScrollingText from "../components/TextOpacity";
+import Link from "next/link";
 
 function Services() {
   const [activeTab, setActiveTab] = useState(1);
@@ -190,7 +191,7 @@ function Services() {
         <div className="w-[90%] mx-auto lg:w-[80%] max-w-screen-lg text-center">
           <ScrollingText className="text-3xl lg:text-3xl lg:leading-[1.35] font-semibold" text="Explore exciting opportunities in the live-streaming world! We provide personal support and guidance to help you succeed. Join us and let's make your dreams a reality!" />
         </div>
-        <a href="/apply-now" className="bg-[#DE0402] w-fit text-white py-2 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto mt-4 lg:mt-8 hover:bg-transparent hover:text-[#DE0402]">Apply Now</a>
+        <Link href="/apply-now" className="bg-[#DE0402] w-fit text-white py-2 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto mt-4 lg:mt-8 hover:bg-transparent hover:text-[#DE0402]">Apply Now</Link>
       </div>
 
       {/* Section 5 */}
