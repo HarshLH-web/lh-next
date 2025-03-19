@@ -2,16 +2,17 @@ import axios from "axios";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { useParams, useSearchParams } from "next/navigation";
-import DOMPurify from "dompurify";
+import DOMPurify from "isomorphic-dompurify";
 
 function BlogDetailPage({ blog }) {
     const { slug } = useParams();
     const searchParams = useSearchParams();
     const [tableOfContents, setTableOfContents] = useState([]);
     const [isTocOpen, setIsTocOpen] = useState(false);
+    const [contentWithIds, setContentWithIds] = useState("");
 
     useEffect(() => {
-        if (!slug) return;
+        if (!slug || typeof window === "undefined") return;
 
         const parser = new DOMParser();
         const doc = parser.parseFromString(blog.content, "text/html");
@@ -25,42 +26,42 @@ function BlogDetailPage({ blog }) {
 
             return {
                 id: `heading-${cleanText}-${index}`,
-                text: heading.textContent.replace(/^\d+\.?\s*/, ""), // Remove leading numbers
+                text: heading.textContent.replace(/^\d+\.?\s*/, ""),
                 originalText: heading.textContent,
                 level: heading.tagName.toLowerCase(),
             };
         });
 
         setTableOfContents(toc);
+
+        // Fix: Only manipulate DOM in the browser
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = blog.content;
+
+        toc.forEach((heading) => {
+            const headingElements = tempDiv.querySelectorAll(heading.level);
+            for (const element of headingElements) {
+                if (element.textContent.trim() === heading.originalText.trim()) {
+                    element.innerHTML = `<span id="${heading.id}" style="scroll-margin-top: 150px; display: block;">${element.innerHTML}</span>`;
+                    break;
+                }
+            }
+        });
+
+        setContentWithIds(tempDiv.innerHTML);
     }, [slug, searchParams, blog]);
 
     if (!blog) return <p>Loading...</p>;
-
-    let contentWithIds = blog.content;
-    const tempDiv = document.createElement("div");
-    tempDiv.innerHTML = contentWithIds;
-
-    tableOfContents.forEach((heading) => {
-        const headingElements = tempDiv.querySelectorAll(heading.level);
-        for (const element of headingElements) {
-            if (element.textContent.trim() === heading.originalText.trim()) {
-                element.innerHTML = `<span id="${heading.id}" style="scroll-margin-top: 150px; display: block;">${element.innerHTML}</span>`;
-                break;
-            }
-        }
-    });
-
-    contentWithIds = tempDiv.innerHTML;
 
     let h2Counter = 0;
 
     return (
         <>
             <Head>
-                <title>{blog.metaTitle} | LH Talent Agency</title>
+                <title>{`${blog.metaTitle} | LH Talent Agency`}</title>
                 <meta name="description" content={blog.metaDescription} />
                 <link rel="canonical" href={`https://lhtalentagency.com/blogs/${blog.slug}`} />
-                <meta name="keywords" content={blog.metaKeywords.join(", ")} />
+                <meta name="keywords" content={blog.metaKeywords?.join(", ") || ""} />
                 <meta property="og:url" content={`https://lhtalentagency.com/blogs/${blog.slug}`} />
                 <meta property="og:type" content="article" />
                 <meta property="og:title" content={blog.metaTitle} />
@@ -79,24 +80,6 @@ function BlogDetailPage({ blog }) {
                             <p
                                 className="hidden font-semibold mb-2 pt-3 text-[#DE0400] cursor-pointer lg:flex items-center justify-between"
                                 style={{ marginTop: "0", fontSize: "1.6rem" }}
-                                onClick={() => setIsTocOpen(!isTocOpen)}
-                            >
-                                Table of Contents
-                                <svg
-                                    className={`w-6 h-6 transform transition-transform duration-300 min-w-6 ${
-                                        isTocOpen ? "rotate-180" : "rotate-0"
-                                    }`}
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </p>
-                            <p
-                                className="lg:hidden font-semibold mb-2 pt-3 text-[#DE0400] cursor-pointer flex items-center justify-between"
-                                style={{ marginTop: "0", fontSize: "1.3rem" }}
                                 onClick={() => setIsTocOpen(!isTocOpen)}
                             >
                                 Table of Contents
