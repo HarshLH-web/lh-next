@@ -327,7 +327,7 @@ export default function Home() {
             Powering Creativity <br />
             <span className="inline-flex flex-col lg:flex-row items-center justify-center">Through
               <span className="inline-flex w-32 lg:w-40 items-center justify-center mx-6 my-4 lg:mt-6">
-              <Image src="/gif-coll.gif" alt="Animation" className="w-full h-full object-cover" width="128" height="128" />
+              <Image src="/gif-coll.gif" alt="Animation" unoptimized className="w-full h-full object-cover" width="128" height="128" />
             </span>
             Collaboration
             </span>
