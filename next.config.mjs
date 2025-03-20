@@ -9,12 +9,12 @@ const nextConfig = {
       },
     ],
   },
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.alias['gsap/ScrollTrigger'] = 'gsap/dist/ScrollTrigger';
-    }
-    return config;
-  },
+  // webpack: (config, { isServer }) => {
+  //   if (!isServer) {
+  //     config.resolve.alias['gsap/ScrollTrigger'] = 'gsap/dist/ScrollTrigger';
+  //   }
+  //   return config;
+  // },
 };
 
 export default nextConfig;
