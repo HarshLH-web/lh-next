@@ -9,10 +9,10 @@ function BlogDetailPage({ blog }) {
     const { slug } = router.query;
     const [tableOfContents, setTableOfContents] = useState([]);
     const [isTocOpen, setIsTocOpen] = useState(false);
-    const [contentWithIds, setContentWithIds] = useState(blog.content || "");
+    const [contentWithIds, setContentWithIds] = useState(null); // Initialize as null
 
     useEffect(() => {
-        if (!blog.content || typeof window === "undefined") return;
+        if (!blog?.content || typeof window === "undefined") return;
 
         const parser = new DOMParser();
         const doc = parser.parseFromString(blog.content, "text/html");
@@ -34,24 +34,22 @@ function BlogDetailPage({ blog }) {
 
         setTableOfContents(toc);
 
-        // Only manipulate the DOM client-side
-        if (typeof window !== "undefined") {
-            const tempDiv = document.createElement("div");
-            tempDiv.innerHTML = blog.content;
+        // DOM Manipulation (Client-side only)
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = blog.content;
 
-            toc.forEach((heading) => {
-                const headingElements = tempDiv.querySelectorAll(heading.level);
-                for (const element of headingElements) {
-                    if (element.textContent.trim() === heading.originalText.trim()) {
-                        element.innerHTML = `<span id="${heading.id}" style="scroll-margin-top: 150px; display: block;">${element.innerHTML}</span>`;
-                        break;
-                    }
+        toc.forEach((heading) => {
+            const headingElements = tempDiv.querySelectorAll(heading.level);
+            for (const element of headingElements) {
+                if (element.textContent.trim() === heading.originalText.trim()) {
+                    element.innerHTML = `<span id="${heading.id}" style="scroll-margin-top: 150px; display: block;">${element.innerHTML}</span>`;
+                    break;
                 }
-            });
+            }
+        });
 
-            setContentWithIds(tempDiv.innerHTML);
-        }
-    }, [blog.content]);
+        setContentWithIds(tempDiv.innerHTML);
+    }, [blog?.content]);
 
     if (!blog) return <p>Loading...</p>;
 
@@ -143,7 +141,9 @@ function BlogDetailPage({ blog }) {
                         </div>
                     )}
 
-                    <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(contentWithIds) }} />
+                    {contentWithIds && (
+                        <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(contentWithIds) }} />
+                    )}
                 </div>
             </div>
         </>
