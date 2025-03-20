@@ -43,15 +43,15 @@ function Blogs() {
         // Fetch blogs from the API
         const response = await axios.get('https://webpanel.store/api/blogs');
         
-        // Filter blogs if tag parameter exists
-        const filteredBlogs = tagParam 
-          ? response.data.filter(blog => 
-              blog.tags.some(tag => 
+        // Filter blogs if tag parameter exists and only include those with toPublish as true
+        const filteredBlogs = response.data.filter(blog => blog.toPublish).filter(blog => 
+          tagParam 
+            ? blog.tags.some(tag => 
                 tag.toLowerCase().includes(tagParam.toLowerCase()) ||
                 tagParam.toLowerCase().includes(tag.toLowerCase())
               )
-            )
-          : response.data;
+            : true
+        );
         
         setBlogs(filteredBlogs);
       } catch (error) {
