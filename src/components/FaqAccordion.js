@@ -10,19 +10,19 @@ const FaqAccordion = () => {
   const faqs = [
     {
       question: 'Who are streamers?',
-      answer: 'Streamers are the individuals who perform live streaming in front of a live audience. They can share any information or their skills through broadcast. The skills can be related to music, dance, games or simply chatting with their fans. With LH Talent Agency, these streamers can easily earn money by following their passion for streaming. We connect them with popular live-streaming platforms and provide the guidance they need to succeed in the industry. <br /> <a href="/become-live-streamer" style="color: #1f21d0;">Start your journey today!</a>',
+      answer: 'Streamers are the individuals who perform live streaming in front of a live audience. They can share any information or their skills through broadcast. The skills can be related to music, dance, games or simply chatting with their fans. With LH Talent Agency, these streamers can easily earn money by following their passion for streaming. We connect them with popular live-streaming platforms and provide the guidance they need to succeed in the industry. <br /> <a href="/become-live-streamer" style="color: #DE0402;">Start your journey today!</a>',
     },
     {
       question: 'How can I earn money through live streaming?',
-      answer: 'You can earn money by becoming an official streamer on a live-streaming platform. We are working with some popular streaming applications like <a href="/blogs/how-to-earn-money-on-poppo-live-beginner-guide" style="color: #1f21d0;">Poppo Live</a>, Niki Live, Chamet, etc. which provide amazing opportunities for live streamers to earn while sitting at home. The streamer shows their skills to the live audience and they send virtual gifts as an appreciation to their favorite streamer. These gifts can be easily converted into real money through easy withdrawal access. Apart from virtual gifts, the streamer can also earn additional rewards through daily tasks, occasional events, participating in Passion PK, etc.',
+      answer: 'You can earn money by becoming an official streamer on a live-streaming platform. We are working with some popular streaming applications like <a href="/blogs/how-to-earn-money-on-poppo-live-beginner-guide" style="color: #DE0402;">Poppo Live</a>, Niki Live, Chamet, etc. which provide amazing opportunities for live streamers to earn while sitting at home. The streamer shows their skills to the live audience and they send virtual gifts as an appreciation to their favorite streamer. These gifts can be easily converted into real money through easy withdrawal access. Apart from virtual gifts, the streamer can also earn additional rewards through daily tasks, occasional events, participating in Passion PK, etc.',
     },
     {
       question: 'How can I become an official streamer?',
-      answer: 'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like LH Talent Agency can guide you through the process, provide training, and help you start earning. Check out the host registration process <a href="/become-live-streamer" style="color: #1f21d0;">here</a>.',
+      answer: 'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like LH Talent Agency can guide you through the process, provide training, and help you start earning. Check out the host registration process <a href="/become-live-streamer" style="color: #DE0402;">here</a>.',
     },
     {
       question: 'Do we need a huge follower list to start streaming?',
-      answer: 'No, you don’t need a huge follower base to start streaming. Anyone can begin their streaming journey with consistent and engaging content. The only thing you need is a fixed schedule for your daily streaming. You can start with one hour a day of live streaming with zero followers, and over time, you will build an audience. Be patient and consistent! <br /> <a href="/live-streaming-tips" style="color: #1f21d0;">Level Up Your Streaming</a>',
+      answer: 'No, you don’t need a huge follower base to start streaming. Anyone can begin their streaming journey with consistent and engaging content. The only thing you need is a fixed schedule for your daily streaming. You can start with one hour a day of live streaming with zero followers, and over time, you will build an audience. Be patient and consistent! <br /> <a href="/live-streaming-tips" style="color: #DE0402;">Level Up Your Streaming</a>',
     },
     {
       question: 'What are the skills needed to become a host?',
@@ -34,7 +34,7 @@ const FaqAccordion = () => {
     },
     {
       question: 'How can I become an official agency?',
-      answer: 'To become an official agency, you need to partner with a live-streaming platform and recruit talented streamers. <br /> LH Talent Agency works with top live streaming applications globally and can help you with guidance and support related to how to set up and grow as an agency. Check out the agency registration process <a href="/become-an-agent" style="color: #1f21d0;">here</a>.',
+      answer: 'To become an official agency, you need to partner with a live-streaming platform and recruit talented streamers. <br /> LH Talent Agency works with top live streaming applications globally and can help you with guidance and support related to how to set up and grow as an agency. Check out the agency registration process <a href="/become-an-agent" style="color: #DE0402;">here</a>.',
     },
     {
       question: 'How much can I earn as an agency?',

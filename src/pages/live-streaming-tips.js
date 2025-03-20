@@ -4,15 +4,7 @@
 import Image from "next/image"
 import Head from "next/head"
 import Link from "next/link"
-import dynamic from "next/dynamic";
-import { useEffect } from 'react';
 
-// Register ScrollTrigger plugin
-// gsap.registerPlugin(ScrollTrigger);
-
-// Use dynamic imports for gsap and ScrollTrigger
-const gsap = dynamic(() => import('gsap'), { ssr: false });
-const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 
 const tipsData = [
   {
@@ -68,18 +60,7 @@ const videoCallTipsData = [
 ]
 
 function StreamingTips() {
-  useEffect(() => {
-    // Ensure gsap and ScrollTrigger are only used on the client side
-    gsap.then((gsapModule) => {
-      const gsap = gsapModule.default;
-      ScrollTrigger.then((ScrollTriggerModule) => {
-        const ScrollTrigger = ScrollTriggerModule.default;
-        gsap.registerPlugin(ScrollTrigger);
 
-        // Your gsap and ScrollTrigger logic here
-      });
-    });
-  }, []);
 
   return (
     <>

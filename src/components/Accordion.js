@@ -33,7 +33,7 @@ const AppsAccordion = () => {
       agentBtnText:'Niki Agent',
       agentBtnURL:'https://nikiliveagent.com/#agent',
       bgimg: '/niki-bg.webp',
-      imgUrl: '/Niki-Live.webp',
+      imgUrl: '/Niki-live.webp',
     },
     {
       title: 'POPPO LIVE',

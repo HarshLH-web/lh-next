@@ -103,6 +103,24 @@ function BlogDetailPage({ blog }) {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                 </svg>
                             </p>
+                            <p
+                                className="lg:hidden font-semibold mb-2 pt-3 text-[#DE0400] cursor-pointer flex items-center justify-between"
+                                style={{ marginTop: "0", fontSize: "1.4rem" }}
+                                onClick={() => setIsTocOpen(!isTocOpen)}
+                            >
+                                Table of Contents
+                                <svg
+                                    className={`w-5 h-5 transform transition-transform duration-300 min-w-5 ${
+                                        isTocOpen ? "rotate-180" : "rotate-0"
+                                    }`}
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </p>
                             <nav
                                 style={{
                                     maxHeight: isTocOpen ? "1000px" : "0",
