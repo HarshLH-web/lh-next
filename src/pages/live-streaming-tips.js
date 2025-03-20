@@ -87,7 +87,21 @@ function StreamingTips() {
         <title>Streaming Tips | LH Talent Agency: Enhance Your Streaming</title>
         <meta name="description" content="Discover valuable streaming tips and best practices from LH Talent Agency to improve your live content and engage with your audience effectively." />
         <meta name="keywords" content="Streaming Tips, Live Streaming Tips and Tricks, Best Streaming Tips for Beginners, Tips For Hosts, How to Become a Successful Streamer" />
-        {/* <meta name="robots" content="index, follow" /> */}
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://lhtalentagency.com/become-an-agent" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Streaming Tips | LH Talent Agency: Enhance Your Streaming" />
+        <meta property="og:description" content="Discover valuable streaming tips and best practices from LH Talent Agency to improve your live content and engage with your audience effectively." />
+        <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="lhtalentagency.com" />
+        <meta property="twitter:url" content="https://lhtalentagency.com/streaming-tips" />
+        <meta name="twitter:title" content="Streaming Tips | LH Talent Agency: Enhance Your Streaming" />
+        <meta name="twitter:description" content="Discover valuable streaming tips and best practices from LH Talent Agency to improve your live content and engage with your audience effectively." />
+        <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://lhtalentagency.com/streaming-tips" />
       </Head>
       <div className='blog-bg'>

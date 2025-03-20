@@ -87,11 +87,11 @@ function Header() {
     }, [isMenuOpen]);
 
   return (
-    <header className="bg-white text-black/10 w-full lg:border-b-[1px] fixed top-0 z-50">
+    <header className="bg-white text-black lg:text-black/10 w-full lg:border-b-[1px] fixed top-0 z-50">
       <div className="max-w-[90%] lg:max-w-[95%] xl:max-w-[85%] mx-auto sm:px-4 py-2 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <Link href="/"><Image src="/logo.png" alt="LH Talent Agency - logo" className="h-16 2xl:h-20" width={80} height={80} /></Link>
+          <Link href="/"><Image src="/logo.png" alt="LH Talent Agency - logo" className="h-16 w-16 2xl:h-20 2xl:w-20" width={80} height={80} /></Link>
         </div>
 
         {/* Hamburger Menu Button (Mobile) */}
@@ -127,15 +127,15 @@ function Header() {
           }`}
         >
     <nav className="flex flex-col items-center py-8 space-y-4">
-      <Link href="/" className="text-base hover:text-gray-400 font-semibold">
+      <Link href="/" className="text-base hover:text-gray-400 font-semibold" onClick={() => setIsMenuOpen(false)}>
         Home
       </Link>
       <div className="h-px w-48 bg-gray-300"></div>
-      <Link href="/about-talent-agency" className="text-base hover:text-gray-400 font-semibold">
+      <Link href="/about-talent-agency" className="text-base hover:text-gray-400 font-semibold" onClick={() => setIsMenuOpen(false)}>
         About
       </Link>
       <div className="h-px w-48 bg-gray-300"></div>
-      <Link href="/our-services" className="text-base hover:text-gray-400 font-semibold">
+      <Link href="/our-services" className="text-base hover:text-gray-400 font-semibold" onClick={() => setIsMenuOpen(false)}>
         Services
       </Link>
       <div className="h-px w-48 bg-gray-300"></div>
@@ -174,6 +174,10 @@ function Header() {
           <Link
             href="/become-live-streamer"
             className="block px-4 py-2 text-base hover:text-gray-400 font-semibold whitespace-nowrap"
+            onClick={() => {
+              setIsMobileRegistrationOpen(false);
+              setIsMenuOpen(false);
+            }}
           >
             Become Live Streamer
           </Link>
@@ -181,6 +185,10 @@ function Header() {
           <Link
             href="/become-an-agent"
             className="block px-4 py-2 text-base hover:text-gray-400 font-semibold"
+            onClick={() => {
+              setIsMobileRegistrationOpen(false);
+              setIsMenuOpen(false);
+            }}
           >
             Become Agent
           </Link>
@@ -189,7 +197,7 @@ function Header() {
 
       <div className="h-px w-48 bg-gray-300"></div>
 
-      <Link href="/blogs" className="text-base hover:text-gray-400 font-semibold">
+      <Link href="/blogs" className="text-base hover:text-gray-400 font-semibold" onClick={() => setIsMenuOpen(false)}>
         Blogs
       </Link>
       <div className="h-px w-48 bg-gray-300"></div>
@@ -224,11 +232,17 @@ function Header() {
           animate={isMobileSupportOpen ? "open" : "closed"}
           variants={dropdownVariants}
         >
-          <Link href="/customer-support" className="block px-4 py-2 text-base hover:text-gray-400">
+          <Link href="/customer-support" className="block px-4 py-2 text-base hover:text-gray-400" onClick={() => {
+            setIsMobileSupportOpen(false);
+            setIsMenuOpen(false);
+          }}>
             Customer Support
           </Link>
           <div className="h-px w-40 mx-auto bg-gray-300"></div>
-          <Link href="/asked-questions" className="block px-4 py-2 text-base hover:text-gray-400">
+          <Link href="/asked-questions" className="block px-4 py-2 text-base hover:text-gray-400" onClick={() => {
+            setIsMobileSupportOpen(false);
+            setIsMenuOpen(false);
+          }}>
             FAQ
           </Link>
         </motion.div>
@@ -240,6 +254,7 @@ function Header() {
         className="bg-[#DE0402] text-white py-3 px-6 rounded-full font-semibold flex items-center gap-2"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
+        onClick={() => setIsMenuOpen(false)}
       >
         Apply Now
         <Image src="/arrow-white.svg" className="h-6" alt="Arrow" width={20} height={20} />
@@ -291,10 +306,10 @@ function Header() {
                 isRegistrationOpen ? 'block' : 'hidden'
               } absolute top-9 -left-10 w-56 bg-gradient-to-b from-[#FEFEFC] to-[#F9F6E3] mt-2 text-black rounded-[0rem_0rem_1rem_1rem] overflow-hidden text-center z-10`}
             >
-              <Link href="/become-live-streamer" className="block px-4 py-3 text-base hover:text-white font-semibold hover:bg-[#DE0402] transition-all duration-300">
+              <Link href="/become-live-streamer" className="block px-4 py-3 text-base hover:text-white font-semibold hover:bg-[#DE0402] transition-all duration-300" onClick={() => setIsRegistrationOpen(false)}>
                 Become Live Streamer
               </Link>
-              <Link href="/become-an-agent" className="block px-4 py-3 text-base hover:text-white font-semibold hover:bg-[#DE0402] transition-all duration-300">
+              <Link href="/become-an-agent" className="block px-4 py-3 text-base hover:text-white font-semibold hover:bg-[#DE0402] transition-all duration-300" onClick={() => setIsRegistrationOpen(false)}>
                 Become An Agent
               </Link>
             </div>
@@ -332,10 +347,10 @@ function Header() {
                 isSupportOpen ? 'block' : 'hidden'
               } absolute top-9 -left-14 w-48 bg-gradient-to-b from-[#FEFEFC] to-[#F9F6E3] rounded-[0rem_0rem_1rem_1rem] mt-2 text-black overflow-hidden z-10`}
             >
-              <Link href="/customer-support" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap">
+              <Link href="/customer-support" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap" onClick={() => setIsSupportOpen(false)}>
                 Customer Support
               </Link>
-              <Link href="/asked-questions" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap">
+              <Link href="/asked-questions" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap" onClick={() => setIsSupportOpen(false)}>
                 FAQ
               </Link>
             </div>
@@ -345,7 +360,7 @@ function Header() {
           
           {/* Apply Now Button */}
           <Link href="/apply-now">
-            <button className="bg-[#DE0402] hover:bg-white text-white hover:text-[#DE0402] py-2 xl:py-3 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402]">
+            <button className="bg-[#DE0402] hover:bg-white text-white hover:text-[#DE0402] py-2 xl:py-3 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402]" onClick={() => setIsMenuOpen(false)}>
             Apply Now
             <svg
               xmlns="http://www.w3.org/2000/svg"

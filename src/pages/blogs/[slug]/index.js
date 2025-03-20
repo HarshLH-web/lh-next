@@ -67,6 +67,14 @@ function BlogDetailPage({ blog }) {
                 <meta property="og:title" content={blog.metaTitle} />
                 <meta property="og:description" content={blog.metaDescription} />
                 <meta property="og:image" content={blog.coverImage} />
+
+                {/* <!-- Twitter Meta Tags --> */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="lhtalentagency.com" />
+                <meta property="twitter:url" content={`https://lhtalentagency.com/blogs/${blog.slug}`} />
+                <meta name="twitter:title" content={blog.metaTitle} />
+                <meta name="twitter:description" content={blog.metaDescription} />
+                <meta name="twitter:image" content={blog.coverImage} />
                 <script type="application/ld+json">
                     {JSON.stringify(blog.blogSchema)}
                 </script>

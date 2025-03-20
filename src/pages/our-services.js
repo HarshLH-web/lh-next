@@ -84,6 +84,22 @@ function Services() {
         <title>Our Services | LH Talent Agency | Grow Your Streaming Presence</title>
         <meta name="description" content="Explore the range of services offered by LH Talent Agency, including hiring hosts, recruiting agencies, and managing them. We help you to grow." />
         <meta name="keywords" content="Hire Talented Streamers, Recruit live Streaming Agents, Streamer Recruitment Agency, Promote Live Streaming platforms, Live streaming Services" />
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://lhtalentagency.com/become-an-agent" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Our Services | LH Talent Agency | Grow Your Streaming Presence" />
+        <meta property="og:description" content="Explore the range of services offered by LH Talent Agency, including hiring hosts, recruiting agencies, and managing them. We help you to grow." />
+        <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="lhtalentagency.com" />
+        <meta property="twitter:url" content="https://lhtalentagency.com/our-services" />
+        <meta name="twitter:title" content="Our Services | LH Talent Agency | Grow Your Streaming Presence" />
+        <meta name="twitter:description" content="Explore the range of services offered by LH Talent Agency, including hiring hosts, recruiting agencies, and managing them. We help you to grow." />
+        <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+        
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://lhtalentagency.com/our-services" />
       </Head>
       <div className="services-bg">

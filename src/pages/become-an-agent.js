@@ -60,6 +60,21 @@ function BecomeAnAgent() {
             <title>Become an Agent at LH Talent Agency: Earn Big!</title>
             <meta name="description" content="Join our team at LH Talent Agency as an agent and play an important role in finding, recruiting, and nurturing live streamers. Start your agency and earn big!" />
             <meta name="keywords" content="Become an Agent, Become a live streaming agent, Start career as a streaming agent" />
+            {/* <!-- Facebook Meta Tags --> */}
+            <meta property="og:url" content="https://lhtalentagency.com/become-an-agent" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Become an Agent at LH Talent Agency: Earn Big!" />
+            <meta property="og:description" content="Join our team at LH Talent Agency as an agent and play an important role in finding, recruiting, and nurturing live streamers. Start your agency and earn big!" />
+            <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
+            {/* <!-- Twitter Meta Tags --> */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="twitter:domain" content="lhtalentagency.com" />
+            <meta property="twitter:url" content="https://lhtalentagency.com/become-an-agent" />
+            <meta name="twitter:title" content="Become an Agent at LH Talent Agency: Earn Big!" />
+            <meta name="twitter:description" content="Join our team at LH Talent Agency as an agent and play an important role in finding, recruiting, and nurturing live streamers. Start your agency and earn big!" />
+            <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href="https://lhtalentagency.com/become-an-agent" />
         </Head>

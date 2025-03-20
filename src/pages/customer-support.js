@@ -60,7 +60,21 @@ function Support() {
       <title>Customer Support | LH Talent Agency: We are here to Help</title>
       <meta name="description" content="Need assistance? Contact LH Talent Agency's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime." />
       <meta name="keywords" content="LH Talent - Customer Support, LH Talent Agency - Contact Number" />
-      {/* <meta name="robots" content="index, follow" /> */}
+      {/* <!-- Facebook Meta Tags --> */}
+      <meta property="og:url" content="https://lhtalentagency.com/customer-support" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Customer Support | LH Talent Agency: We are here to Help" />
+      <meta property="og:description" content="Need assistance? Contact LH Talent Agency's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime." />
+      <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
+      {/* <!-- Twitter Meta Tags --> */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content="lhtalentagency.com" />
+      <meta property="twitter:url" content="https://lhtalentagency.com/customer-support" />
+      <meta name="twitter:title" content="Customer Support | LH Talent Agency: We are here to Help" />
+      <meta name="twitter:description" content="Need assistance? Contact LH Talent Agency's customer support for all your live streaming and hosting inquiries. Fill out this form and reach us anytime." />
+      <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+      <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://lhtalentagency.com/customer-support" />
     </Head>
     <div className='contact-bg'>

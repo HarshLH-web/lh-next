@@ -52,6 +52,21 @@ function Faq() {
       <meta name="keywords" content="What is live streaming? How to Become a live-streaming Agent? How can i earn money through live streaming in 2025? What are the benefits of working as a host or Agent?" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://lhtalentagency.com/asked-questions" />
+      {/* <!-- Facebook Meta Tags --> */}
+      <meta property="og:url" content="https://lhtalentagency.com/asked-questions" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="FAQs | Live Hosting Agency: Answers to Your Streaming Questions" />
+      <meta property="og:description" content="Find answers to frequently asked questions about LH Talent Agency's services and opportunities. Get the information you need to succeed in the live-streaming industry." />
+      <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
+      {/* <!-- Twitter Meta Tags --> */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content="lhtalentagency.com" />
+      <meta property="twitter:url" content="https://lhtalentagency.com/asked-questions" />
+      <meta name="twitter:title" content="FAQs | Live Hosting Agency: Answers to Your Streaming Questions" />
+      <meta name="twitter:description" content="Find answers to frequently asked questions about LH Talent Agency's services and opportunities. Get the information you need to succeed in the live-streaming industry." />
+      <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
       <script type="application/ld+json">
         {JSON.stringify(FaqSchema)}
       </script>

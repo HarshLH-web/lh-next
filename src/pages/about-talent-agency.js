@@ -33,20 +33,22 @@ function About() {
       <title>About LH Talent Agency | Your Partner in Live Streaming Success</title>
       <meta name="description" content="Learn about LH Talent Agency, one of the top live-streaming agencies. Our mission is to create a community for talented content creators and hosts." />
       <meta name="keywords" content="Live Streaming, Talent Agency, Content Creator Agency" />
-          {/* <!-- Facebook Meta Tags --> */}
-<meta property="og:url" content="https://lhtalentagency.com" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="LH Talent Agency | Your Partner in Live Streaming Success" />
-<meta property="og:description" content="Learn about LH Talent Agency, one of the top live-streaming agencies. Our mission is to create a community for talented content creators and hosts." />
-<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+      {/* <!-- Facebook Meta Tags --> */}
+      <meta property="og:url" content="https://lhtalentagency.com" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="LH Talent Agency | Your Partner in Live Streaming Success" />
+      <meta property="og:description" content="Learn about LH Talent Agency, one of the top live-streaming agencies. Our mission is to create a community for talented content creators and hosts." />
+      <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
 
-{/* <!-- Twitter Meta Tags --> */}
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:domain" content="lhtalentagency.com" />
+      {/* <!-- Twitter Meta Tags --> */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content="lhtalentagency.com" />
       <meta property="twitter:url" content="https://lhtalentagency.com" />
       <meta name="twitter:title" content="LH Talent Agency | Your Partner in Live Streaming Success" />
       <meta name="twitter:description" content="Learn about LH Talent Agency, one of the top live-streaming agencies. Our mission is to create a community for talented content creators and hosts." />
       <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
+      <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://lhtalentagency.com/about-talent-agency" />
     </Head>
     <div>

@@ -54,7 +54,21 @@ function BecomeLiveStreamer() {
       <title>Join LH Talent Agency as a Live Streamer: Unlock Your Potential</title>
       <meta name="description" content="Want to become a live streamer? Join LH Talent Agency for expert guidance and exciting opportunities to enhance your streaming career." />
       <meta name="keywords" content="Become Live Streamer, join as a Live Streamer, Become a Successful Streamer" />
-      {/* <meta name="robots" content="index, follow" /> */}
+      {/* <!-- Facebook Meta Tags --> */}
+      <meta property="og:url" content="https://lhtalentagency.com/become-live-streamer" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Join LH Talent Agency as a Live Streamer: Unlock Your Potential" />
+      <meta property="og:description" content="Want to become a live streamer? Join LH Talent Agency for expert guidance and exciting opportunities to enhance your streaming career." />
+      <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+
+      {/* <!-- Twitter Meta Tags --> */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content="lhtalentagency.com" />
+      <meta property="twitter:url" content="https://lhtalentagency.com/become-live-streamer" />
+      <meta name="twitter:title" content="Join LH Talent Agency as a Live Streamer: Unlock Your Potential" />
+      <meta name="twitter:description" content="Want to become a live streamer? Join LH Talent Agency for expert guidance and exciting opportunities to enhance your streaming career." />
+      <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+      <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://lhtalentagency.com/become-live-streamer" />
     </Head>
         <div className="bg-[url('/become-live-streamer-bg.png')] bg-cover bg-top bg-no-repeat h-40 lg:h-72 flex items-center justify-center">
