@@ -1,18 +1,18 @@
 import axios from "axios";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import { useParams, useSearchParams } from "next/navigation";
 import DOMPurify from "isomorphic-dompurify";
 
 function BlogDetailPage({ blog }) {
-    const router = useRouter();
-    const { slug } = router.query;
+    const { slug } = useParams();
+    const searchParams = useSearchParams();
     const [tableOfContents, setTableOfContents] = useState([]);
     const [isTocOpen, setIsTocOpen] = useState(false);
-    const [contentWithIds, setContentWithIds] = useState(null); // Initialize as null
+    const [contentWithIds, setContentWithIds] = useState("");
 
     useEffect(() => {
-        if (!blog?.content || typeof window === "undefined") return;
+        if (!slug || typeof window === "undefined") return;
 
         const parser = new DOMParser();
         const doc = parser.parseFromString(blog.content, "text/html");
@@ -34,7 +34,7 @@ function BlogDetailPage({ blog }) {
 
         setTableOfContents(toc);
 
-        // DOM Manipulation (Client-side only)
+        // Fix: Only manipulate DOM in the browser
         const tempDiv = document.createElement("div");
         tempDiv.innerHTML = blog.content;
 
@@ -49,7 +49,7 @@ function BlogDetailPage({ blog }) {
         });
 
         setContentWithIds(tempDiv.innerHTML);
-    }, [blog?.content]);
+    }, [slug, searchParams, blog]);
 
     if (!blog) return <p>Loading...</p>;
 
@@ -68,7 +68,7 @@ function BlogDetailPage({ blog }) {
                 <meta property="og:description" content={blog.metaDescription} />
                 <meta property="og:image" content={blog.coverImage} />
 
-                {/* Twitter Meta Tags */}
+                {/* <!-- Twitter Meta Tags --> */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta property="twitter:domain" content="lhtalentagency.com" />
                 <meta property="twitter:url" content={`https://lhtalentagency.com/blogs/${blog.slug}`} />
@@ -141,9 +141,7 @@ function BlogDetailPage({ blog }) {
                         </div>
                     )}
 
-                    {contentWithIds && (
-                        <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(contentWithIds) }} />
-                    )}
+                    <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(contentWithIds) }} />
                 </div>
             </div>
         </>

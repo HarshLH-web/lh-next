@@ -5,8 +5,8 @@ import ScrollUpButton from "../components/ScrollUp";
 import Testimonials from "../components/Testimonial";
 import AppsAccordion from "../components/Accordion";
 import CountUp from "react-countup";
-import Lottie from "lottie-react";
-import groupAnimation from '../assets/Group-5.json';
+// import Lottie from "lottie-react";
+// import groupAnimation from '../assets/Group-5.json';
 import { InView } from 'react-intersection-observer';
 import Link from "next/link";
 
@@ -206,7 +206,7 @@ export default function Home() {
           <div className="w-full lg:w-1/2 text-white flex items-center mx-auto px-6 lg:px-12 py-6 lg:py-4 wwa-gradient lg:my-8 mb-4 text-lg text-center lg:text-left">
           <p className="text-base lg:text-lg leading-snug">Our journey began with a vision, and today, we are the top recruiter for most of our collaborated apps. Every milestone reflects our dedication to reaching new heights, from recruiting new talent to shaping careers.</p>
           </div>
-          <InView>
+          {/* <InView>
             {({ref, inView}) => (
               <div ref={ref} className="w-full lg:w-1/2 my-4 flex items-center justify-center">
               <Lottie 
@@ -217,7 +217,7 @@ export default function Home() {
             </div>
             )
           }
-          </InView>
+          </InView> */}
           
         </div>
 
