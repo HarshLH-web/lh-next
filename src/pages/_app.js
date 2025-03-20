@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 import { Poppins } from 'next/font/google';
+import ScrollUp from "@/components/ScrollUp";
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], // Add needed font weights
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }) {
       `}</style>
     </Head>
     <Header />
+    <ScrollUp />
     <Component {...pageProps} />
     <Footer />
   </>;

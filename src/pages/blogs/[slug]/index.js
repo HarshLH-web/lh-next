@@ -35,20 +35,22 @@ function BlogDetailPage({ blog }) {
         setTableOfContents(toc);
 
         // Fix: Only manipulate DOM in the browser
-        const tempDiv = document.createElement("div");
-        tempDiv.innerHTML = blog.content;
+        if (typeof window !== 'undefined') {
+            const tempDiv = document.createElement("div");
+            tempDiv.innerHTML = blog.content;
 
-        toc.forEach((heading) => {
-            const headingElements = tempDiv.querySelectorAll(heading.level);
-            for (const element of headingElements) {
-                if (element.textContent.trim() === heading.originalText.trim()) {
-                    element.innerHTML = `<span id="${heading.id}" style="scroll-margin-top: 150px; display: block;">${element.innerHTML}</span>`;
-                    break;
+            toc.forEach((heading) => {
+                const headingElements = tempDiv.querySelectorAll(heading.level);
+                for (const element of headingElements) {
+                    if (element.textContent.trim() === heading.originalText.trim()) {
+                        element.innerHTML = `<span id="${heading.id}" style="scroll-margin-top: 150px; display: block;">${element.innerHTML}</span>`;
+                        break;
+                    }
                 }
-            }
-        });
+            });
 
-        setContentWithIds(tempDiv.innerHTML);
+            setContentWithIds(tempDiv.innerHTML);
+        }
     }, [slug, searchParams, blog]);
 
     if (!blog) return <p>Loading...</p>;
