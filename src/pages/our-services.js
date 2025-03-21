@@ -160,7 +160,7 @@ function Services() {
                   <Image src="/red-arrow.svg" alt="arrow" width={20} height={20} className="w-4 h-4 lg:w-5 lg:h-5" />
                   <p className="text-base lg:text-xl font-semibold leading-normal">{item}</p>
                 </div>
-                {index < tabs.find((tab) => tab.id === activeTab)?.content.length - 1 && <hr className="w-[90%] h-[1px] my-2 bg-[#DFDFDF]" />}
+                {index < tabs.find((tab) => tab.id === activeTab)?.content.length - 1 && <hr className="w-[90%] my-2 border-t-[#DFDFDF]" />}
               </div>
             ))}
           </div>

@@ -199,7 +199,7 @@ export default function Home() {
           </div>
 
             <Link href="/our-services">
-            <button className="hover:bg-[#DE0402] hover:text-white bg-transparent border-[#DE0402] border-2 text-[#DE0402] font-medium px-4 py-2 rounded-full mt-10 lg:mt-12 mx-auto block transition duration-300">
+            <button className="hover:bg-transparent hover:text-[#DE0402] bg-[#DE0402] border-[#DE0402] border-2 text-white font-medium px-4 py-2 rounded-full mt-10 lg:mt-12 mx-auto block transition duration-300">
               Read More
             </button>
             </Link>
