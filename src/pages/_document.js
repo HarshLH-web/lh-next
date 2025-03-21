@@ -49,14 +49,11 @@ export default function Document() {
 
       {/* WhatsApp Chatbot */}
       <Script
+        type="text/javascript"
         src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
         id="aisensy-wa-widget"
-        strategy="lazyOnload"
-        onLoad={() => {
-          console.log("WhatsApp chatbot script loaded.");
-        }}
+        widget-id="1oCrUt"
       />
-
       </Head>
       <body className="antialiased">
         {/* Google Tag Manager (noscript) */}

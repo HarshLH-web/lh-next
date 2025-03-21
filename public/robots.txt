@@ -1,19 +1,24 @@
 User-agent: *
 
+Allow: /our-services/
+Allow: /become-live-streamer/
+Allow: /customer-support/
+Allow: /live-streaming-tips/
+Allow: /blogs/
+Allow: /blogs/how-to-earn-money-on-poppo-live-beginner-guide/
+
+
 Disallow: /2024/
 Disallow: /feed/
 Disallow: /tag/
 Disallow: /category/
+Disallow: /?amp=1/
+
 
 # Block old subdomains from indexing
 Disallow: https://one.lhtalentagency.com/
 Disallow: https://1.lhtalentagency.com/
-Disallow: /?amp=1/
 
-# Allow search engines to crawl everything else
-Allow: https://lhtalentagency.com/
 
 # Sitemap location
-
-Sitemap: https://lhtalentagency.com/sitemap.xml
-
+Sitemap: https://lhtalentagency.com/sitemap.xml/ 
