@@ -71,7 +71,7 @@ function Faq() {
         {JSON.stringify(FaqSchema)}
       </script>
     </Head>
-    <div className="faq-bg w-full h-52 lg:h-72 flex items-center justify-center">
+    <div className="faq-bg w-full h-40 lg:h-72 flex items-center justify-center">
       <h1 className="text-white text-4xl lg:text-6xl font-extrabold text-center lg:leading-[1.15]">FAQ&rsquo;s</h1>
     </div>
     <div className=" pt-8 lg:pt-16 pb-4">

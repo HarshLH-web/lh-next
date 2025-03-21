@@ -16,8 +16,8 @@ Disallow: /?amp=1/
 
 
 # Block old subdomains from indexing
-Disallow: https://one.lhtalentagency.com/
-Disallow: https://1.lhtalentagency.com/
+Disallow: /one.lhtalentagency.com/
+Disallow: /1.lhtalentagency.com/
 
 
 # Sitemap location
