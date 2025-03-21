@@ -149,12 +149,12 @@ function Footer() {
               <Link href="/blogs/tango-agency-registration" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to become agent in Tango Live</Link>
               <div className="h-px bg-[#242424]"></div>
               <Link href="/blogs/how-to-earn-money-on-poppo-live-beginner-guide" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to earn money on Poppo Live</Link>
+              <div className="h-px bg-[#242424]"></div>
+              <Link href="/blogs/how-poppo-app-agency-earn-money" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How Poppo App Agency Earn Money</Link>
               {/* <div className="h-px bg-[#242424]"></div>
-              <Link href="/join-streamer" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Increasing Demand of Influencers</Link>
+              <Link href="/register-influencer" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to Register as a Niki Live Agent</Link> */}
               <div className="h-px bg-[#242424]"></div>
-              <Link href="/register-influencer" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to Register as a Niki Live Agent</Link>
-              <div className="h-px bg-[#242424]"></div>
-              <Link href="/streaming-tips" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to Become a Poppo App Agency</Link> */}
+              <Link href="/blogs/how-to-trade-coins-in-poppo-live" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to trade coins in Poppo Live</Link>
             </div>
         </div>
       </div>
