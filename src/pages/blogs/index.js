@@ -51,7 +51,7 @@ function Blogs() {
                 tagParam.toLowerCase().includes(tag.toLowerCase())
               )
             : true
-        );
+        ).reverse(); // Reverse the order of the blogs
         
         setBlogs(filteredBlogs);
       } catch (error) {

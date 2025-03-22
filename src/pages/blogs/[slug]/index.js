@@ -171,13 +171,9 @@ export async function getServerSideProps(context) {
 
     try {
         const response = await axios.get(`https://webpanel.store/api/blogs/${slug}`);
-        
-        // Reverse the order of the blogs
-        const reversedBlogs = response.data.reverse();
-
         return {
             props: {
-                blog: reversedBlogs,
+                blog: response.data,
             },
         };
     } catch (error) {
