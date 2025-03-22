@@ -116,7 +116,7 @@ function Blogs() {
             </div>
             <h2 className='text-xl lg:text-2xl font-semibold'>{blog.title}</h2>
             {/* {const formattedDate = format(new Date(blog.createdAt), 'MMMM d, yyyy')} */}
-            <p className='text-sm font-medium text-[#D24F4F] my-1'>By {blog.author} on {format(new Date(blog.updatedAt), 'MMMM dd, yyyy')}</p>
+            <p className='text-sm font-medium text-[#D24F4F] my-1'>By {blog.author} on {format(new Date(blog.createdAt), 'MMMM dd, yyyy')}</p>
             <p className='text-base text-[#00000080]'>{blog.coverText.length > 80 ? `${blog.coverText.substring(0, 80)}....` : blog.coverText}</p>
           <button className='bg-white hover:bg-[#DE0402] text-[#DE0402] hover:text-white border-[2px] transition-all duration-300 border-[#DE0402] px-4 py- rounded-full mt-3'>Read More</button>
           </div>
