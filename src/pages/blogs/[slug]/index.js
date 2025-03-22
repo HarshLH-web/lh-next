@@ -80,7 +80,7 @@ function BlogDetailPage({ blog }) {
                 </script>
             </Head>
 
-            <div id="blog-container" className="w-[90%] mx-auto mb-48 mt-7 lg:mt-16 lg:mb-44">
+            <div id="blog-container" className="w-[90%] lg:w-[80%] mx-auto mb-48 mt-7 lg:mt-16 lg:mb-44">
                 <h1 className="text-3xl font-bold mb-4 text-center max-w-3xl mx-auto">{blog.title}</h1>
                 <div className="w-full max-w-7xl mx-auto">
                     {tableOfContents.length > 0 && (

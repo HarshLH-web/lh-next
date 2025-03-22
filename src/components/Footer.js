@@ -146,7 +146,7 @@ function Footer() {
           <div className="w-6 h-0.5 bg-white mx-2 mb-4"></div>
 
           <div className="space-y-2 flex flex-col lg:max-w-[80%]">
-              <Link href="/blogs/tango-agency-registration" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to become agent in Tango Live</Link>
+              <Link href="/blogs/tango-agency-registration" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Tango Agency Registration</Link>
               <div className="h-px bg-[#242424]"></div>
               <Link href="/blogs/how-to-earn-money-on-poppo-live-beginner-guide" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to earn money on Poppo Live</Link>
               <div className="h-px bg-[#242424]"></div>
@@ -154,7 +154,7 @@ function Footer() {
               <div className="h-px bg-[#242424]"></div>
               <Link href="/blogs/poppo-live-agency-benefits" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Poppo Live Agency Benefits</Link>
               <div className="h-px bg-[#242424]"></div>
-              <Link href="/blogs/how-to-trade-coins-in-poppo-live" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to trade coins in Poppo Live</Link>
+              <Link href="/blogs/how-to-trade-coins-in-poppo-live" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Poppo Coin Seller</Link>
             </div>
         </div>
       </div>
