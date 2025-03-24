@@ -97,7 +97,7 @@ function Blogs() {
     <div className='blog-bg'>
       <h1 className='text-white text-4xl lg:text-6xl font-bold uppercase'>Blogs</h1>
     </div>
-    <div className='grid grid-cols-1 lg:grid-cols-3 gap-16 md:gap-4 mx-auto mt-8 lg:mt-16 mb-48 lg:mb-44 w-[90%] max-w-7xl'>
+    <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto mt-8 lg:mt-16 mb-48 lg:mb-44 w-[90%] max-w-7xl'>
       {isLoading ? (
         <p className="col-span-full text-center text-lg text-gray-600">Loading...</p>
       ) : blogs.length > 0 ? blogs.map((blog) => (
