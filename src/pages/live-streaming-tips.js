@@ -78,12 +78,12 @@ function StreamingTips() {
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="lhtalentagency.com" />
-        <meta property="twitter:url" content="https://lhtalentagency.com/streaming-tips" />
+        <meta property="twitter:url" content="https://lhtalentagency.com/live-streaming-tips" />
         <meta name="twitter:title" content="Streaming Tips | LH Talent Agency: Enhance Your Streaming" />
         <meta name="twitter:description" content="Discover valuable streaming tips and best practices from LH Talent Agency to improve your live content and engage with your audience effectively." />
         <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://lhtalentagency.com/streaming-tips" />
+        <link rel="canonical" href="https://lhtalentagency.com/live-streaming-tips" />
       </Head>
       <div className='blog-bg'>
       <h1 className='text-white text-4xl lg:text-6xl font-bold uppercase'>Streaming Tips</h1>
