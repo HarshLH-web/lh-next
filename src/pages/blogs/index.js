@@ -41,7 +41,7 @@ function Blogs() {
         const tagParam = query.tag || null;  // Get the 'tag' parameter from the query
         
         // Fetch blogs from the API
-        const response = await axios.get('https://webpanel.store/api/blogs');
+        const response = await axios.get('https://webpanel.store/api/blogs/selected-fields');
         
         // Filter blogs if tag parameter exists and only include those with toPublish as true
         const filteredBlogs = response.data.filter(blog => blog.toPublish).filter(blog => 
