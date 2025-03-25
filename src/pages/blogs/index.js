@@ -30,6 +30,7 @@ function Blogs() {
 
   const [blogs, setBlogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isBlogLoading, setIsBlogLoading] = useState(false);
   const router = useRouter();
   const { query } = router;
 
@@ -67,7 +68,7 @@ function Blogs() {
 
     // Array of predefined background colors
     const bgColors = ["bg-[#FFEDE0]", "bg-[#E0F7FA]", "bg-[#E8F5E9]", "bg-[#FFF3E0]", "bg-[#EBF8C1]"];
-
+    console.log(isBlogLoading)
   return (
     <>
     <Head>
@@ -102,8 +103,7 @@ function Blogs() {
         <p className="col-span-full text-center text-lg text-gray-600">Loading...</p>
       ) : blogs.length > 0 ? blogs.map((blog) => (
         <div key={blog._id} className='rounded-lg overflow-hidden'>
-         <Link href={`/blogs/${blog.slug}`} key={blog._id} className="block">
-
+         <Link href={`/blogs/${blog.slug}`} key={blog._id} className="block" onClick={() => setIsBlogLoading(true)}>
           <div>
             <Image src={blog.coverImage} alt={blog.title} className='w-full h-52 object-cover' width={1000} height={1000} />
           </div>
@@ -126,6 +126,22 @@ function Blogs() {
         )) : <p className="col-span-full text-center text-lg text-gray-600">No blogs found</p>}
 
     </div>
+    {isBlogLoading  && <div className="fixed inset-0 bg-black/80 flex items-center justify-center">
+      <div className="relative w-12 h-12 flex items-center justify-center">
+  <div
+    className="absolute w-full h-full rounded-full animate-spin"
+    style={{
+      background: "conic-gradient(transparent, red, transparent)",
+      maskImage: "radial-gradient(transparent 50%, black 54%)",
+      WebkitMaskImage: "radial-gradient(transparent 50%, black 54%)",
+    }}
+  ></div>
+</div>
+
+
+
+      {/* <Image src="/loading.gif" alt="Loading" className='w-16' width={1000} height={1000} /> */}
+    </div>}
     </>
   )
 }
