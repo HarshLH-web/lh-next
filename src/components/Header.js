@@ -249,17 +249,15 @@ function Header() {
       </div>
 
       {/* Apply Now Button */}
-      <Link href="/apply-now">
-      <motion.button
-        className="bg-[#DE0402] text-white py-3 px-6 rounded-full font-semibold flex items-center gap-2"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
+      <button
+        className="bg-[#DE0402] text-white rounded-full font-semibold "
         onClick={() => setIsMenuOpen(false)}
       >
+        <Link href="/apply-now" className="flex items-center gap-2 py-3 px-6">
         Apply Now
-        <Image src="/arrow-white.svg" className="h-6" alt="Arrow" width={20} height={20} />
-      </motion.button>
-      </Link>
+        <Image src="/arrow-white.svg" className="h-6" alt="White Arrow" width={20} height={20} />
+        </Link>
+      </button>
     </nav>
         </div>
 
@@ -359,8 +357,8 @@ function Header() {
 
           
           {/* Apply Now Button */}
-          <Link href="/apply-now">
-            <button className="bg-[#DE0402] hover:bg-white text-white hover:text-[#DE0402] py-2 xl:py-3 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402]" onClick={() => setIsMenuOpen(false)}>
+          <button className="bg-[#DE0402] hover:bg-white text-white hover:text-[#DE0402] rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402]" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/apply-now" className="flex items-center gap-2 py-2 xl:py-3 px-6 ">
             Apply Now
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -376,8 +374,8 @@ function Header() {
                 strokeLinejoin="round"
               />
             </svg>
+            </Link>
           </button>
-        </Link>
 
         </nav>
       </div>

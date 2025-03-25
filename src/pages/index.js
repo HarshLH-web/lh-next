@@ -112,11 +112,11 @@ export default function Home() {
             <p className="text-base lg:text-xl lg:pr-24 font-semibold mt-2">Ready to take your streaming journey to the next level? Let us help you shine on the world&apos;s leading platforms.</p>
             </div>
 
-       <Link href="/apply-now">
-       <button
-          className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 py-3 px-6 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto mt-2 lg:m-0"
+            <button
+          className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold  group transition duration-300 mx-auto w-fit mt-2 lg:m-0"
           aria-label="Discover Now"
         >
+          <Link href="/apply-now" className="flex items-center gap-1 w-fit relative overflow-hidden py-3 px-6" aria-label="Discover Now">
           <span>Discover Now</span>
           <span className="relative">
             <svg
@@ -134,9 +134,9 @@ export default function Home() {
               />
             </svg>
           </span>
+          </Link>
         </button>
 
-       </Link>
           </div>
           {/* Banner Image */}
           <div className="w-full lg:w-2/5 flex items-end">
@@ -198,11 +198,11 @@ export default function Home() {
 
           </div>
 
-            <Link href="/our-services">
-            <button className="hover:bg-transparent hover:text-[#DE0402] bg-[#DE0402] border-[#DE0402] border-2 text-white font-medium px-4 py-2 rounded-full mt-10 lg:mt-12 mx-auto block transition duration-300" aria-label="Read More">
-              Read More
-            </button>
-            </Link>
+          
+          <button className="hover:bg-transparent hover:text-[#DE0402] bg-[#DE0402] border-[#DE0402] border-2 text-white font-medium rounded-full mt-10 lg:mt-12 mx-auto block transition duration-300 px-1 py-2" aria-label="Read More">
+          <Link href="/our-services" aria-label="Read More" className="px-4 py-2">Read More</Link>
+          </button>
+
         </div>
       </section>
 
@@ -296,30 +296,27 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
               <h2 className="uppercase text-center text-black font-extrabold text-4xl lg:text-6xl 2xl:text-7xl leading-snug">Our Apps</h2>
               <p className="text-base font-medium max-w-[36rem] text-center lg:text-left ">Explore our top collaborations with live streaming applications, where talent meets opportunity. Your success story begins here- let&apos;s create something big together.</p>
-              <Link href="/apply-now" className="rounded-full mt-4 lg:mt-0">
-              <button
-        className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 py-3 px-6 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto lg:m-0"
-        aria-label="View All"
-      >
-        <span>View All</span>
-        <span className="relative">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            className="h-6 z-10 transition-transform duration-300 ease-out group-hover:scale-x-125 origin-left"
-          >
-            <path
-              d="M4 12H20M20 12L16 8M20 12L16 16"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </span>
+              <button className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold group transition duration-300 mx-auto mt-4 lg:m-0" aria-label="View All">
+                <Link href="/our-apps" className="py-3 px-6 rounded-full lg:mt-0 flex items-center gap-1 w-fit relative overflow-hidden" aria-label="View All">
+                  <span>View All</span>
+                  <span className="relative">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="h-6 z-10 transition-transform duration-300 ease-out group-hover:scale-x-125 origin-left"
+                    >
+                      <path
+                        d="M4 12H20M20 12L16 8M20 12L16 16"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </Link>
               </button>
-              </Link>
             </div>
             {/* app container */}
             <div>
@@ -343,11 +340,11 @@ export default function Home() {
             </h2>
             <p className="text-base lg:text-3xl max-w-2xl mx-auto font-semibold">Interested in collaborating? Let&apos;s make magic happen!</p>
 
-          <a href="mailto:support@lhtalentagency.com">
-          <button
-          className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 py-3 px-6 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto lg:mt-4"
+            <button
+          className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto lg:mt-4"
           aria-label="Get in Touch"
         >
+          <a href="mailto:support@lhtalentagency.com" className="py-3 px-6 rounded-full lg:mt-0 flex items-center gap-1 w-fit relative overflow-hidden" aria-label="Get in Touch">
           <span>Get in Touch</span>
           <span className="relative">
             <svg
@@ -365,8 +362,8 @@ export default function Home() {
               />
             </svg>
           </span>
-          </button>
           </a>
+          </button>
           </div>
         </section>
         {/* Section 7 */}

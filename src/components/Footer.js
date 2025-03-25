@@ -74,7 +74,7 @@ function Footer() {
               className=" border-2 border-white text-white bg-[#DE0402] hover:scale-110 transition-all duration-300 p-[6px] rounded-full absolute right-[23px] lg:right-[8px]"
               aria-label="Search"
             >
-              <Image src="/arrow-white.svg" alt="" className='w-6 h-6' width={24} height={24} />
+              <Image src="/arrow-white.svg" alt="White Arrow" className='w-6 h-6' width={24} height={24} />
             </button>
 
 
