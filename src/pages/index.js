@@ -112,11 +112,10 @@ export default function Home() {
             <p className="text-base lg:text-xl lg:pr-24 font-semibold mt-2">Ready to take your streaming journey to the next level? Let us help you shine on the world&apos;s leading platforms.</p>
             </div>
 
-            <button
-          className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold  group transition duration-300 mx-auto w-fit mt-2 lg:m-0"
+            <Link href="/apply-now"
+          className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold  group transition duration-300 mx-auto mt-2 lg:m-0 flex items-center gap-1 w-fit relative overflow-hidden py-3 px-6"
           aria-label="Discover Now"
         >
-          <Link href="/apply-now" className="flex items-center gap-1 w-fit relative overflow-hidden py-3 px-6" aria-label="Discover Now">
           <span>Discover Now</span>
           <span className="relative">
             <svg
@@ -135,7 +134,7 @@ export default function Home() {
             </svg>
           </span>
           </Link>
-        </button>
+
 
           </div>
           {/* Banner Image */}
@@ -198,10 +197,11 @@ export default function Home() {
 
           </div>
 
-          
-          <button className="hover:bg-transparent hover:text-[#DE0402] bg-[#DE0402] border-[#DE0402] border-2 text-white font-medium rounded-full mt-10 lg:mt-12 mx-auto block transition duration-300 px-1 py-2" aria-label="Read More">
-          <Link href="/our-services" aria-label="Read More" className="px-4 py-2">Read More</Link>
-          </button>
+
+          <div className="flex justify-center">
+          <Link href="/our-services"  className="hover:bg-transparent hover:text-[#DE0402] bg-[#DE0402] border-[#DE0402] border-2 text-white font-medium rounded-full mt-10 lg:mt-12 mx-auto block transition duration-300 px-4 py-2" aria-label="Read More">Read More
+          </Link>
+          </div>
 
         </div>
       </section>
@@ -296,8 +296,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
               <h2 className="uppercase text-center text-black font-extrabold text-4xl lg:text-6xl 2xl:text-7xl leading-snug">Our Apps</h2>
               <p className="text-base font-medium max-w-[36rem] text-center lg:text-left ">Explore our top collaborations with live streaming applications, where talent meets opportunity. Your success story begins here- let&apos;s create something big together.</p>
-              <button className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold group transition duration-300 mx-auto mt-4 lg:m-0" aria-label="View All">
-                <Link href="/our-apps" className="py-3 px-6 rounded-full lg:mt-0 flex items-center gap-1 w-fit relative overflow-hidden" aria-label="View All">
+              <Link href="/our-apps" className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 font-semibold group transition duration-300 mx-auto mt-4 lg:m-0 py-3 px-6 rounded-full lg:mt-0 flex items-center gap-1 w-fit relative overflow-hidden" aria-label="View All">
                   <span>View All</span>
                   <span className="relative">
                     <svg
@@ -316,7 +315,6 @@ export default function Home() {
                     </svg>
                   </span>
                 </Link>
-              </button>
             </div>
             {/* app container */}
             <div>
@@ -340,11 +338,8 @@ export default function Home() {
             </h2>
             <p className="text-base lg:text-3xl max-w-2xl mx-auto font-semibold">Interested in collaborating? Let&apos;s make magic happen!</p>
 
-            <button
-          className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto lg:mt-4"
-          aria-label="Get in Touch"
-        >
-          <a href="mailto:support@lhtalentagency.com" className="py-3 px-6 rounded-full lg:mt-0 flex items-center gap-1 w-fit relative overflow-hidden" aria-label="Get in Touch">
+
+          <Link href="mailto:support@lhtalentagency.com" className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto py-3 px-6 lg:mt-0" aria-label="Get in Touch">
           <span>Get in Touch</span>
           <span className="relative">
             <svg
@@ -362,8 +357,7 @@ export default function Home() {
               />
             </svg>
           </span>
-          </a>
-          </button>
+          </Link>
           </div>
         </section>
         {/* Section 7 */}

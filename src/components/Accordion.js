@@ -109,17 +109,13 @@ const AppsAccordion = () => {
                 <p className="mt-2 text-base lg:text-lg px-4">{section.description}</p>
                 <div className="mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center">
                   {section.hostBtnText && (
-                    <button className="px-4 py-2  bg-transparent border-[1px] border-[#FFE9DF] hover:bg-[#FFE9DF] hover:text-[#DE0400] transition duration-300 rounded-3xl" aria-label={`Become ${section.hostBtnText}`}>
-                        <a href={section.hostBtnURL} className='px-4 py-2 '>
+                    <a href={section.hostBtnURL} className="px-4 py-2 bg-transparent border-[1px] border-[#FFE9DF] hover:bg-[#FFE9DF] hover:text-[#DE0400] transition duration-300 rounded-3xl" aria-label={`Become ${section.hostBtnText}`}>       
                         Become {section.hostBtnText}
-                      </a>
-                    </button>
-                  )}
-                  <button className="px-4 py-2 bg-transparent border-[1px] border-[#FFE9DF] hover:bg-[#FFE9DF] hover:text-[#DE0400] transition duration-300 rounded-3xl" aria-label={`Become ${section.agentBtnText}`}>
-                    <a href={section.agentBtnURL} className='px-4 py-2 '>
-                      Become {section.agentBtnText}
                     </a>
-                  </button>
+                  )}
+                  <a href={section.agentBtnURL} className="px-4 py-2 bg-transparent border-[1px] border-[#FFE9DF] hover:bg-[#FFE9DF] hover:text-[#DE0400] transition duration-300 rounded-3xl" aria-label={`Become ${section.agentBtnText}`}>
+                    Become {section.agentBtnText}
+                  </a>
                 </div>
               </div>
             </div>
