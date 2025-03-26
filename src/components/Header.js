@@ -357,8 +357,7 @@ function Header() {
 
           
           {/* Apply Now Button */}
-          <button className="bg-[#DE0402] hover:bg-white text-white hover:text-[#DE0402] rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402]" onClick={() => setIsMenuOpen(false)}>
-            <Link href="/apply-now" className="flex items-center gap-2 py-2 xl:py-3 px-6 ">
+            <Link href="/apply-now" className="py-2 xl:py-3 px-6 bg-[#DE0402] hover:bg-white text-white hover:text-[#DE0402] rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402]">
             Apply Now
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -375,7 +374,6 @@ function Header() {
               />
             </svg>
             </Link>
-          </button>
 
         </nav>
       </div>
