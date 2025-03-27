@@ -85,7 +85,7 @@ function Services() {
         <meta name="description" content="Explore the range of services offered by LH Talent Agency, including hiring hosts, recruiting agencies, and managing them. We help you to grow." />
         <meta name="keywords" content="Hire Talented Streamers, Recruit live Streaming Agents, Streamer Recruitment Agency, Promote Live Streaming platforms, Live streaming Services" />
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://lhtalentagency.com/become-an-agent" />
+        <meta property="og:url" content="https://lhtalentagency.com/our-services" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Our Services | LH Talent Agency | Grow Your Streaming Presence" />
         <meta property="og:description" content="Explore the range of services offered by LH Talent Agency, including hiring hosts, recruiting agencies, and managing them. We help you to grow." />

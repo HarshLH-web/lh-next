@@ -26,7 +26,7 @@ const Apply = () => {
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="lhtalentagency.com" />
-      <meta property="twitter:url" content="https://lhtalentagency.com" />
+        <meta property="twitter:url" content="https://lhtalentagency.com/apply-now" />
       <meta name="twitter:title" content="Apply Now | LH Talent Agency: Start Your Streaming Career" />
       <meta name="twitter:description" content="Ready to take the next step? Unlock the world of opportunities in live-streaming and content creation. Apply to join LH Talent Agency today!" />
       <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />

@@ -68,6 +68,7 @@ function BecomeLiveStreamer() {
       <meta name="twitter:title" content="Join LH Talent Agency as a Live Streamer: Unlock Your Potential" />
       <meta name="twitter:description" content="Want to become a live streamer? Join LH Talent Agency for expert guidance and exciting opportunities to enhance your streaming career." />
       <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+      
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://lhtalentagency.com/become-live-streamer" />
     </Head>

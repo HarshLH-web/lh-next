@@ -69,7 +69,7 @@ function StreamingTips() {
         <meta name="description" content="Discover valuable streaming tips and best practices from LH Talent Agency to improve your live content and engage with your audience effectively." />
         <meta name="keywords" content="Streaming Tips, Live Streaming Tips and Tricks, Best Streaming Tips for Beginners, Tips For Hosts, How to Become a Successful Streamer" />
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://lhtalentagency.com/become-an-agent" />
+        <meta property="og:url" content="https://lhtalentagency.com/live-streaming-tips" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Streaming Tips | LH Talent Agency: Enhance Your Streaming" />
         <meta property="og:description" content="Discover valuable streaming tips and best practices from LH Talent Agency to improve your live content and engage with your audience effectively." />
