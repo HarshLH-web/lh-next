@@ -200,7 +200,7 @@ export default function Home() {
 
 
           <div className="flex justify-center">
-          <Link href="/our-services"  className="hover:bg-transparent hover:text-[#DE0402] bg-[#DE0402] border-[#DE0402] border-2 text-white font-medium rounded-full mt-10 lg:mt-12 mx-auto block transition duration-300 px-4 py-2" aria-label="Read More">Read More
+          <Link href="/our-services"  className="hover:bg-transparent hover:text-[#DE0402] bg-[#DE0402] border-[#DE0402] border-2 text-white font-medium rounded-full mt-10 lg:mt-12 mx-auto block transition duration-300 px-4 py-2" aria-label="Explore Our Services">Explore Our Services
           </Link>
           </div>
 
@@ -297,7 +297,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
               <h2 className="uppercase text-center text-black font-extrabold text-4xl lg:text-6xl 2xl:text-7xl leading-snug">Our Apps</h2>
               <p className="text-base font-medium max-w-[36rem] text-center lg:text-left ">Explore our top collaborations with live streaming applications, where talent meets opportunity. Your success story begins here- let&apos;s create something big together.</p>
-              <Link href="/our-apps" className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 font-semibold group transition duration-300 mx-auto mt-4 lg:m-0 py-3 px-6 rounded-full lg:mt-0 flex items-center gap-1 w-fit relative overflow-hidden" aria-label="View All">
+              <Link href="/apply-now" className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 font-semibold group transition duration-300 mx-auto mt-4 lg:m-0 py-3 px-6 rounded-full lg:mt-0 flex items-center gap-1 w-fit relative overflow-hidden" aria-label="View All">
                   <span>View All</span>
                   <span className="relative">
                     <svg
