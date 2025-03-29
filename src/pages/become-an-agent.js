@@ -123,6 +123,8 @@ function BecomeAnAgent() {
                     <div className="w-full lg:w-1/2">
                         <h2 className="text-[#000000] text-3xl lg:text-[42px] lg:leading-[1.15] font-semibold mb-2">What are the Responsibilities of an Agent?</h2>
                         <p className="text-[#363636] text-base lg:text-xl">As an agent, your first responsibility is to find and recruit skilled people who are passionate about streaming. You&apos;ll provide support and advice, helping them enhance their skills. Also, you will be the first point of contact for the streamers with any queries.</p>
+
+                        <Link href="/customer-support" className="bg-[#DE0402] w-fit text-white py-2 px-6 rounded-full font-semibold flex items-center lg:items-start gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto lg:mx-0 mt-4 lg:mt-6 hover:bg-transparent hover:text-[#DE0402]">Need Help</Link>
                     </div>
                 </div>
             </div>

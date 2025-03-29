@@ -18,7 +18,7 @@ const FaqAccordion = () => {
     },
     {
       question: 'How can I become an official streamer?',
-      answer: 'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like LH Talent Agency can guide you through the process, provide training, and help you start earning. Check out the host registration process <a href="/become-live-streamer" style="color: #DE0402;">here</a>.',
+      answer: 'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like LH Talent Agency can guide you through the process, provide training, and help you start earning. Check out the host registration process <a href="/blogs/how-to-earn-money-on-poppo-live-beginner-guide" style="color: #DE0402;">here</a>.',
     },
     {
       question: 'Do we need a huge follower list to start streaming?',
@@ -34,11 +34,11 @@ const FaqAccordion = () => {
     },
     {
       question: 'How can I become an official agency?',
-      answer: 'To become an official agency, you need to partner with a live-streaming platform and recruit talented streamers. <br /> LH Talent Agency works with top live streaming applications globally and can help you with guidance and support related to how to set up and grow as an agency. Check out the agency registration process <a href="/become-an-agent" style="color: #DE0402;">here</a>.',
+      answer: 'To become an official agency, you need to partner with a live-streaming platform and recruit talented streamers. <br /> LH Talent Agency works with top live streaming applications globally and can help you with guidance and support related to how to set up and grow as an agency. Check out the agency registration process <a href="/blogs/how-to-create-poppo-live-account" style="color: #DE0402;">here</a>.',
     },
     {
       question: 'How much can I earn as an agency?',
-      answer: 'As an agency, your earnings depend on the number of streamers you recruit and their performance. The agency also invites sub-agents to expand the network of the applications. Your commission will be calculated on the overall income of your agency, which includes the hired streamers and sub-agents. The more active and successful your hosts and sub-agents are, the higher your commissions.',
+      answer: 'As an agency, your earnings depend on the number of streamers you recruit and their performance. The agency also invites sub-agents to expand the network of the applications. Your commission will be calculated on the overall income of your agency, which includes the hired streamers and sub-agents. The more active and successful your hosts and sub-agents are, the higher your commissions. <br /> <a href="/blogs/how-poppo-app-agency-earn-money" style="color: #DE0402;">Want to know more about Poppo Agent Commission?</a>',
     },
     {
       question: 'Can I become an agent and still be able to do the live-streaming?',
