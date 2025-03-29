@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head >
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="/lh-favicon.png" type="image/png" />
 
        {/* Google Search Console */}
        <meta

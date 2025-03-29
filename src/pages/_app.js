@@ -14,7 +14,6 @@ const poppins = Poppins({
 export default function App({ Component, pageProps }) {
   return <>
     <Head>
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       <style jsx global>{`
         html, body {
           font-family: ${poppins.style.fontFamily};
