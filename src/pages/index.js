@@ -83,6 +83,10 @@ export default function Home() {
 <meta name="twitter:description" content="Discover LH Talent Agency, a leading live-streaming talent agency, connects talented streamers with top streaming opportunities. Join us today!" />
 <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
 
+
+<meta name="p:domain_verify" content="a77a4c2cd1da692ab97cb76168926953"/>
+
+
         <link rel="canonical" href="https://lhtalentagency.com/" />
         <link rel="preload" href="/live-hosting.gif" as="image" type="image/gif" />
         <meta name="robots" content="index, follow" />
