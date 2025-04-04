@@ -29,6 +29,7 @@ const BreadcrumbSchema =
 function Blogs() {
 
   const [blogs, setBlogs] = useState([]);
+  const [fullBlogs, setFullBlogs] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [isBlogLoading, setIsBlogLoading] = useState(false);
   const router = useRouter();
@@ -41,7 +42,7 @@ function Blogs() {
       try {
         const tagParam = query.tag || null;  // Get the 'tag' parameter from the query
         
-        // Fetch blogs from the API
+        // Fetch blogs with selected fields
         const response = await axios.get('https://webpanel.store/api/blogs/selected-fields');
         
         // Filter blogs if tag parameter exists and only include those with toPublish as true
@@ -55,11 +56,26 @@ function Blogs() {
         ).reverse(); // Reverse the order of the blogs
         
         setBlogs(filteredBlogs);
+        // Fetch full blog data in the background without blocking
+        axios.get('https://webpanel.store/api/blogs')
+          .then(fullResponse => {
+            const fullData = fullResponse.data.reduce((acc, blog) => {
+              acc[blog._id] = blog;
+              return acc;
+            }, {});
+            setFullBlogs(fullData);
+            // console.log('Full blog data:', fullData); // Log fullData to the console
+          })
+          .catch(error => {
+            console.error('Error fetching full blog data:', error);
+          });
+
       } catch (error) {
         console.error('Error fetching blogs:', error);
       } finally {
         setIsLoading(false);
       }
+
     };
     
     fetchBlogs();
@@ -68,7 +84,7 @@ function Blogs() {
 
     // Array of predefined background colors
     const bgColors = ["bg-[#FFEDE0]", "bg-[#E0F7FA]", "bg-[#E8F5E9]", "bg-[#FFF3E0]", "bg-[#EBF8C1]"];
-    console.log(isBlogLoading)
+    // console.log(isBlogLoading)
   return (
     <>
     <Head>
