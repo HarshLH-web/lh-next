@@ -64,7 +64,6 @@ function Blogs() {
               return acc;
             }, {});
             setFullBlogs(fullData);
-            // console.log('Full blog data:', fullData); // Log fullData to the console
           })
           .catch(error => {
             console.error('Error fetching full blog data:', error);
@@ -75,7 +74,6 @@ function Blogs() {
       } finally {
         setIsLoading(false);
       }
-
     };
     
     fetchBlogs();

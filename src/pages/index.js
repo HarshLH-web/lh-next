@@ -17,7 +17,7 @@ const HomeSchema =
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "LH Agency Official",
+    "name": "LH Talent Agency",
     "alternateName": "LH Talent Management Agency",
     "url": "https://lhtalentagency.com",
     "description": "LH Talent Agency's blog page provides you with all the needed information with updated details, insights, and tips about the live streaming industry. Explore Now!",
@@ -43,7 +43,7 @@ const HomeSchema =
   {
     "@context": "https://schema.org",
     "@type": "Corporation",
-    "name": "LH Agency Official",
+    "name": "LH Talent Agency",
     "alternateName": "LH Talent Management Agency",
     "url": "https://lhtalentagency.com/",
     "logo": "https://lhtalentagency.com/logo.png",
@@ -71,7 +71,7 @@ export default function Home() {
 <meta property="og:url" content="https://lhtalentagency.com" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="LH Talent Agency | Connecting Talent with Top Streaming Opportunities" />
-<meta property="og:site_name" content="LH Agency Official" />
+<meta property="og:site_name" content="LH Talent Agency" />
 <meta property="og:description" content="Discover LH Talent Agency, a leading live-streaming talent agency, connects talented streamers with top streaming opportunities. Join us today!" />
 <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
 
