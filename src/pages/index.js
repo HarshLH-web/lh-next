@@ -23,7 +23,7 @@ const HomeSchema =
     "description": "LH Talent Agency's blog page provides you with all the needed information with updated details, insights, and tips about the live streaming industry. Explore Now!",
     "publisher": {
       "@type": "Organization",
-      "name": "LH Agency Official",
+      "name": "LH Talent Agency",
       "logo": "https://lhtalentagency.com/logo.png",
       "url": "https://lhtalentagency.com"
     },
