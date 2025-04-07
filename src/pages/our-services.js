@@ -116,7 +116,7 @@ function Services() {
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              className={`relative px-4 py-2 lg:py-3 rounded-2xl border-[1px] w-full flex items-center justify-center gap-4 lg:gap-0 lg:flex-1 ${
+              className={`relative px-4 py-2 lg:py-3 rounded-2xl border-[1px] w-full flex items-center justify-center gap-4 lg:gap-0 cursor-pointer lg:flex-1 ${
                 activeTab === tab.id ? 'tab-gradient text-black border-[#DE0402]' : 'bg-white text-black border-[#bfbfbf]'
               }`}
               onClick={() => setActiveTab(tab.id)}

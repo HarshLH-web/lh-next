@@ -144,7 +144,7 @@ export default function Home() {
           </div>
           {/* Banner Image */}
           <div className="w-full lg:w-2/5 flex items-end">
-            <Image src="/men-2.png" alt="LH Talent Agency - live streaming - Become a streamer" className="hidden lg:block mx-auto lg:m-0 w-64 lg:w-auto" loading="lazy" width="1000" height="256" />
+            <Image src="/men-2.png" alt="LH Talent Agency - live streaming - Become a streamer" className="hidden lg:block mx-auto lg:m-0 w-64 lg:w-[100%] xl:w-[100%] 2xl:w-auto" loading="lazy" width="1000" height="256" />
           </div>
         </div>
       </main>
