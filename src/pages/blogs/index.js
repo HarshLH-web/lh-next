@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Head from "next/head";
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import useBlogStore from '../../store/useBlogStore'; // Adjust the path as necessary
 
 const BreadcrumbSchema = 
 {
@@ -27,62 +28,18 @@ const BreadcrumbSchema =
 
 
 function Blogs() {
-
-  const [blogs, setBlogs] = useState([]);
-  const [fullBlogs, setFullBlogs] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
+  const { blogs, isLoading, fetchBlogs } = useBlogStore();
   const [isBlogLoading, setIsBlogLoading] = useState(false);
   const router = useRouter();
   const { query } = router;
 
-
   useEffect(() => {
-    const fetchBlogs = async () => {
-      setIsLoading(true);
-      try {
-        const tagParam = query.tag || null;  // Get the 'tag' parameter from the query
-        
-        // Fetch blogs with selected fields
-        const response = await axios.get('https://webpanel.store/api/blogs/selected-fields');
-        
-        // Filter blogs if tag parameter exists and only include those with toPublish as true
-        const filteredBlogs = response.data.filter(blog => blog.toPublish).filter(blog => 
-          tagParam 
-            ? blog.tags.some(tag => 
-                tag.toLowerCase().includes(tagParam.toLowerCase()) ||
-                tagParam.toLowerCase().includes(tag.toLowerCase())
-              )
-            : true
-        ).reverse(); // Reverse the order of the blogs
-        
-        setBlogs(filteredBlogs);
-        // Fetch full blog data in the background without blocking
-        axios.get('https://webpanel.store/api/blogs')
-          .then(fullResponse => {
-            const fullData = fullResponse.data.reduce((acc, blog) => {
-              acc[blog._id] = blog;
-              return acc;
-            }, {});
-            setFullBlogs(fullData);
-          })
-          .catch(error => {
-            console.error('Error fetching full blog data:', error);
-          });
+    fetchBlogs(query.tag || null);
+  }, [query, fetchBlogs]);
 
-      } catch (error) {
-        console.error('Error fetching blogs:', error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    
-    fetchBlogs();
-  }, [query]);  // Only depend on query
-
-
-    // Array of predefined background colors
-    const bgColors = ["bg-[#FFEDE0]", "bg-[#E0F7FA]", "bg-[#E8F5E9]", "bg-[#FFF3E0]", "bg-[#EBF8C1]"];
-    // console.log(isBlogLoading)
+  // Array of predefined background colors
+  const bgColors = ["bg-[#FFEDE0]", "bg-[#E0F7FA]", "bg-[#E8F5E9]", "bg-[#FFF3E0]", "bg-[#EBF8C1]"];
+  // console.log(isBlogLoading)
   return (
     <>
     <Head>

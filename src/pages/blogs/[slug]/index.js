@@ -1,18 +1,33 @@
 import axios from "axios";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { useParams, useSearchParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import DOMPurify from "isomorphic-dompurify";
+import useBlogStore from '../../../store/useBlogStore'; // Import the Zustand store
 
-function BlogDetailPage({ blog }) {
-    const { slug } = useParams();
-    const searchParams = useSearchParams();
+function BlogDetailPage({ initialBlog }) {
+    const params = useParams();
+    const slug = params ? params.slug : null;
+    const { fullBlogs, fetchBlogs } = useBlogStore(); // Access the store
     const [tableOfContents, setTableOfContents] = useState([]);
     const [isTocOpen, setIsTocOpen] = useState(false);
     const [contentWithIds, setContentWithIds] = useState("");
+    const [hasFetched, setHasFetched] = useState(false); // Add a flag for initial fetch
 
     useEffect(() => {
-        if (!slug || typeof window === "undefined") return;
+        if (!slug || typeof window === "undefined" || hasFetched) return;
+
+        // Fetch blogs if not already fetched
+        if (!fullBlogs[slug]) {
+            fetchBlogs();
+            setHasFetched(true); // Set the flag to true after fetching
+        }
+    }, [slug, fetchBlogs, fullBlogs, hasFetched]);
+
+    const blog = fullBlogs[slug] || initialBlog;
+
+    useEffect(() => {
+        if (!blog) return;
 
         const parser = new DOMParser();
         const doc = parser.parseFromString(blog.content, "text/html");
@@ -49,7 +64,7 @@ function BlogDetailPage({ blog }) {
         });
 
         setContentWithIds(tempDiv.innerHTML);
-    }, [slug, searchParams, blog]);
+    }, [blog]);
 
     if (!blog) return <p>Loading...</p>;
 
@@ -173,7 +188,7 @@ export async function getServerSideProps(context) {
         const response = await axios.get(`https://webpanel.store/api/blogs/${slug}`);
         return {
             props: {
-                blog: response.data,
+                initialBlog: response.data,
             },
         };
     } catch (error) {
