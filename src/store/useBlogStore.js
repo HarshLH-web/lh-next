@@ -2,7 +2,7 @@
 import {create} from 'zustand';
 import axios from 'axios';
 
-const useBlogStore = create((set) => ({
+const useBlogStore = create((set, get) => ({
   blogs: [],
   fullBlogs: {},
   isLoading: true,
@@ -23,7 +23,7 @@ const useBlogStore = create((set) => ({
 
       const fullResponse = await axios.get('https://webpanel.store/api/blogs');
       const fullData = fullResponse.data.reduce((acc, blog) => {
-        acc[blog._id] = blog;
+        acc[blog.slug] = blog;
         return acc;
       }, {});
       set({ fullBlogs: fullData });
@@ -33,6 +33,10 @@ const useBlogStore = create((set) => ({
     } finally {
       set({ isLoading: false });
     }
+  },
+  getBlogById: (slug) => {
+    const { fullBlogs } = get();
+    return fullBlogs[slug] || null;
   }
 }));
 
