@@ -6,6 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head >
       <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <meta name="application-name" content="LH Talent Agency" />
 
        {/* Google Search Console */}
        <meta
