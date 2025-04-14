@@ -106,7 +106,7 @@ export default function Home() {
             <h1 className="text-[35px] max-w-[300px] mx-auto sm:mx-0 sm:max-w-none sm:text-[3rem] xl:text-6xl 2xl:text-[4.25rem] leading-[1.15] sm:leading-tight uppercase font-black">
               LH Talent Agency <span className="sm:hidden">where</span> <br />
               <span className="inline-flex items-center gap-4"><span className="hidden sm:block">where</span> talent 
-                <span><Image src="/live-hosting.gif" alt="Live Icon" unoptimized className="w-auto h-12 sm:h-16 xl:h-20 2xl:h-24 object-contain sm:mt-1" loading="eager" width="50" height="24" />
+                <span><Image src="/live-hosting.gif" alt="Live Icon" priority className="w-auto h-12 sm:h-16 xl:h-20 2xl:h-24 object-contain sm:mt-1" width="50" height="24" />
                 </span>
               </span> <br />
               meets opportunity
