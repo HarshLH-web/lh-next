@@ -1,30 +1,12 @@
 import axios from "axios";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
 import DOMPurify from "isomorphic-dompurify";
-import useBlogStore from '../../../store/useBlogStore'; // Import the Zustand store
 
-function BlogDetailPage({ initialBlog }) {
-    const params = useParams();
-    const slug = params ? params.slug : null;
-    const { fullBlogs, fetchBlogs } = useBlogStore(); // Access the store
+function BlogDetailPage({ blog }) {
     const [tableOfContents, setTableOfContents] = useState([]);
     const [isTocOpen, setIsTocOpen] = useState(false);
     const [contentWithIds, setContentWithIds] = useState("");
-    const [hasFetched, setHasFetched] = useState(false); // Add a flag for initial fetch
-
-    useEffect(() => {
-        if (!slug || typeof window === "undefined" || hasFetched) return;
-
-        // Fetch blogs if not already fetched
-        if (!fullBlogs[slug]) {
-            fetchBlogs();
-            setHasFetched(true); // Set the flag to true after fetching
-        }
-    }, [slug, fetchBlogs, fullBlogs, hasFetched]);
-
-    const blog = fullBlogs[slug] || initialBlog;
 
     useEffect(() => {
         if (!blog) return;
@@ -49,7 +31,6 @@ function BlogDetailPage({ initialBlog }) {
 
         setTableOfContents(toc);
 
-        // Fix: Only manipulate DOM in the browser
         const tempDiv = document.createElement("div");
         tempDiv.innerHTML = blog.content;
 
@@ -82,8 +63,6 @@ function BlogDetailPage({ initialBlog }) {
                 <meta property="og:title" content={blog.metaTitle} />
                 <meta property="og:description" content={blog.metaDescription} />
                 <meta property="og:image" content={blog.coverImage} />
-
-                {/* <!-- Twitter Meta Tags --> */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta property="twitter:domain" content="lhtalentagency.com" />
                 <meta property="twitter:url" content={`https://lhtalentagency.com/blogs/${blog.slug}`} />
@@ -97,99 +76,101 @@ function BlogDetailPage({ initialBlog }) {
 
             <div id="blog-container" className="w-[90%] lg:w-[80%] mx-auto mb-48 mt-7 lg:mt-16 lg:mb-44">
                 <h1 className="text-3xl font-bold mb-4 text-center max-w-3xl mx-auto">{blog.title}</h1>
-                <div className="w-full max-w-7xl mx-auto">
-                    {tableOfContents.length > 0 && (
-                        <div className="mb-4 lg:mb-8 mt-4 lg:mt-12 px-4 pt-1 pb-2 bg-gray-200 rounded-lg">
-                            <p
-                                className="hidden font-semibold mb-2 pt-3 text-[#DE0400] cursor-pointer lg:flex items-center justify-between"
-                                style={{ marginTop: "0", fontSize: "1.6rem" }}
-                                onClick={() => setIsTocOpen(!isTocOpen)}
-                            >
-                                Table of Contents
-                                <svg
-                                    className={`w-6 h-6 transform transition-transform duration-300 min-w-6 ${
-                                        isTocOpen ? "rotate-180" : "rotate-0"
-                                    }`}
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </p>
-                            <p
-                                className="lg:hidden font-semibold mb-2 pt-3 text-[#DE0400] cursor-pointer flex items-center justify-between"
-                                style={{ marginTop: "0", fontSize: "1.4rem" }}
-                                onClick={() => setIsTocOpen(!isTocOpen)}
-                            >
-                                Table of Contents
-                                <svg
-                                    className={`w-5 h-5 transform transition-transform duration-300 min-w-5 ${
-                                        isTocOpen ? "rotate-180" : "rotate-0"
-                                    }`}
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </p>
-                            <nav
-                                style={{
-                                    maxHeight: isTocOpen ? "1000px" : "0",
-                                    overflow: "hidden",
-                                    paddingBottom: isTocOpen ? "10px" : "0",
-                                    transition: "max-height 0.4s ease",
-                                }}
-                            >
-                                {tableOfContents.map((heading) => {
-                                    if (heading.level === "h2") {
-                                        h2Counter++;
-                                    }
 
-                                    return (
-                                        <a
-                                            key={heading.id}
-                                            href={`#${heading.id}`}
-                                            style={{ color: "black" }}
-                                            className={`block mb-2 ${
-                                                heading.level === "h3"
-                                                    ? "ml-4 lg:ml-6 text-sm lg:text-base"
-                                                    : "text-base lg:text-lg font-medium"
-                                            }`}
-                                        >
-                                            {heading.level === "h3" ? (
-                                                <span className="text-sm lg:text-base">{heading.text}</span>
-                                            ) : (
-                                                <span className="text-base lg:text-lg font-medium">
-                                                    {h2Counter}. {heading.text}
-                                                </span>
-                                            )}
-                                        </a>
-                                    );
-                                })}
-                            </nav>
-                        </div>
-                    )}
+                {tableOfContents.length > 0 && (
+                    <div className="mb-4 lg:mb-8 mt-4 lg:mt-12 px-4 pt-1 pb-2 bg-gray-200 rounded-lg">
+                        <p
+                            className="font-semibold mb-2 pt-3 text-[#DE0400] cursor-pointer flex items-center justify-between"
+                            style={{ fontSize: "1.4rem" }}
+                            onClick={() => setIsTocOpen(!isTocOpen)}
+                        >
+                            Table of Contents
+                            <svg
+                                className={`w-5 h-5 transform transition-transform duration-300 min-w-5 ${
+                                    isTocOpen ? "rotate-180" : "rotate-0"
+                                }`}
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </p>
+                        <nav
+                            style={{
+                                maxHeight: isTocOpen ? "1000px" : "0",
+                                overflow: "hidden",
+                                paddingBottom: isTocOpen ? "10px" : "0",
+                                transition: "max-height 0.4s ease",
+                            }}
+                        >
+                            {tableOfContents.map((heading) => {
+                                if (heading.level === "h2") h2Counter++;
+                                return (
+                                    <a
+                                        key={heading.id}
+                                        href={`#${heading.id}`}
+                                        className={`block mb-2 ${
+                                            heading.level === "h3"
+                                                ? "ml-4 lg:ml-6 text-sm lg:text-base"
+                                                : "text-base lg:text-lg font-medium"
+                                        }`}
+                                        style={{ color: "black" }}
+                                    >
+                                        {heading.level === "h3" ? (
+                                            <span className="text-sm lg:text-base">{heading.text}</span>
+                                        ) : (
+                                            <span className="text-base lg:text-lg font-medium">
+                                                {h2Counter}. {heading.text}
+                                            </span>
+                                        )}
+                                    </a>
+                                );
+                            })}
+                        </nav>
+                    </div>
+                )}
 
-                    <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(contentWithIds) }} />
-                </div>
+                <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(contentWithIds) }} />
             </div>
         </>
     );
 }
 
-export async function getServerSideProps(context) {
-    const { slug } = context.params;
+export async function getStaticPaths() {
+    try {
+      const res = await axios.get("https://webpanel.store/api/blogs/selected-fields");
+      const blogs = res.data.filter(blog => blog.toPublish);
+  
+      const paths = blogs.map(blog => ({
+        params: { slug: blog.slug },
+      }));
+  
+      return {
+        paths,
+        fallback: "blocking", // Enables dynamic SSG for new slugs
+      };
+    } catch (error) {
+      console.error("Error fetching paths:", error);
+      return {
+        paths: [],
+        fallback: "blocking",
+      };
+    }
+  }
+
+export async function getStaticProps({ params }) {
+    const { slug } = params;
 
     try {
         const response = await axios.get(`https://webpanel.store/api/blogs/${slug}`);
         return {
             props: {
-                initialBlog: response.data,
+                blog: response.data,
             },
+            // optional: enable if blogs might change occasionally
+            revalidate: 60 * 60 * 24 // Revalidate every 24 hours
         };
     } catch (error) {
         console.error("Error fetching blog data:", error);

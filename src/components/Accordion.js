@@ -95,7 +95,7 @@ const AppsAccordion = () => {
               >
                 {section.title}
               </h3>
-              <Image src={section.imgUrl} alt={`${section.title} - Logo`} width={60} height={1000} className={`h-10 w-10 md:h-12 md:w-12 rounded-lg md:rounded-xl absolute left-6 md:bottom-8 md:left-auto  ${
+              <Image src={section.imgUrl} alt={`${section.title} - Logo`} width={65} height={65} className={`h-10 w-10 md:h-12 md:w-12 rounded-lg md:rounded-xl absolute left-6 md:bottom-8 md:left-auto  ${
                   activeIndex === index ? 'hidden' : 'opacity-100'
                 }`} />
 
@@ -104,7 +104,7 @@ const AppsAccordion = () => {
                   activeIndex === index ? 'opacity-100' : 'hidden'
                 }`}
               >
-                <Image src={section.imgUrl} alt={`${section.title} - Logo`} width={60} height={1000} className="h-16 w-16 rounded-xl mx-auto mb-2" />
+                <Image src={section.imgUrl} alt={`${section.title} - Logo`} width={65} height={65} className="h-16 w-16 rounded-xl mx-auto mb-2" />
                 <h4 className="text-xl md:text-2xl font-semibold">{section.heading}</h4>
                 <p className="mt-2 text-base lg:text-lg px-4">{section.description}</p>
                 <div className="mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center">
