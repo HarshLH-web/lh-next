@@ -13,9 +13,18 @@ const AppsAccordion = () => {
 
   const sections = [
     {
+      title: 'TAKA LIVE',
+      heading: 'TAKA LIVE',
+      description: 'Discover the world of fun and non-stop entertainment.',
+      agentBtnText:'Taka Agent',
+      agentBtnURL:'https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg==',
+      bgimg: '/taka-bg.png',
+      imgUrl: '/taka-logo.webp',
+    },
+    {
       title: 'TANGO LIVE',
       heading: 'TANGO LIVE',
-      description: 'A streaming app exclusively designed for the Indian audience.',
+      description: 'Make connections and earn big through live streaming.',
       hostBtnText:'',
       // hostBtnText:'Tango Host',
       // hostBtnURL:'https://tangoliveagent.com/',

@@ -22,11 +22,11 @@
       ]
     },
     {
-      "name": "Tango Live",
-      "logo": "/Apply-nowPage/tango-logo.png",
+      "name": "Taka Live",
+      "logo": "/Apply-nowPage/taka-logo.png",
       "description": [
           [
-              "Live Streaming App.",
+              "Live Streaming & Video Calling App.",
               "All Hosts can Apply.",
               "Host from all Countries.",
               "Agencies from all Countries."
@@ -35,7 +35,7 @@
       "buttons": [
         {
           "text": "Start Agency",
-          "url": "https://tangoliveagent.com/"
+          "url": "https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg=="
         }
       ]
     },
@@ -102,6 +102,24 @@
         {
           "text": "Start Agency",
           "url": "https://mimiliveagent.com/#agent"
+        }
+      ]
+    },
+    {
+      "name": "Tango Live",
+      "logo": "/Apply-nowPage/tango-logo.png",
+      "description": [
+          [
+              "Live Streaming App.",
+              "All Hosts can Apply.",
+              "Host from all Countries.",
+              "Agencies from all Countries."
+          ]
+      ],
+      "buttons": [
+        {
+          "text": "Start Agency",
+          "url": "https://tangoliveagent.com/"
         }
       ]
     }
