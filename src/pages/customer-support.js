@@ -3,10 +3,11 @@ import { useState } from 'react';
 import Head from 'next/head';
 function Support() {
   const [formValues, setFormValues] = useState({});
-
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
     // Get IP address
     const ipAddress = await fetch('https://api.ipify.org?format=json')
@@ -43,6 +44,8 @@ function Support() {
       }
     } catch (error) {
       console.error("Error sending form data:", error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -158,8 +161,12 @@ function Support() {
                   />
                   <label htmlFor="message" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-6 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4">Your message</label>
                 </div>
-                <button type="submit" className="bg-[#DE0402] text-white px-4 py-2 rounded-full focus:outline-none">
-                  Submit
+                <button 
+                  type="submit" 
+                  className="bg-[#DE0402] text-white px-4 py-2 rounded-full focus:outline-none"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Submitting...' : 'Submit'}
                 </button>
               </div>
             </div>

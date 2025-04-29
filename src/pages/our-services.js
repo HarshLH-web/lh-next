@@ -10,6 +10,7 @@ const ScrollingText = dynamic(() => import("../components/TextOpacity"));
 function Services() {
   const [activeTab, setActiveTab] = useState(1);
   const [formValues, setFormValues] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Content for each tab
   const tabs = [
@@ -20,6 +21,7 @@ function Services() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     // Get IP address
     const ipAddress = await fetch('https://api.ipify.org?format=json')
@@ -56,6 +58,8 @@ function Services() {
       }
     } catch (error) {
       console.error("Error sending form data:", error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -238,7 +242,7 @@ function Services() {
                 onChange={handleInputChange}
                 placeholder=" "
                 required
-                className="w-full py-2 px-4 rounded-full border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent peer" 
+                className="w-full py-2 px-4 rounded-full border border-[#DFDFDF] bg-white focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent peer" 
               />
               <label htmlFor="name" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4">Enter your name</label>
             </div>
@@ -250,7 +254,7 @@ function Services() {
                 value={formValues.phone || ''}
                 onChange={handleInputChange}
                 placeholder=" "
-                className="w-full py-2 px-4 rounded-3xl border border-[#DFDFDF] focus:outline-none focus:ring-2 focus:ring-[#DE0402] focus:border-transparent peer"
+                className="w-full py-2 px-4 rounded-3xl border border-[#DFDFDF] bg-white focus:outline-none focus:ring-2 focus:ring-[#DE0402] focus:border-transparent peer"
                 required
               />
               <label htmlFor="phone" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4">Phone Number</label>
@@ -263,7 +267,7 @@ function Services() {
                 value={formValues.email || ''}
                 onChange={handleInputChange}
                 placeholder=" "
-                className="w-full py-2 px-4 rounded-3xl border border-[#DFDFDF] focus:outline-none focus:ring-2 focus:ring-[#DE0402] focus:border-transparent peer"
+                className="w-full py-2 px-4 rounded-3xl border border-[#DFDFDF] bg-white focus:outline-none focus:ring-2 focus:ring-[#DE0402] focus:border-transparent peer"
                 required
               />
               <label htmlFor="email" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4">Email</label>
@@ -276,7 +280,7 @@ function Services() {
                 value={formValues.website_link || ''}
                 onChange={handleInputChange}
                 placeholder=" "
-                className="w-full py-2 px-4 rounded-3xl border border-[#DFDFDF] focus:outline-none focus:ring-2 focus:ring-[#DE0402] focus:border-transparent peer"
+                className="w-full py-2 px-4 rounded-3xl border border-[#DFDFDF] bg-white focus:outline-none focus:ring-2 focus:ring-[#DE0402] focus:border-transparent peer"
               />
               <label htmlFor="website_link" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4">Website Link</label>
             </div>
@@ -287,7 +291,7 @@ function Services() {
                 value={formValues.message || ''}
                 onChange={handleInputChange}
                 placeholder=" "
-                className="w-full min-h-[8rem] py-2 px-4 rounded-3xl border border-[#DFDFDF] focus:outline-none focus:ring-2 focus:ring-[#DE0402] focus:border-transparent peer"
+                className="w-full min-h-[8rem] py-2 px-4 rounded-3xl border border-[#DFDFDF] bg-white focus:outline-none focus:ring-2 focus:ring-[#DE0402] focus:border-transparent peer"
                 required
               />
               <label htmlFor="message" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-6 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4">Your message</label>
@@ -295,8 +299,9 @@ function Services() {
             <button
               className="bg-transparent hover:bg-[#DE0402] text-[#DE0402] hover:text-white py-2 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto mt-4"
               type="submit"
+              disabled={isSubmitting}
             >
-              Submit
+              {isSubmitting ? "Submitting..." : "Submit"}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 function BlogForm({ fields, className }) {
     const [formValues, setFormValues] = useState({});
     const [currentUrl, setCurrentUrl] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     // Initialize formValues based on the fields prop
     useEffect(() => {
@@ -22,6 +23,7 @@ function BlogForm({ fields, className }) {
     // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
 
         try {
             const response = await fetch("/api/formData", {
@@ -45,6 +47,8 @@ function BlogForm({ fields, className }) {
             }
         } catch (error) {
             console.error("Error sending form data:", error);
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -105,19 +109,20 @@ function BlogForm({ fields, className }) {
 
                 <button
                     type="submit"
+                    disabled={isSubmitting}
                     style={{
                         width: "100%",
                         padding: "0.75rem 1rem",
                         marginTop: "0.5rem",
-                        backgroundColor: "#DE0402",
+                        backgroundColor: isSubmitting ? "#ccc" : "#DE0402",
                         color: "white",
                         borderRadius: "1.5rem",
                         transition: "all 0.3s",
                     }}
-                    onMouseEnter={(e) => (e.target.style.backgroundColor = "#ff2d2d")}
-                    onMouseLeave={(e) => (e.target.style.backgroundColor = "#DE0402")}
+                    onMouseEnter={(e) => !isSubmitting && (e.target.style.backgroundColor = "#ff2d2d")}
+                    onMouseLeave={(e) => !isSubmitting && (e.target.style.backgroundColor = "#DE0402")}
                 >
-                    Submit
+                    {isSubmitting ? "Submitting..." : "Submit"}
                 </button>
             </form>
         </div>
