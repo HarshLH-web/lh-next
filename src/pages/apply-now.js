@@ -97,11 +97,11 @@ const Apply = () => {
                     className="cursor-pointer w-5 h-5 lg:w-6 lg:h-6"
                   />
                   {openDropdownIndex === index && (
-                    <div className="absolute right-0 bg-gradient-to-b from-[#FEFEFC] to-[#F9F6E3] border border-gray-300 rounded-md shadow-lg mt-2 lg:min-w-40">
+                    <div className="absolute right-0 bg-gradient-to-b from-[#FEFEFC] to-[#F9F6E3] border border-gray-300 rounded-md shadow-lg mt-2 min-w-32 lg:min-w-40">
                       <ul className="py-1">
                         {app.download.map((download, i) => (
-                          <li key={i} className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
-                            <a href={download.url} download={download.text}>
+                          <li key={i} className="px-2 lg:px-4 py-1 lg:py-2 hover:bg-gray-200 cursor-pointer">
+                            <a href={download.url} download={download.text} className=" text-sm lg:text-base">
                               {download.text}
                             </a>
                           </li>
