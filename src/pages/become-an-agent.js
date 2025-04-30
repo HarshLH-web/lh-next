@@ -85,20 +85,13 @@ function BecomeAnAgent() {
 
             <div className="flex flex-col lg:flex-row items-center justify-center w-[90%] max-w-5xl mx-auto mt-12 lg:mt-[-50px] pb-12 lg:pb-20">
                 <div className="flex flex-col items-start justify-center w-full lg:w-1/2">
-                    <h2 className="text-[#1C1B1B] text-3xl lg:text-[42px] lg:leading-[1.15] font-semibold pl-0">Good at managing <br /> a team and want to <br /> start your Agency?</h2>
+                    <h2 className="text-[#1C1B1B] text-3xl lg:text-[42px] lg:leading-[1.15] font-semibold pl-0">Want to start your Agency and earn money?</h2>
                     <Image src="/tab-line.svg" alt="Become Live Streamer" className="w-4/5 mt-4 mb-4 ml-4 lg:ml-0" width={100} height={100} />
                     <div className="flex items-start justify-start gap-2 pb-2 lg:px-0">
                         {/* <img src="/Apply-nowPage/apply-tick.svg" alt="arrow" className="w-4 h-4 mt-1" /> */}
-                        <p className="text-base lg:text-[20px] text-[#363636]">You have landed on the right platform.</p>
+                        <p className="text-base lg:text-[20px] text-[#363636] lg:pr-20">Become a part of LH Talent Agency and start your career as a live streaming agent.</p>
                     </div>
-                    <div className="flex items-start justify-start gap-2 pb-2 lg:px-0">
-                        {/* <img src="/Apply-nowPage/apply-tick.svg" alt="arrow" className="w-4 h-4 mt-1" /> */}
-                        <p className="text-base lg:text-[20px] text-[#363636]">We welcome you to join us and become a part of the vibrant community.</p>
-                    </div>
-                    <div className="flex items-start justify-start gap-2 lg:px-0">
-                        {/* <img src="/Apply-nowPage/apply-tick.svg" alt="arrow" className="w-4 h-4 mt-1" /> */}
-                        <p className="text-base lg:text-[20px] text-[#363636]">Let us guide you on what you will get as an Agent.</p>
-                    </div>
+                    
                 </div>
                 <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
                 <BlogForm fields={fields} className=" py-8 px-4 lg:px-6" />

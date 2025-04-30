@@ -19,6 +19,20 @@
           "text": "Start Agency",
           "url": "https://poppoagencyregistration.com/register/become-poppo-agent"
         }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/POPPO HOST REGISTRATION - WEBSITE.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/POPPO AGENCY POLICY - WEBSITE.pdf"
+        },
+        {
+          "text": "Coin Seller Policy",
+          "url": "/Policies/Poppo Coin Trading - Website .pdf"
+        }
       ]
     },
     {
@@ -36,6 +50,16 @@
         {
           "text": "Start Agency",
           "url": "https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg=="
+        }
+      ],
+      "download": [
+        {
+          "text": "Commission Structure",
+          "url": "/Policies/TAKA Commission Structure policy.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/TAKA LIVE AGENCY POLICY.pdf"
         }
       ]
     },
@@ -59,6 +83,16 @@
           "text": "Start Agency",
           "url": "https://chametappagency.com/#agent"
         }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/Chamet Host Policy 2024-25 (1).pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/CHAMET AGENCY POLICY 2024-25  (1).pdf"
+        }
       ]
     },
     {
@@ -80,6 +114,20 @@
         {
           "text": "Start Agency",
           "url": "https://nikiliveagent.com/#agent"
+        }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/Niki live Host Policy.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/Niki live Agency Policy.pdf"
+        },
+        {
+          "text": "Coin Seller Policy",
+          "url": "/Policies/Niki live Coin Seller Policy.pdf"
         }
       ]
     },
@@ -103,6 +151,20 @@
           "text": "Start Agency",
           "url": "https://mimiliveagent.com/#agent"
         }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/MIMI LIVE HOST POLICY - WEBSITE.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/MIMI LIVE AGENCY REGISTRATION - WEBSITE.pdf"
+        },
+        {
+          "text": "Coin Seller Policy",
+          "url": "/Policies/MIMI LIVE COIN SELLER - WEBSITE.pdf"
+        }
       ]
     },
     {
@@ -120,6 +182,16 @@
         {
           "text": "Start Agency",
           "url": "https://tangoliveagent.com/"
+        }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/Tango Agency Policy.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/Tango Host Policy.pdf"
         }
       ]
     }

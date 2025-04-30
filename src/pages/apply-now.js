@@ -2,8 +2,33 @@ import Head from "next/head";
 import Image from "next/image";
 import appsData from "../assets/Apps.json";
 import BouncyButton from "../components/BouncyButton";
+import { useState, useEffect, useRef } from "react";
 
 const Apply = () => {
+  const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
+  const dropdownRefs = useRef([]);
+
+  const toggleDropdown = (index) => {
+    setOpenDropdownIndex(openDropdownIndex === index ? null : index);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRefs.current.every(
+          (ref) => ref && !ref.contains(event.target)
+        )
+      ) {
+        setOpenDropdownIndex(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -46,19 +71,46 @@ const Apply = () => {
           {appsData.map((app, index) => (
             <div
               key={index}
+              ref={(el) => (dropdownRefs.current[index] = el)}
               className="w-full md:w-auto mx-auto max-w-xl border-[1px] border-[#00000012] rounded-3xl py-4 px-6 lg:px-12 lg:py-6 bg-gradient-to-b from-[#FEFEFC] to-[#F9F6E3]"
             >
-              <div className="flex justify-center items-center gap-4 lg:gap-8">
+              <div className="flex justify-between items-center gap-4 lg:gap-8">
+                <div className="flex justify-center items-center gap-4 lg:gap-8">
                 <Image
                   src={app.logo}
                   alt={app.name}
                   width={64}
                   height={64}
-                  className="w-16 h-16"
+                  className="w-12 h-12 lg:w-16 lg:h-16"
                 />
-                <h2 className="text-3xl lg:text-4xl font-medium uppercase whitespace-nowrap">
+                <h2 className="text-2xl lg:text-3xl font-medium uppercase whitespace-nowrap">
                   {app.name}
                 </h2>
+                </div>
+                <div className="relative">
+                  <Image
+                    src="/Download-icon.svg"
+                    alt="download"
+                    width={24}
+                    height={24}
+                    onClick={() => toggleDropdown(index)}
+                    className="cursor-pointer w-5 h-5 lg:w-6 lg:h-6"
+                  />
+                  {openDropdownIndex === index && (
+                    <div className="absolute right-0 bg-gradient-to-b from-[#FEFEFC] to-[#F9F6E3] border border-gray-300 rounded-md shadow-lg mt-2 lg:min-w-40">
+                      <ul className="py-1">
+                        {app.download.map((download, i) => (
+                          <li key={i} className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                            <a href={download.url} download={download.text}>
+                              {download.text}
+                            </a>
+                          </li>
+                        ))}
+
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </div>
               <div className="bg-[#16161612] w-full h-[1px] mt-6 mx-auto rounded-full"></div>
 
