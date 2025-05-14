@@ -3,6 +3,7 @@ import BlogForm from "../components/BlogForm";
 import dynamic from 'next/dynamic';
 import Head from "next/head";
 import Link from "next/link";
+import FaqAccordion from "@/components/FaqAccordion";
 
 const ScrollingText = dynamic(() => import('../components/TextOpacity'), { ssr: false });
 
@@ -54,6 +55,40 @@ function BecomeAnAgent() {
         });
     }
 
+    const faqs = [
+        {
+            question: 'Who can join, and what are the requirements?',
+            answer: 'Anyone who wants to work from home and can easily recruit and manage a team of streamers. Agents must be at least 18 years old, have an internet connection, and own a smartphone.',
+        },
+        {
+            question: 'How do I sign up, and what is the onboarding process?',
+            answer: 'To sign up, please fill out the above application form. Once the form is submitted, our team will contact you and share the recruitment details.',
+        },
+        {
+            question: 'How and when do I get paid?',
+            answer: 'You will earn commission based on your hired streamers&apos; live streaming performances and paid out monthly or weekly, depending on the platform. You will receive the payments through various methods such as bank transfer, ePay, Binance, etc.',
+
+        },
+        {
+            question: 'Are there any fees or hidden costs to join?',
+            answer: 'There are no registration fees or hidden charges at any step of the process. Joining as an agent is free.',
+        },
+        {
+            question: 'Do I need prior experience or special qualifications?',
+            answer: 'No prior experience is required. We provide support and guidance to help you get started, if needed.',
+        },
+        {
+            question: 'Can I work part-time or set my own schedule?',
+            answer: 'Yes, agents can also work as per their schedule. Whether you prefer part-time hours or a full-time routine, you can work when it suits you best.',
+        },
+        {
+            question: 'Whom can I contact for help or more information?',
+            answer: 'For any queries, please contact our support team at <a href="mailto:support@lhtalentagency.com" style="color: #DE0402;">support@lhtalentagency.com</a> or WhatsApp us at <a href="https://wa.me/917065384660" style="color: #DE0402;">+917065384660</a>.',
+        },
+
+
+    ]
+
     return (
         <>
         <Head>
@@ -85,11 +120,12 @@ function BecomeAnAgent() {
 
             <div className="flex flex-col lg:flex-row items-center justify-center w-[90%] max-w-5xl mx-auto mt-12 lg:mt-[-50px] pb-12 lg:pb-20">
                 <div className="flex flex-col items-start justify-center w-full lg:w-1/2">
-                    <h2 className="text-[#1C1B1B] text-3xl lg:text-[42px] lg:leading-[1.15] font-semibold pl-0">Want to start your Agency and earn money?</h2>
+                    <h2 className="text-[#1C1B1B] text-3xl lg:text-[42px] lg:leading-[1.15] font-semibold pl-0">Become a Streamer Agent with Top Live Streaming Apps.</h2>
                     <Image src="/tab-line.svg" alt="Become Live Streamer" className="w-4/5 mt-4 mb-4 ml-4 lg:ml-0" width={100} height={100} />
-                    <div className="flex items-start justify-start gap-2 pb-2 lg:px-0">
+                    <div className="flex flex-col items-start justify-start gap-2 pb-2 lg:px-0">
                         {/* <img src="/Apply-nowPage/apply-tick.svg" alt="arrow" className="w-4 h-4 mt-1" /> */}
-                        <p className="text-base lg:text-[20px] text-[#363636] lg:pr-20">Become a part of LH Talent Agency and start your career as a live streaming agent.</p>
+                        <p className="text-base lg:text-[20px] text-[#363636] lg:leading-[1.35] lg:pr-20">Start your career in the live streaming industry by joining as a talent recruiter.</p>
+                        <p className="text-base lg:text-[20px] font-medium text-[#363636] lg:leading-[1.35] lg:pr-20">Submit the registration form, and our team will assist you soon.</p>
                     </div>
                     
                 </div>
@@ -102,7 +138,7 @@ function BecomeAnAgent() {
             <div className="py-12 lg:py-20 collaboration-section">
                 <div className="w-[90%] mx-auto lg:w-[80%] max-w-screen-md text-center">
                     <h2 className="text-[#1C1B1B] text-3xl lg:text-[42px] lg:leading-[1.15] font-semibold pl-4 lg:pl-0 mb-2">Who are Agents?</h2>
-                    <ScrollingText className="text-[#1C1B1B] text-xl lg:text-2xl" text="The agents act as a bridge between talented streamers and live-streaming platforms. This opportunity will allow you to work with various talented individuals." />
+                    <ScrollingText className="text-[#1C1B1B] text-xl lg:text-2xl" text="Agents are official recruiting partners of live-streaming apps like Bigo, Tango, Poppo, Mimi, Niki, etc. They bring new talent, contribute to application growth by hiring and managing their team." />
                 </div>
                 <Link href="/apply-now" className="bg-[#DE0402] w-fit text-white py-2 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto mt-4 lg:mt-6 hover:bg-transparent hover:text-[#DE0402]">Join Us</Link>
             </div>
@@ -123,7 +159,8 @@ function BecomeAnAgent() {
             </div>
             {/* Section 4 */}
             <div className="py-12 lg:pt-20 lg:pb-16">
-                <div className="w-[90%] mx-auto lg:w-[80%] max-w-screen-xl flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-0">
+                <h2 className="text-[#1C1B1B] text-center text-3xl lg:text-[42px] lg:leading-[1.15] font-semibold pl-4 lg:pl-0 mb-2">Frequently Asked Questions</h2>
+                {/* <div className="w-[90%] mx-auto lg:w-[80%] max-w-screen-xl flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-0">
                     <div className="w-full lg:w-1/2 pt-4">
                         <Image src="/benefits_of_agency.svg" alt="Unlock your live streaming potential with expert support" className="w-full max-w-[30rem] mx-auto" width={100} height={100} />
                     </div>
@@ -134,7 +171,8 @@ function BecomeAnAgent() {
                         <p className="text-[#363636] text-base lg:text-[19px] font-semibold">Ready to take the next step? </p>
                         <p className="text-[#363636] text-base lg:text-[19px] font-semibold">Fill out the <Link href="/become-an-agent" className="text-[#DE0402] underline hover:text-[#363636]">registration form</Link> above and start your journey as a talent agent with us today!</p>
                     </div>
-                </div>
+                </div> */}
+                <FaqAccordion faqs={faqs} />
             </div>
         </>
     )
