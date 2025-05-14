@@ -83,7 +83,7 @@ function BecomeAnAgent() {
         },
         {
             question: 'Whom can I contact for help or more information?',
-            answer: 'For any queries, please contact our support team at <a href="mailto:support@lhtalentagency.com" style="color: #DE0402;">support@lhtalentagency.com</a> or WhatsApp us at <a href="https://wa.me/917065384660" style="color: #DE0402;">+917065384660</a>.',
+            answer: 'For any queries, please contact our support team at <a href="mailto:support@lhtalentagency.com" style="color: #DE0402;">support@lhtalentagency.com</a> or WhatsApp us at <a href="https://wa.me/917065384660" style="color: #DE0402;">+917065384660</a>. You Can Submit The Above <a href="#apply-now-form" style="color: #DE0402;"> Form. </a>',
         },
 
 
@@ -129,7 +129,7 @@ function BecomeAnAgent() {
                     </div>
                     
                 </div>
-                <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+                <div className="w-full lg:w-1/2 mt-8 lg:mt-0 scroll-mt-32" id="apply-now-form">
                 <BlogForm fields={fields} className=" py-8 px-4 lg:px-6" />
                 </div>
             </div>
