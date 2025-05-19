@@ -14,11 +14,11 @@ const FaqAccordion = ({ faqs = [] }) => {
   //   },
   //   {
   //     question: 'How can I earn money through live streaming?',
-  //     answer: 'You can earn money by becoming an official streamer on a live-streaming platform. We are working with some popular streaming applications like <a href="/blogs/how-to-earn-money-on-poppo-live-beginner-guide" style="color: #DE0402;">Poppo Live</a>, Niki Live, Chamet, etc. which provide amazing opportunities for live streamers to earn while sitting at home. The streamer shows their skills to the live audience and they send virtual gifts as an appreciation to their favorite streamer. These gifts can be easily converted into real money through easy withdrawal access. Apart from virtual gifts, the streamer can also earn additional rewards through daily tasks, occasional events, participating in Passion PK, etc.',
+  //     answer: 'You can earn money by becoming an official streamer on a live-streaming platform. We are working with some popular streaming applications like <a href="/blogs/become-poppo-live-host-and-earn-money" style="color: #DE0402;">Poppo Live</a>, Niki Live, Chamet, etc. which provide amazing opportunities for live streamers to earn while sitting at home. The streamer shows their skills to the live audience and they send virtual gifts as an appreciation to their favorite streamer. These gifts can be easily converted into real money through easy withdrawal access. Apart from virtual gifts, the streamer can also earn additional rewards through daily tasks, occasional events, participating in Passion PK, etc.',
   //   },
   //   {
   //     question: 'How can I become an official streamer?',
-  //     answer: 'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like LH Talent Agency can guide you through the process, provide training, and help you start earning. Check out the host registration process <a href="/blogs/how-to-earn-money-on-poppo-live-beginner-guide" style="color: #DE0402;">here</a>.',
+  //     answer: 'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like LH Talent Agency can guide you through the process, provide training, and help you start earning. Check out the host registration process <a href="/blogs/become-poppo-live-host-and-earn-money" style="color: #DE0402;">here</a>.',
   //   },
   //   {
   //     question: 'Do we need a huge follower list to start streaming?',

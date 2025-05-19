@@ -148,7 +148,7 @@ function Footer() {
           <div className="space-y-2 flex flex-col lg:max-w-[80%]">
               <Link href="/blogs/tango-agency-registration" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Tango Agency Registration</Link>
               <div className="h-px bg-[#242424]"></div>
-              <Link href="/blogs/how-to-earn-money-on-poppo-live-beginner-guide" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to earn money on Poppo Live</Link>
+              <Link href="/blogs/become-poppo-live-host-and-earn-money" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">How to earn money on Poppo Live</Link>
               <div className="h-px bg-[#242424]"></div>
               <Link href="/blogs/how-poppo-app-agency-earn-money" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Poppo Agent Commission</Link>
               <div className="h-px bg-[#242424]"></div>
