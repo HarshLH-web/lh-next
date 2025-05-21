@@ -5,7 +5,7 @@ Allow: /become-live-streamer/
 Allow: /customer-support/
 Allow: /live-streaming-tips/
 Allow: /blogs/
-Allow: /blogs/how-to-earn-money-on-poppo-live-beginner-guide/
+Allow: /blogs/become-poppo-live-host-and-earn-money/
 
 
 Disallow: /2024/
