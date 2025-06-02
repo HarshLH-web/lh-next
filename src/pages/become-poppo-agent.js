@@ -11,7 +11,7 @@ function becomePoppoAgent() {
                 <div className="flex flex-col md:flex-row items-center justify-center my-auto">
                     {/* <!-- Text Section --> */}
                     <div className=" text-black px-6 sm:px-8 lg:pt-0 flex flex-col items-center justify-center">
-                        <h2 className="text-4xl lg:text-5xl text-center font-extrabold mb-4 lg:mb-10">Become Agent
+                        <h2 className="text-4xl lg:text-5xl text-center font-extrabold mb-4 lg:mb-10">Become Poppo Agent
                         </h2>
                         {/* <!-- <div className="hidden md:block w-[75px] h-[5px] bg-blue-700 my-4 rounded-full"></div> --> */}
                         <div className="flex flex-col gap-4">
@@ -20,7 +20,7 @@ function becomePoppoAgent() {
                             <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> <a
                                     href="https://aaaonline.info/Wkn6hh"
                                     className="underline text-blue-700">Download the
-                                     Live App</a></li>
+                                     App</a></li>
                             <li className="text-[1rem] leading-[1.25] md:text-lg text-left ">Register & Sign-in using your
                                 preferred option</li>
                             <li className="text-[1rem] leading-[1.25] md:text-lg text-left ">Copy ID from your profile
@@ -76,7 +76,7 @@ function becomePoppoAgent() {
       <ul className="list-disc px-5">
         <li>The host will get 70% of the received gifts. </li>
         <p className="py-2 px-2 lg:px-8 my-2 bg-white"><span className="font-bold">Example</span>: If the host gets a gift worth 10,000
-          coins, she will receive 70% of that gift, which will be 7,000 points.</p>
+          coins, they will receive 70% of that gift, which will be 7,000 points.</p>
         <li>The conversion value for withdrawal is 10000 Points = 1 USD. </li>
         <li>An agency can get 92,000-95,000 coins for $10 through recharge, depending on the agency&apos;s rate.</li>
       </ul>
