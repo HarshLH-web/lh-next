@@ -11,7 +11,7 @@ function becomePoppoAgent() {
                 <div className="flex flex-col md:flex-row items-center justify-center my-auto">
                     {/* <!-- Text Section --> */}
                     <div className=" text-black px-6 sm:px-8 lg:pt-0 flex flex-col items-center justify-center">
-                        <h2 className="text-4xl lg:text-5xl text-center font-extrabold mb-4 lg:mb-10">Become Poppo Agent
+                        <h2 className="text-4xl lg:text-5xl text-center font-extrabold mb-4 lg:mb-10">Become Agent
                         </h2>
                         {/* <!-- <div className="hidden md:block w-[75px] h-[5px] bg-blue-700 my-4 rounded-full"></div> --> */}
                         <div className="flex flex-col gap-4">
@@ -20,15 +20,15 @@ function becomePoppoAgent() {
                             <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> <a
                                     href="https://aaaonline.info/Wkn6hh"
                                     className="underline text-blue-700">Download the
-                                    Poppo Live App</a></li>
+                                     Live App</a></li>
                             <li className="text-[1rem] leading-[1.25] md:text-lg text-left ">Register & Sign-in using your
                                 preferred option</li>
-                            <li className="text-[1rem] leading-[1.25] md:text-lg text-left ">Copy Poppo ID from your profile
+                            <li className="text-[1rem] leading-[1.25] md:text-lg text-left ">Copy ID from your profile
                             </li>
                             <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> Click on the <a
                                     href="https://h5.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=poppo"
                                     className="underline text-blue-700">Agency Registration Link </a></li>
-                            <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> Enter your Poppo ID & Click
+                            <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> Enter your ID & Click
                                 &quot;Get&quot;</li>
                             <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> Find the verification code in
                                 your App messages</li>
@@ -52,7 +52,7 @@ function becomePoppoAgent() {
                                     <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
                                 </svg>
                                 </span>
-                                Download Poppo
+                                Download App
                               </a>
                             <a href="https://h5.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=poppo" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
                                 <span className="w-5 h-5 inline-block ">
@@ -80,9 +80,9 @@ function becomePoppoAgent() {
         <li>The conversion value for withdrawal is 10000 Points = 1 USD. </li>
         <li>An agency can get 92,000-95,000 coins for $10 through recharge, depending on the agency&apos;s rate.</li>
       </ul>
-      <h3 id="agent-commission-structure" className="text-lg font-semibold pt-4">Poppo Agent&apos;s Commission Rate</h3>
+      <h3 id="agent-commission-structure" className="text-lg font-semibold pt-4">Agent&apos;s Commission Rate</h3>
       <ul className="list-disc px-5 space-y-1 mt-3">
-        <li>The Poppo agent&apos;s commission rate is calculated based on the hired hosts and sub-agents&apos; income for the last
+        <li>The agent&apos;s commission rate is calculated based on the hired hosts and sub-agents&apos; income for the last
           30 days, excluding platform rewards.</li>
         <li> The commission rate may vary monthly in the range of 4%-20%.</li>
         <li> The more the agency&apos;s earnings, the higher its commission rate will be.</li>
@@ -95,11 +95,6 @@ function becomePoppoAgent() {
             className="font-bold">Hosts&apos; earnings * commission rate + (agent&apos;s commission rate - sub agent&apos;s commission
             rate) * subagent&apos;s earnings.</span>
         </p>
-        {/* <li><a href="/register/poppo-coin-seller">Want to become Poppo Coin Seller <span
-              className="text-blue-600 underline">&quot;Click Here&quot;</span> for more details</a></li>
-        <button className="bg-blue-600 text-white font-semibold py-2 px-4 rounded mt-4">
-          <a href="https://h5.vshowapi.com/guild/agency_invite/register?inviter_id=29828616&c=poppo">Become Agent</a>
-        </button> */}
     </div>
     </section>
 
@@ -107,15 +102,15 @@ function becomePoppoAgent() {
     <div className="px-6 sm:px-8 flex flex-col max-w-[1250px] mx-auto  pt-10 pb-10 lg:pt-16 lg:pb-16">
     <h2 id="host-registration" className="text-3xl lg:text-5xl font-bold mb-4 text-center text-black"> Host Invitation Process
             </h2>
-            <p className="text-center lg:text-lg">Here are two methods to start the process of becoming a Poppo Host:
+            <p className="text-center lg:text-lg">Here are two methods to start the process of becoming a Host:
             </p>
             <div className="flex flex-col lg:flex-row gap-6 mt-6 max-w-4xl mx-auto">
               <div className="w-full lg:w-1/2 lg:border-[#6d6d6d] lg:border-r-[1px] ">
               <h3 id="method-1" className="font-semibold text-lg leading-6">Method 1: Host Registration with Agent ID
                           </h3>
                           <ul className="list-decimal px-6 space-y-1 mt-2">
-                              <li><a href="https://aaaonline.info/Wkn6hh" className="text-blue-600 underline">Download Poppo App</a></li>
-                              <li>Install & Register on the Poppo App. </li>
+                              <li><a href="https://aaaonline.info/Wkn6hh" className="text-blue-600 underline">Download App</a></li>
+                              <li>Install & Register on the App. </li>
                               <li>The host needs to click on ‘My Agent’ from the profile options.</li>
                               <li>Enter Agent ID <span className="font-bold">29828616</span> & Apply to join the agency.</li>
                           </ul>
@@ -123,11 +118,11 @@ function becomePoppoAgent() {
               <div className="w-full lg:w-1/2">
               <h3 id="method-2" className="font-semibold text-lg leading-6">Method 2: Become a Host through an Invitation</h3>
                 <ul className="list-decimal px-6 space-y-1 mt-2">
-                    <li> <a href="https://aaaonline.info/Wkn6hh" className="text-blue-600 underline">Download Poppo </a> App</li>
-                    <li> Install & Register on the Poppo App. </li>
-                    <li> Find the Poppo ID & Host Code <br />
+                    <li> <a href="https://aaaonline.info/Wkn6hh" className="text-blue-600 underline">Download </a> App</li>
+                    <li> Install & Register on the App. </li>
+                    <li> Find the ID & Host Code <br />
                         (To check ID & Host Code, Click on the ‘My Agent’ Option in the Profile.)</li>
-                    <li> Submit the form with the correct details OR send us your Poppo ID & Host Code on <a
+                    <li> Submit the form with the correct details OR send us your ID & Host Code on <a
                             href="https://wa.me/7065384660" className="text-blue-600 underline"> Whatsapp at +917065384660</a>
                     </li>
                 </ul>
@@ -139,11 +134,11 @@ function becomePoppoAgent() {
     <div className="px-6 sm:px-8 flex flex-col max-w-5xl mx-auto bg-white pt-10 pb-10 lg:pt-16 lg:pb-16">
     <h2 id="agent-guidelines" className="text-3xl lg:text-5xl font-bold text-center lg:mb-4 text-black leading-11">Agency Rules (Guidelines)</h2>
       <ul className="list-disc px-5 space-y-1 mt-4">
-        <li>Advertisement of any other application on Poppo Live is prohibited.</li>
+        <li>Advertisement of any other application is prohibited.</li>
         <li>A host can only join one agency. If reported, the new ID will be banned.</li>
-        <li>The agents are not allowed to hire hosts from other Poppo agencies. In case of violation, an initial fine of
-          $10 will be charged and with continuous violation, the account will be banned permanently on Poppo Live.</li>
-        <li>The Poppo agency is responsible for keeping a healthy and professional environment and should motivate and
+        <li>The agents are not allowed to hire hosts from other agencies. In case of violation, an initial fine of
+          $10 will be charged and with continuous violation, the account will be banned permanently.</li>
+        <li>The Agency is responsible for keeping a healthy and professional environment and should motivate and
           support the hired hosts and the sub-agents.</li>
         <li>Any violation will result in salary deductions and a permanent ban on the account.</li>
       </ul>
@@ -154,7 +149,7 @@ function becomePoppoAgent() {
                                     <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
                                 </svg>
                                 </span>
-                                Download Poppo
+                                Download App
                               </a>
                             <a href="https://h5.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=poppo" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
                                 <span className="w-5 h-5 inline-block ">
