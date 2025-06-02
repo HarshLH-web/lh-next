@@ -2,6 +2,8 @@ import Image from "next/image";
 import BlogForm from "../components/BlogForm";
 import Head from "next/head";
 import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 function BecomeLiveStreamer() {
     const fields = [
         {
@@ -72,6 +74,7 @@ function BecomeLiveStreamer() {
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://lhtalentagency.com/become-live-streamer" />
     </Head>
+    <Header />
         <div className="bg-[url('/become-live-streamer-bg.png')] bg-cover bg-top bg-no-repeat h-40 lg:h-72 flex items-center justify-center">
             <h1 className="text-white text-4xl lg:text-6xl font-extrabold uppercase text-center">Become <br /> Live Streamer</h1>
         </div>
@@ -201,6 +204,7 @@ function BecomeLiveStreamer() {
                 </div>
             </div>
         </div>
+        <Footer />
     </>
   )
 }

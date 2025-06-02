@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+// import Header from "@/components/Header";
+// import Footer from "@/components/Footer";
 import Head from "next/head";
 import { Poppins } from 'next/font/google';
 import ScrollUp from "@/components/ScrollUp";
@@ -23,10 +23,8 @@ export default function App({ Component, pageProps }) {
         }
       `}</style>
     </Head>
-    <Header />
     <ScrollUp />
     <Component {...pageProps} />
-    <Footer />
     <SpeedInsights />
     <Analytics />
   </>;

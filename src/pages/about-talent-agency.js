@@ -1,5 +1,7 @@
 // import React from 'react'
 
+import Footer from "@/components/Footer"
+import Header from "@/components/Header"
 import Head from "next/head"
 
 
@@ -51,6 +53,7 @@ function About() {
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://lhtalentagency.com/about-talent-agency" />
     </Head>
+    <Header />
     <div>
       <div className="about-bg">
         <h1 className="text-black text-4xl lg:text-6xl font-extrabold uppercase">About</h1>
@@ -108,6 +111,7 @@ function About() {
         </div>
       </div>
     </div>
+    <Footer />
     </>
   )
 }

@@ -2,7 +2,8 @@ import axios from "axios";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import DOMPurify from "isomorphic-dompurify";
-
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 function BlogDetailPage({ blog }) {
     const [tableOfContents, setTableOfContents] = useState([]);
     const [isTocOpen, setIsTocOpen] = useState(false);
@@ -74,6 +75,8 @@ function BlogDetailPage({ blog }) {
                 </script>
             </Head>
 
+            <Header />
+
             <div id="blog-container" className="w-[90%] lg:w-[80%] mx-auto mb-48 mt-7 lg:mt-16 lg:mb-44">
                 <h1 className="text-3xl font-bold mb-4 text-center max-w-3xl mx-auto">{blog.title}</h1>
 
@@ -134,7 +137,9 @@ function BlogDetailPage({ blog }) {
 
                 <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(contentWithIds) }} />
             </div>
+            <Footer />
         </>
+
     );
 }
 

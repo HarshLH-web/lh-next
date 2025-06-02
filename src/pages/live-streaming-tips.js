@@ -4,6 +4,8 @@
 import Image from "next/image"
 import Head from "next/head"
 import Link from "next/link"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 
 const tipsData = [
@@ -85,6 +87,7 @@ function StreamingTips() {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://lhtalentagency.com/live-streaming-tips" />
       </Head>
+      <Header />
       <div className='blog-bg'>
       <h1 className='text-white text-4xl lg:text-6xl font-bold uppercase'>Streaming Tips</h1>
       </div>
@@ -157,7 +160,7 @@ function StreamingTips() {
               ))}
         </div>
       </div>
-
+      <Footer />
       
     </>
 

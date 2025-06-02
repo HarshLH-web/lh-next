@@ -8,7 +8,7 @@ body{
   scroll-behavior: smooth;
   padding-top: 5.1rem;
   /* cursor: none; */
-  user-select: none;
+  /* user-select: none; */
 }
 @media (min-width: 1024px) {
 ::-webkit-scrollbar {

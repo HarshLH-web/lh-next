@@ -1,5 +1,7 @@
 import Head from "next/head";
 import FaqAccordion from "../components/FaqAccordion";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const FaqSchema = 
 {
@@ -115,6 +117,7 @@ function Faq() {
         {JSON.stringify(FaqSchema)}
       </script>
     </Head>
+    <Header />
     <div className="faq-bg w-full h-40 lg:h-72 flex items-center justify-center">
       <h1 className="text-white text-4xl lg:text-6xl font-extrabold text-center lg:leading-[1.15]">FAQ&rsquo;s</h1>
     </div>
@@ -126,6 +129,7 @@ function Faq() {
       </div>
       <FaqAccordion faqs={faqs} />
     </div>
+    <Footer />
     </>
   )
 }

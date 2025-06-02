@@ -3,7 +3,8 @@ import Image from "next/image";
 import appsData from "../assets/Apps.json";
 import BouncyButton from "../components/BouncyButton";
 import { useState, useEffect, useRef } from "react";
-
+import Header from "../components/Header";
+import Footer from "@/components/Footer";
 const Apply = () => {
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
   const dropdownRefs = useRef([]);
@@ -59,6 +60,7 @@ const Apply = () => {
         <link rel="canonical" href="https://lhtalentagency.com/apply-now" />
       </Head>
 
+      <Header />
       <div className="apply-bg w-full h-52 lg:h-72 bg-[#DE0402] flex items-center justify-center">
         <h1 className="text-white text-4xl lg:text-6xl font-extrabold uppercase">Apply Now</h1>
       </div>
@@ -149,6 +151,7 @@ const Apply = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

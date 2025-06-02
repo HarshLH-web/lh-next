@@ -8,6 +8,8 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import useBlogStore from '../../store/useBlogStore'; // Adjust the path as necessary
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const BreadcrumbSchema = 
 {
@@ -66,6 +68,8 @@ function Blogs() {
         {JSON.stringify(BreadcrumbSchema)}
       </script>
     </Head>
+
+    <Header />
     <div className='blog-bg'>
       <h1 className='text-white text-4xl lg:text-6xl font-bold uppercase'>Blogs</h1>
     </div>
@@ -113,6 +117,7 @@ function Blogs() {
 
       {/* <Image src="/loading.gif" alt="Loading" className='w-16' width={1000} height={1000} /> */}
     </div>}
+    <Footer />
     </>
   )
 }

@@ -13,6 +13,8 @@ import Link from "next/link";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import groupAnimation from '../assets/Group-5.json';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 const HomeSchema = 
   {
     "@context": "https://schema.org",
@@ -99,6 +101,7 @@ export default function Home() {
 
         </Head>
       <ScrollUpButton />
+      <Header />
       <main className="h-auto w-full main">
         <div className="flex flex-col lg:flex-row w-[90%] xl:w-[80%] pb-8 mx-auto h-full pt-16 lg:pt-40 lg:pb-0">
           {/* Banner Text */}
@@ -371,7 +374,7 @@ export default function Home() {
           <Testimonials />
         </div>
         </section>
-
+        <Footer />
     </>
   )
 }

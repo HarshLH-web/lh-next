@@ -4,6 +4,8 @@ import dynamic from 'next/dynamic';
 import Head from "next/head";
 import Link from "next/link";
 import FaqAccordion from "@/components/FaqAccordion";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const ScrollingText = dynamic(() => import('../components/TextOpacity'), { ssr: false });
 
@@ -113,6 +115,7 @@ function BecomeAnAgent() {
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href="https://lhtalentagency.com/become-an-agent" />
         </Head>
+        <Header />
             <div className="bg-[url('/become-agent-mobile.webp')] lg:bg-[url('/become-agent-bg.png')]  bg-cover bg-center bg-no-repeat h-40 lg:h-72 flex items-center justify-center">
                 <h1 className="text-white text-4xl lg:text-6xl font-extrabold uppercase text-center px-4">Become An Agent</h1>
             </div>
@@ -174,6 +177,7 @@ function BecomeAnAgent() {
                 </div> */}
                 <FaqAccordion faqs={faqs} />
             </div>
+            <Footer />
         </>
     )
 }

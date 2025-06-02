@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // Dynamically import the ScrollingText component
 const ScrollingText = dynamic(() => import("../components/TextOpacity"));
@@ -106,6 +108,7 @@ function Services() {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://lhtalentagency.com/our-services" />
       </Head>
+      <Header />
       <div className="services-bg">
         <h1 className="text-black text-4xl lg:text-6xl font-extrabold uppercase">Our Services</h1>
       </div>
@@ -334,6 +337,7 @@ function Services() {
           <Image src="/red-arrow-curved.svg" alt="curved-arrow" width={96} height={96} className="hidden lg:block w-16 lg:w-24 mt-4" />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

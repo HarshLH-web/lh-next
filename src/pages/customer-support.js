@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import Head from 'next/head';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 function Support() {
   const [formValues, setFormValues] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -80,6 +82,7 @@ function Support() {
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://lhtalentagency.com/customer-support" />
     </Head>
+    <Header />
     <div className='contact-bg'>
       <h1 className='text-white text-4xl lg:text-6xl font-bold uppercase text-center px-8'>Customer Support</h1>
 
@@ -184,6 +187,7 @@ function Support() {
 
         <p className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border-[1px] border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center'><span className='font-bold'>Email:</span> <a href='mailto:support@lhtalentagency.com' className='text-black'>support@lhtalentagency.com</a></p>
       </div>
+      <Footer />
     </>
 
   );
