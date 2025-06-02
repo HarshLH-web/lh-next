@@ -1,3 +1,4 @@
+import ImageModal from '@/components/ImageModal';
 import Image from 'next/image';
 import React from 'react'
 
@@ -43,7 +44,7 @@ function becomePoppoAgent() {
                                     at +917065384660</a> after completing the process.</strong>
                         </p>
                         </div>
-                        <Image src="/become-poppo-agency.webp" alt="Download the Poppo Live App and Submit your application to become an Agency" width={1000} height={100} className="w-full mt-8 mb-8" />
+                        <ImageModal imageSrc="/become-poppo-agency.webp" imageAlt="Download the Poppo Live App and Submit your application to become an Agency" />
 
                         <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-8 mt-8">
                             <a href="https://aaaonline.info/Wkn6hh" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
