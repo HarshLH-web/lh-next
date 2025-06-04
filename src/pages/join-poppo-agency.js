@@ -17,17 +17,13 @@ function JoinPoppoAgency() {
                                 <div className="flex flex-col gap-4">
                                     <p className="text-base lg:text-lg font-normal">Join the dynamic world of live streaming, build your exclusive talent network, and facilitate streamer earnings on Poppo!</p> {/* Changed: "easily earn streamer revenue!" to "facilitate streamer earnings!" - removes "easy" and focuses on the agent's role. */}
                                 <ul className=" text-left list-decimal px-6 space-y-1">
-                                    <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> <a
-                                            href="https://aaaonline.info/Wkn6hh"
-                                            className="underline text-blue-700">Download the
-                                            App</a></li>
+                                    <li className="text-[1rem] leading-[1.25] md:text-lg text-left ">Download the
+                                            App</li>
                                     <li className="text-[1rem] leading-[1.25] md:text-lg text-left ">Register & Sign-in using your
                                         preferred option</li>
                                     <li className="text-[1rem] leading-[1.25] md:text-lg text-left ">Copy ID from your profile
                                     </li>
-                                    <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> Click on the <a
-                                            href="https://h5.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=poppo"
-                                            className="underline text-blue-700">Talent Partner Registration Link </a></li> {/* Changed "Agency Registration Link" to "Talent Partner Registration Link" for consistency. */}
+                                    <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> Click on the Talent Partner Registration Link </li> {/* Changed "Agency Registration Link" to "Talent Partner Registration Link" for consistency. */}
                                     <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> Enter your ID & Click
                                         &quot;Get&quot;</li>
                                     <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> Find the verification code in
@@ -37,15 +33,13 @@ function JoinPoppoAgency() {
                                     <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> Wait for the confirmation (usually 10-15 minutes)
                                     </li>
                                 </ul>
-                                <p className="m-2 text-[1rem] leading-[1.25] md:text-lg lg:text-xl"> <strong>Inform us on <a
-                                            className="text-blue-600 underline"
-                                            href="https://api.whatsapp.com/send/?phone=917065384660&text&type=phone_number&app_absent=0">WhatsApp
-                                            at +917065384660</a> after completing the process.</strong>
+                                <p className="m-2 text-[1rem] leading-[1.25] md:text-lg lg:text-xl"> <strong>Inform us on WhatsApp
+                                            at +917065384660 after completing the process.</strong>
                                 </p>
                                 </div>
                                 <ImageModal imageSrc="/become-poppo-agency.webp" imageAlt="Download the Poppo Live App and Submit your application to become an Agency" />
             
-                                <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-8 mt-8">
+                                {/* <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-8 mt-8">
                                     <a href="https://aaaonline.info/Wkn6hh" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
                                         <span className="w-5 h-5 inline-block ">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" classNameName="w-full h-full">
@@ -60,9 +54,9 @@ function JoinPoppoAgency() {
                                         <path d="M519.2 127.9l-47.6-47.6A56.252 56.252 0 0 0 432 64H205.2c-14.8 0-29.1 5.9-39.6 16.3L118 127.9H0v255.7h64c17.6 0 31.8-14.2 31.9-31.7h9.1l84.6 76.4c30.9 25.1 73.8 25.7 105.6 3.8 12.5 10.8 26 15.9 41.1 15.9 18.2 0 35.3-7.4 48.8-24 22.1 8.7 48.2 2.6 64-16.8l26.2-32.3c5.6-6.9 9.1-14.8 10.9-23h57.9c.1 17.5 14.4 31.7 31.9 31.7h64V127.9H519.2zM48 351.6c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16zm390-6.9l-26.1 32.2c-2.8 3.4-7.8 4-11.3 1.2l-23.9-19.4-30 36.5c-6 7.3-15 4.8-18 2.4l-36.8-31.5-15.6 19.2c-13.9 17.1-39.2 19.7-55.3 6.6l-97.3-88H96V175.8h41.9l61.7-61.6c2-.8 3.7-1.5 5.7-2.3H262l-38.7 35.5c-29.4 26.9-31.1 72.3-4.4 101.3 14.8 16.2 61.2 41.2 101.5 4.4l8.2-7.5 108.2 87.8c3.4 2.8 3.9 7.9 1.2 11.3zm106-40.8h-69.2c-2.3-2.8-4.9-5.4-7.7-7.7l-102.7-83.4 12.5-11.4c6.5-6 7-16.1 1-22.6L367 167.1c-6-6.5-16.1-6.9-22.6-1l-55.2 50.6c-9.5 8.7-25.7 9.4-34.6 0-9.3-9.9-8.5-25.1 1.2-33.9l65.6-60.1c7.4-6.8 17-10.5 27-10.5l83.7-.2c2.1 0 4.1.8 5.5 2.3l61.7 61.6H544v128zm48 47.7c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16z"/>
                                         </svg>
                                         </span>
-                                        Become a Talent Partner {/* Changed "Become an Agency" to "Become a Talent Partner" */}
+                                        Become a Talent Partner
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -113,7 +107,7 @@ function JoinPoppoAgency() {
                                     <h3 id="method-1" className="font-semibold text-lg leading-6">Method 1: Streamer Registration with Partner ID
                                             </h3> {/* Changed "Host Registration with Agent ID" to "Streamer Registration with Partner ID" */}
                                             <ul className="list-decimal px-6 space-y-1 mt-2">
-                                                <li><a href="https://aaaonline.info/Wkn6hh" className="text-blue-600 underline">Download App</a></li>
+                                                <li>Download App</li>
                                                 <li>Install & Register on the App. </li>
                                                 <li>The streamer needs to click on ‘My Partner’ from the profile options.</li> {/* Changed "My Agent" to "My Partner" */}
                                                 <li>Enter Partner ID <span className="font-bold">29828616</span> & Apply to join the partner network.</li> {/* Changed "Agent ID" to "Partner ID" and "join the agency" to "join the partner network." */}
@@ -122,12 +116,11 @@ function JoinPoppoAgency() {
                                     <div className="w-full lg:w-1/2">
                                     <h3 id="method-2" className="font-semibold text-lg leading-6">Method 2: Become a Streamer through an Invitation</h3> {/* Changed "Become a Host through an Invitation" to "Become a Streamer through an Invitation" */}
                                         <ul className="list-decimal px-6 space-y-1 mt-2">
-                                            <li> <a href="https://aaaonline.info/Wkn6hh" className="text-blue-600 underline">Download </a> App</li>
+                                            <li>Download App</li>
                                             <li> Install & Register on the App. </li>
                                             <li> Find the ID & Streamer Code <br /> {/* Changed "Host Code" to "Streamer Code" */}
                                                 (To check ID & Streamer Code, Click on the ‘My Partner’ Option in the Profile.)</li> {/* Changed "Host Code" to "Streamer Code" and "My Agent" to "My Partner" */}
-                                            <li> Submit the form with the correct details OR send us your ID & Streamer Code on <a
-                                                    href="https://wa.me/7065384660" className="text-blue-600 underline"> Whatsapp at +917065384660</a>
+                                            <li> Submit the form with the correct details OR send us your ID & Streamer Code on Whatsapp at +917065384660
                                             </li>
                                         </ul>
                                     </div>
@@ -144,7 +137,7 @@ function JoinPoppoAgency() {
                         <li>Talent Partners are responsible for fostering a healthy and professional environment, and should actively motivate and support their managed streamers and sub-partners.</li> {/* Changed "The Agency is responsible for keeping a healthy and professional environment and should motivate and support the hired hosts and the sub-agents." - focused on "Talent Partners" and "managed streamers/sub-partners." */}
                         <li>Any violation of these guidelines may result in adjustments to commissions or account suspension.</li> {/* Changed "Any violation will result in salary deductions and a permanent ban on the account." - softened "salary deductions" to "adjustments to commissions" and "permanent ban" to "account suspension." */}
                     </ul>
-                    <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-8 mt-8 justify-center">
+                    {/* <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-8 mt-8 justify-center">
                                 <a href="https://aaaonline.info/Wkn6hh" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
                                         <span className="w-5 h-5 inline-block ">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" classNameName="w-full h-full">
@@ -161,7 +154,7 @@ function JoinPoppoAgency() {
                                         </span>
                                         Become a Talent Partner
                                     </a>
-                                </div>
+                                </div> */}
             </div>
         </>
       )
