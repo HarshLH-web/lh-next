@@ -18,10 +18,7 @@ function becomePoppoAgent() {
                         <div className="flex flex-col gap-4">
                             <p className="text-base lg:text-lg font-normal">Enjoy the fun of live streaming, create your own exclusive guild, and easily earn streamer revenue!</p>
                         <ul className=" text-left list-decimal px-6 space-y-1">
-                            <li className="text-[1rem] leading-[1.25] md:text-lg text-left "> <a
-                                    href="https://aaaonline.info/Wkn6hh"
-                                    className="underline text-blue-700">Download the
-                                     App</a></li>
+                            <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Download the App</li>
                             <li className="text-[1rem] leading-[1.25] md:text-lg text-left ">Register & Sign-in using your
                                 preferred option</li>
                             <li className="text-[1rem] leading-[1.25] md:text-lg text-left ">Copy ID from your profile
@@ -47,14 +44,14 @@ function becomePoppoAgent() {
                         <ImageModal imageSrc="/become-poppo-agency.webp" imageAlt="Download the Poppo Live App and Submit your application to become an Agency" />
 
                         <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-8 mt-8">
-                            <a href="https://aaaonline.info/Wkn6hh" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
+                            {/* <a href="https://aaaonline.info/Wkn6hh" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
                                 <span className="w-5 h-5 inline-block ">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" classNameName="w-full h-full">
                                     <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
                                 </svg>
                                 </span>
                                 Download App
-                              </a>
+                              </a> */}
                             <a href="https://h5.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=poppo" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
                                 <span className="w-5 h-5 inline-block ">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor">
@@ -110,7 +107,7 @@ function becomePoppoAgent() {
               <h3 id="method-1" className="font-semibold text-lg leading-6">Method 1: Host Registration with Agent ID
                           </h3>
                           <ul className="list-decimal px-6 space-y-1 mt-2">
-                              <li><a href="https://aaaonline.info/Wkn6hh" className="text-blue-600 underline">Download App</a></li>
+                              <li>Download App</li>
                               <li>Install & Register on the App. </li>
                               <li>The host needs to click on ‘My Agent’ from the profile options.</li>
                               <li>Enter Agent ID <span className="font-bold">29828616</span> & Apply to join the agency.</li>
@@ -119,7 +116,7 @@ function becomePoppoAgent() {
               <div className="w-full lg:w-1/2">
               <h3 id="method-2" className="font-semibold text-lg leading-6">Method 2: Become a Host through an Invitation</h3>
                 <ul className="list-decimal px-6 space-y-1 mt-2">
-                    <li> <a href="https://aaaonline.info/Wkn6hh" className="text-blue-600 underline">Download </a> App</li>
+                    <li>Download App</li>
                     <li> Install & Register on the App. </li>
                     <li> Find the ID & Host Code <br />
                         (To check ID & Host Code, Click on the ‘My Agent’ Option in the Profile.)</li>
@@ -144,14 +141,14 @@ function becomePoppoAgent() {
         <li>Any violation will result in salary deductions and a permanent ban on the account.</li>
       </ul>
       <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-8 mt-8 justify-center">
-                            <a href="https://aaaonline.info/Wkn6hh" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
+                            {/* <a href="https://aaaonline.info/Wkn6hh" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
                                 <span className="w-5 h-5 inline-block ">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" classNameName="w-full h-full">
                                     <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
                                 </svg>
                                 </span>
                                 Download App
-                              </a>
+                              </a> */}
                             <a href="https://h5.vshowapi.com/guild/agency_invite/register/?inviter_id=29828616&c=poppo" className="bg-blue-600 text-white text-md font-normal flex items-center justify-center gap-2 btn-gradient w-fit px-4 py-2 rounded-lg">
                                 <span className="w-5 h-5 inline-block ">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor">
