@@ -137,7 +137,7 @@ function JoinChamet() {
                         <div className="md:pt-6 w-full h-full max-w-md mx-auto">
                             <h4 className="text-lg md:text-2xl font-bold md:mb-4">Broadcaster Earnings:</h4>
                             <p>
-                                Broadcasters earn "beans" through engaging in live video interactions and streaming sessions. Viewers on the platform can show appreciation by sending virtual gifts, which are converted into beans.
+                                Broadcasters earn &quot;beans&quot; through engaging in live video interactions and streaming sessions. Viewers on the platform can show appreciation by sending virtual gifts, which are converted into beans.
                             </p>
                             <p> Broadcasters also have the flexibility to set their own price for video calls. These earned beans can then be converted into real currency.</p>
                             <p className="font-semibold mt-2"> Please note: Earning potential can vary significantly and is not guaranteed, depending on factors such as broadcaster activity, audience engagement, and adherence to platform policies.</p>
@@ -151,7 +151,7 @@ function JoinChamet() {
                             <span className="text-large md:text-xl font-bold text-[#3B0447]">Expand Your Network: Invitation for Sub-agents</span>
                         </button>
                         <div className=" p-4 text-left">
-                            <p className="md:text-[17px] pb-2">As an Official Agent, you have the unique opportunity to expand your business through our legitimate <span className="font-semibold">performance-based referral program</span>, inviting new agents to manage their own teams of broadcasters. This operates as a transparent affiliate model, **where earnings are derived solely from the performance of the broadcasters and sub-agents you oversee, and it is explicitly not a multi-level marketing (MLM) or pyramid scheme.** You can send personal invitation links directly from your agent dashboard. Building a strong network of sub-agents can significantly contribute to your agent program's overall earnings and growth on the platform, based on their collective performance and strict adherence to all guidelines.</p>
+                            <p className="md:text-[17px] pb-2">As an Official Agent, you have the unique opportunity to expand your business through our legitimate <span className="font-semibold">performance-based referral program</span>, inviting new agents to manage their own teams of broadcasters. This operates as a transparent affiliate model, <span className="font-semibold">where earnings are derived solely from the performance of the broadcasters and sub-agents you oversee, and it is explicitly not a multi-level marketing (MLM) or pyramid scheme.</span> You can send personal invitation links directly from your agent dashboard. Building a strong network of sub-agents can significantly contribute to your agent program&apos;s overall earnings and growth on the platform, based on their collective performance and strict adherence to all guidelines.</p>
                             {/* ImageModal component for sub-agent.webp */}
                             <ImageModal imageSrc="https://chametappagency.com/Images/sub-agent.webp" imageAlt="Invitation for Sub-agents Dashboard interface" width="max-w-3xl" className="w-full lg:max-w-3xl object-cover cursor-pointer" />
                         </div>
@@ -172,7 +172,7 @@ function JoinChamet() {
                                 <li>Agents should focus on recruiting new broadcasters to the platform and are not permitted to recruit individuals who are already active as broadcasters or associated with another agent.</li>
                                 <li>It is strictly prohibited for Agents to encourage broadcasters to migrate to other applications or platforms.</li>
                                 <li>All payments to broadcasters must be made in full, without any unauthorized deductions or hidden fees from the agent.</li>
-                                <li>All users, including agents and broadcasters, must fully adhere to the platform's official terms of service and community guidelines, which <span className="font-semibold">strictly prohibit any nudity, sexually explicit material, sexually suggestive content, illicit activities, or harmful behavior</span>, to ensure a safe and respectful environment for all users.</li>
+                                <li>All users, including agents and broadcasters, must fully adhere to the platform&apos;s official terms of service and community guidelines, which <span className="font-semibold">strictly prohibit any nudity, sexually explicit material, sexually suggestive content, illicit activities, or harmful behavior</span>, to ensure a safe and respectful environment for all users.</li>
                             </ul>
                         </div>
                         <div className="md:hidden w-full md:flex-1 mb-4 md:mb-0">
