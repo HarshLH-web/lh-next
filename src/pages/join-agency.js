@@ -140,7 +140,7 @@ function JoinChamet() {
                             </p>
                             <p><strong>For Sub-Talent Partners:</strong></p>
                             <p>
-                                Commission = (your rate − sub-Talent Partner’s rate) × sub-Talent Partner's broadcaster income.
+                                Commission = (your rate − sub-Talent Partner&apos;s rate) × sub-Talent Partner&apos;s broadcaster income.
                             </p>
                         </div>
 
