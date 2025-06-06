@@ -7,6 +7,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "lhtalentagency.com",
       },
+      {
+        protocol: "https",
+        hostname: "chametappagency.com",
+      },
     ],
   },
 };
