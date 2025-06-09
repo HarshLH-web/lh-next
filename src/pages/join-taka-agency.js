@@ -18,7 +18,7 @@ function joinTakaAgency() { // Renamed function for broader appeal
               Joining Taka Live: Your Registration Guide
             </h2>
             <ul className="list-decimal text-base lg:text-lg pl-4 space-y-2 text-black/80 mt-2 lg:mt-4">
-              <li>Download the TAKA Live app.</li>
+              <li><a href="https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg==" className="text-blue-700 underline">Download the TAKA Live app.</a></li>
               <li>Sign in using your email address or mobile number.</li>
               <li>Complete the initial profile setup.</li>
               <li>Choose your preferred language.</li>
@@ -34,10 +34,12 @@ function joinTakaAgency() { // Renamed function for broader appeal
           </div>
         </div>
 
-        <p className="text-xl font-medium text-black/80 text-center mt-6 lg:mt-16 px-4">
+        <p className="text-xl font-medium text-black/80 text-center mt-6 lg:mt-0 px-4">
           You are now successfully set up on{" "}
           <span className="font-bold text-black">TAKA LIVE</span>.
         </p>
+        <a href="https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg==" className="text-white bg-green-700 hover:bg-green-800 transition-colors duration-300 px-4 py-2 rounded-md mx-auto block w-fit mt-6">Download TAKA</a>
+
         {/* <p className="text-center max-w-2xl mx-auto text-black text-base lg:text-xl font-medium mt-6 lg:mt-12 px-4">If you already have an account on Taka Live or are experiencing any technical issues, please fill out our support form, and our team will assist you promptly.</p> */}
       </section>
 
@@ -118,7 +120,7 @@ function joinTakaAgency() { // Renamed function for broader appeal
               Taka Live Content Creator Onboarding Process
             </h2>
             <ul className="list-decimal text-base lg:text-lg pl-4 space-y-2 text-black/80 mt-2 lg:mt-4">
-              <li>Download the TAKA Live app.</li>
+              <li><a href="https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg==" className="text-blue-700 underline">Download the TAKA Live app.</a></li>
               <li>Sign in using your email address or mobile number.</li>
               <li>Complete the initial profile setup.</li>
               <li>Choose your preferred language.</li>
@@ -134,10 +136,12 @@ function joinTakaAgency() { // Renamed function for broader appeal
           </div>
         </div>
 
-        <p className="text-xl font-medium text-black/80 text-center mt-6 lg:mt-16 px-4">
+        <p className="text-xl font-medium text-black/80 text-center mt-6 lg:mt-0 px-4">
           You are now successfully onboarded with{" "}
           <span className="font-bold text-black">TAKA LIVE</span>.
         </p>
+        <a href="https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg==" className="text-white bg-green-700 hover:bg-green-800 transition-colors duration-300 px-4 py-2 rounded-md mx-auto block w-fit mt-6">Download TAKA</a>
+
         {/* <p className="text-center max-w-2xl mx-auto text-black text-xl font-bold mt-6 lg:mt-12 px-4">If you already have an account on Taka Live or are experiencing any technical issues, please fill out our support form, and our team will assist you promptly.</p> */}
 
       </section>
