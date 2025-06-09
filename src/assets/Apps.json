@@ -168,6 +168,38 @@
       ]
     },
     {
+      "name": "Joyo Live",
+      "logo": "/Apply-nowPage/joyo-logo.png",
+      "description": [
+        [
+          "Live Streaming App.",
+          "All Hosts can Apply.",
+          "Host from all Countries.",
+          "Agencies from all Countries."
+      ]
+      ],
+      "buttons": [
+        {
+          "text": "Apply Hosting",
+          "url": "https://joyoliveagent.com/#host-registration"
+        },
+        {
+          "text": "Start Agency",
+          "url": "https://joyoliveagent.com/#agency-registration"
+        }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/Joyo_Live_Host_Policy-Website.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/Joyo_Live_Agent_Policy-Website.pdf"
+        }
+      ]
+    },
+    {
       "name": "Tango Live",
       "logo": "/Apply-nowPage/tango-logo.png",
       "description": [
