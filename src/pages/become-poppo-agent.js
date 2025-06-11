@@ -83,9 +83,9 @@ function BecomePoppoAgent() {
                 </ul>
                 <h3 id="agent-commission-rate" className="text-lg font-semibold pt-4">Agent (Partner) Commission Rate</h3>
                 <ul className="list-disc px-5 space-y-1 mt-3">
-                    <li style={{color: 'white'}}>An agent's commission rate is calculated based on the net earnings of their managed hosts and any sub-agencies (sub-partners) for the last
+                    <li style={{color: 'white'}}>An agent&apos;s commission rate is calculated based on the net earnings of their managed hosts and any sub-agencies (sub-partners) for the last
                         30 days, excluding platform rewards.</li>
-                    <li style={{color: 'white'}}> The commission rate may vary monthly in the range of 4%-20%, reflecting performance and volume of the agency's network.</li>
+                    <li style={{color: 'white'}}> The commission rate may vary monthly in the range of 4%-20%, reflecting performance and volume of the agency&apos;s network.</li>
                     <li style={{color: 'white'}}> The higher the agency&apos;s overall managed earnings, the higher their commission rate will be.</li>
                     <li style={{color: 'white'}}> The commission on the host&apos;s received gifts will be added to the agent&apos;s account immediately.</li>
                     <li style={{color: 'white'}} className="font-semibold">Indian Agencies (Agents) will receive commission in coins from their invited agents&apos; earnings.</li>
@@ -120,7 +120,7 @@ function BecomePoppoAgent() {
                                                         </ul>
                                     </div>
                                     <div className="w-full lg:w-1/2">
-                                        <h3 id="method-2" className="font-semibold text-lg leading-6">Method 2: Become a Host through an Agent's Invitation</h3>
+                                        <h3 id="method-2" className="font-semibold text-lg leading-6">Method 2: Become a Host through an Agent&apos;s Invitation</h3>
                                                         <ul className="list-decimal px-6 space-y-1 mt-2">
                                                             <li>Download App</li>
                                                             <li> Install & Register on the App. </li>
