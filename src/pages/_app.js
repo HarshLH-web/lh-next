@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 import Head from "next/head";
 import { Poppins } from 'next/font/google';
 import ScrollUp from "@/components/ScrollUp";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+// import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({
@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
     </Head>
     <ScrollUp />
     <Component {...pageProps} />
-    <SpeedInsights />
+    {/* <SpeedInsights /> */}
     <Analytics />
   </>;
 }
