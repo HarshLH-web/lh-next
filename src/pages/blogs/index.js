@@ -55,7 +55,7 @@ function Blogs() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.innerHeight + document.documentElement.scrollTop;
-      const threshold = window.innerWidth < 768 ? 100 : 400; // Smaller threshold for mobile
+      const threshold = window.innerWidth < 768 ? 1000 : 400; // Smaller threshold for mobile
       const bottomPosition = document.documentElement.offsetHeight - threshold;
 
       if (scrollPosition >= bottomPosition) {
