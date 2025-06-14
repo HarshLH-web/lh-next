@@ -75,7 +75,7 @@ function BecomeLiveStreamer() {
       <link rel="canonical" href="https://lhtalentagency.com/become-live-streamer" />
     </Head>
     <Header />
-        <div className="bg-[url('/become-live-streamer-bg.png')] bg-cover bg-top bg-no-repeat h-40 lg:h-72 flex items-center justify-center">
+        <div className="bg-[url('/bg/become-live-streamer-bg.webp')] bg-cover bg-top bg-no-repeat h-40 lg:h-72 flex items-center justify-center">
             <h1 className="text-white text-4xl lg:text-6xl font-extrabold uppercase text-center">Become <br /> Live Streamer</h1>
         </div>
 

@@ -121,7 +121,7 @@ function BecomeAnAgent() {
             <link rel="canonical" href="https://lhtalentagency.com/become-an-agent" />
         </Head>
         <Header />
-            <div className="bg-[url('/become-agent-mobile.webp')] lg:bg-[url('/become-agent-bg.png')]  bg-cover bg-center bg-no-repeat h-40 lg:h-72 flex items-center justify-center">
+            <div className="bg-[url('/bg/become-agent-mobile.webp')] lg:bg-[url('/bg/become-agent-bg.webp')]  bg-cover bg-center bg-no-repeat h-40 lg:h-72 flex items-center justify-center">
                 <h1 className="text-white text-4xl lg:text-6xl font-extrabold uppercase text-center px-4">Become A Talent Manager</h1>
             </div>
 

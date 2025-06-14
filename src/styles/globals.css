@@ -82,7 +82,7 @@ body{
 }
 
 .about-bg{
-  background: url(/lh-about-img.png);
+  background: url(/bg/lh-about-img.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ body{
 }
 
 .services-bg{
-  background: url(/services-bg.png);
+  background: url(/bg/services-bg.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -125,14 +125,14 @@ body{
 }
 
 .faq-bg{
-  background: url(/FAQ-bg.png);
+  background: url(/bg/FAQ-bg.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .blog-bg{
-  background: url(/blogs-bg.png);
+  background: url(/bg/blogs-bg.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -144,7 +144,7 @@ body{
 }
 
 .contact-bg{
-  background: url(/contact_us-bg.png);
+  background: url(/bg/contact_us-bg.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ body{
       height: 10rem;
   }
   .contact-bg{
-      background: url(/contact-us_bg-mobile.png);
+      background: url(/bg/contact-us_bg-mobile.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -291,21 +291,21 @@ body{
   }
 
   .faq-bg{
-      background: url(/FAQ-bg-mobile.png);
+      background: url(/bg/FAQ-bg-mobile.webp);
       background-position: right;
       background-size: cover;
       background-repeat: no-repeat;
   }
 
   .apply-bg{
-      background: url(/apply-bg-mobile.png);
+      background: url(/bg/apply-bg-mobile.png);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
   }
 
   .services-bg{
-      background: url(/services-bg-mobile.webp);
+      background: url(/bg/services-bg-mobile.webp);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;

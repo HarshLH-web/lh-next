@@ -32,12 +32,42 @@ const BreadcrumbSchema =
 function Blogs() {
   const { blogs, isLoading, fetchBlogs } = useBlogStore();
   const [isBlogLoading, setIsBlogLoading] = useState(false);
+  const [displayedBlogs, setDisplayedBlogs] = useState([]);
+  const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(true);
   const router = useRouter();
   const { query } = router;
+  const blogsPerPage = 6;
 
   useEffect(() => {
     fetchBlogs(query.tag || null);
   }, [query, fetchBlogs]);
+
+  useEffect(() => {
+    if (blogs.length > 0) {
+      const endIndex = page * blogsPerPage;
+      const newBlogs = blogs.slice(0, endIndex);
+      setDisplayedBlogs(newBlogs);
+      setHasMore(endIndex < blogs.length);
+    }
+  }, [blogs, page]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.innerHeight + document.documentElement.scrollTop;
+      const threshold = 400; // pixels from bottom to trigger loading
+      const bottomPosition = document.documentElement.offsetHeight - threshold;
+
+      if (scrollPosition >= bottomPosition) {
+        if (hasMore && !isLoading) {
+          setPage(prevPage => prevPage + 1);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [hasMore, isLoading]);
 
   // Array of predefined background colors
   const bgColors = ["bg-[#FFEDE0]", "bg-[#E0F7FA]", "bg-[#E8F5E9]", "bg-[#FFF3E0]", "bg-[#EBF8C1]"];
@@ -74,9 +104,9 @@ function Blogs() {
       <h1 className='text-white text-4xl lg:text-6xl font-bold uppercase'>Blogs</h1>
     </div>
     <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto mt-8 lg:mt-16 mb-48 lg:mb-44 w-[90%] max-w-7xl'>
-      {isLoading ? (
+      {isLoading && page === 1 ? (
         <p className="col-span-full text-center text-lg text-gray-600">Loading...</p>
-      ) : blogs.length > 0 ? blogs.map((blog) => (
+      ) : displayedBlogs.length > 0 ? displayedBlogs.map((blog) => (
         <div key={blog._id} className='rounded-lg overflow-hidden'>
          <Link href={`/blogs/${blog.slug}`} key={blog._id} className="block" onClick={() => setIsBlogLoading(true)}>
           <div>
@@ -99,7 +129,21 @@ function Blogs() {
           </Link>
         </div>
         )) : <p className="col-span-full text-center text-lg text-gray-600">No blogs found</p>}
-
+      
+      {isLoading && page > 1 && (
+        <div className="col-span-full flex justify-center py-4">
+          <div className="relative w-12 h-12 flex items-center justify-center">
+            <div
+              className="absolute w-full h-full rounded-full animate-spin"
+              style={{
+                background: "conic-gradient(transparent, red, transparent)",
+                maskImage: "radial-gradient(transparent 50%, black 54%)",
+                WebkitMaskImage: "radial-gradient(transparent 50%, black 54%)",
+              }}
+            ></div>
+          </div>
+        </div>
+      )}
     </div>
     {isBlogLoading  && <div className="fixed inset-0 bg-black/80 flex items-center justify-center">
       <div className="relative w-12 h-12 flex items-center justify-center">
