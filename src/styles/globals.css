@@ -125,7 +125,7 @@ body{
 }
 
 .faq-bg{
-  background: url(/bg/FAQ-bg.webp);
+  background: url(/bg/FAQ-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ body{
   }
 
   .faq-bg{
-      background: url(/bg/FAQ-bg-mobile.webp);
+      background: url(/bg/FAQ-bg-mobile.png);
       background-position: right;
       background-size: cover;
       background-repeat: no-repeat;
