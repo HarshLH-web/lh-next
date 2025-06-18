@@ -94,8 +94,8 @@ function Support() {
         <div className="max-w-2xl mx-auto py-4">
 
           <form onSubmit={handleSubmit} className="w-full">
-            <div className="flex flex-col lg:flex-row gap-4">
-              <div className="flex flex-col gap-3 w-[90%] lg:w-1/2 mx-auto">
+            <div className="flex flex-col lg:flex-row gap-2 lg:gap-4">
+              <div className="flex flex-col gap-2 lg:gap-3 w-[90%] lg:w-1/2 mx-auto">
                 <div className="relative">
                   <input 
                     id="name"
@@ -152,7 +152,7 @@ function Support() {
                   <label htmlFor="country" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4">Enter your country</label>
                 </div>
               </div>
-              <div className="flex flex-col gap-3 w-[90%] lg:w-1/2 mx-auto">
+              <div className="flex flex-col gap-2 lg:gap-3 w-[90%] lg:w-1/2 mx-auto">
                 <div className="relative flex-grow">
                   <textarea
                     id="message"
@@ -160,7 +160,7 @@ function Support() {
                     value={formValues.message || ''} 
                     onChange={handleInputChange}
                     placeholder=" "
-                    className="w-full min-h-[100%] border p-2 rounded-2xl border-gray-300 bg-white focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent peer"
+                    className="w-full min-h-[10rem] lg:min-h-[100%] border p-2 rounded-2xl border-gray-300 bg-white focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent peer"
                   />
                   <label htmlFor="message" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-6 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4">Your message</label>
                 </div>
