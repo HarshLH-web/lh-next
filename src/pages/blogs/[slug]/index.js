@@ -247,7 +247,7 @@ export async function getStaticProps({ params }) {
                 blog: response.data,
             },
             // optional: enable if blogs might change occasionally
-            revalidate: 60 * 60 * 24 // Revalidate every 24 hours
+            // revalidate: 60 * 60 * 24 // Revalidate every 24 hours
         };
     } catch (error) {
         console.error("Error fetching blog data:", error);
