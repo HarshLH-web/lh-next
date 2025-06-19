@@ -34,9 +34,9 @@ const BlogModal = ({ imageSrc, imageAlt, width, className }) => {
           </div>
             <button
               onClick={closeModal}
-              className="closeModal mt-4 bg-white rounded-full px-4 py-[6px] cursor-pointer text-2xl absolute top-2 right-4"
+              className="cursor-pointer absolute top-2 right-8" style={{padding: '10px 18px'}}
             >
-              x
+              <span style={{color: '#fff'}}>X</span>
             </button>
         </div>
       )}
