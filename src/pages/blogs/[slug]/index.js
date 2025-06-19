@@ -4,10 +4,13 @@ import { useEffect, useState } from "react";
 import DOMPurify from "isomorphic-dompurify";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BlogModal from "@/components/BlogModal";
+
 function BlogDetailPage({ blog }) {
     const [tableOfContents, setTableOfContents] = useState([]);
     const [isTocOpen, setIsTocOpen] = useState(false);
     const [contentWithIds, setContentWithIds] = useState("");
+    const [processedContent, setProcessedContent] = useState("");
 
     useEffect(() => {
         if (!blog) return;
@@ -35,6 +38,7 @@ function BlogDetailPage({ blog }) {
         const tempDiv = document.createElement("div");
         tempDiv.innerHTML = blog.content;
 
+        // Add IDs to headings
         toc.forEach((heading) => {
             const headingElements = tempDiv.querySelectorAll(heading.level);
             for (const element of headingElements) {
@@ -46,7 +50,74 @@ function BlogDetailPage({ blog }) {
         });
 
         setContentWithIds(tempDiv.innerHTML);
+
+        // Process images for ImageModal
+        const processImages = (htmlContent) => {
+            const tempDiv = document.createElement("div");
+            tempDiv.innerHTML = htmlContent;
+
+            const images = tempDiv.querySelectorAll("img");
+            images.forEach((img, index) => {
+                const imgSrc = img.getAttribute("src");
+                const imgAlt = img.getAttribute("alt") || "Blog image";
+                const imgClass = img.getAttribute("class") || "";
+                
+                // Create a unique ID for the image
+                const imageId = `blog-image-${index}`;
+                
+                // Replace the img tag with a placeholder that we'll replace with ImageModal
+                const placeholder = document.createElement("div");
+                placeholder.innerHTML = `<div id="${imageId}" data-src="${imgSrc}" data-alt="${imgAlt}" data-class="${imgClass}"></div>`;
+                
+                img.parentNode.replaceChild(placeholder.firstChild, img);
+            });
+
+            return tempDiv.innerHTML;
+        };
+
+        const processedHtml = processImages(tempDiv.innerHTML);
+        setProcessedContent(processedHtml);
     }, [blog]);
+
+    // Function to render processed content with ImageModal components
+    const renderProcessedContent = () => {
+        if (!processedContent) return null;
+
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = processedContent;
+
+        // Find all image placeholders and replace them with ImageModal components
+        const imagePlaceholders = tempDiv.querySelectorAll("[id^='blog-image-']");
+        
+        // Convert to array and process
+        const elements = Array.from(tempDiv.children);
+        
+        return elements.map((element, index) => {
+            if (element.id && element.id.startsWith('blog-image-')) {
+                const imgSrc = element.getAttribute('data-src');
+                const imgAlt = element.getAttribute('data-alt');
+                const imgClass = element.getAttribute('data-class');
+                
+                return (
+                    <div key={`image-${index}`} className="my-4">
+                        <BlogModal 
+                            imageSrc={imgSrc}
+                            imageAlt={imgAlt}
+                            className={imgClass}
+                            width="w-full lg:max-w-[60%] mx-auto"
+                        />
+                    </div>
+                );
+            } else {
+                return (
+                    <div 
+                        key={`content-${index}`}
+                        dangerouslySetInnerHTML={{ __html: element.outerHTML }}
+                    />
+                );
+            }
+        });
+    };
 
     if (!blog) return <p>Loading...</p>;
 
@@ -135,11 +206,12 @@ function BlogDetailPage({ blog }) {
                     </div>
                 )}
 
-                <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(contentWithIds) }} />
+                <div className="text-gray-700">
+                    {renderProcessedContent()}
+                </div>
             </div>
             <Footer />
         </>
-
     );
 }
 

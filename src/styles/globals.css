@@ -257,6 +257,15 @@ body{
   margin-bottom: 0.25rem;
 }
 
+/* Override for modal images - allow them to be larger */
+#modal img {
+  max-width: none !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+
 @media only screen and (max-width: 600px) {
   .main{
       background: url(/banner-BG-mobile.png),linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(247,240,211,1) 100%);
