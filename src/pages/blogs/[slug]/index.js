@@ -104,7 +104,7 @@ function BlogDetailPage({ blog }) {
                             imageSrc={imgSrc}
                             imageAlt={imgAlt}
                             className={imgClass}
-                            width="w-full lg:max-w-[60%] mx-auto"
+                            width="w-full lg:max-w-[60%] mx-auto cursor-pointer"
                         />
                     </div>
                 );
