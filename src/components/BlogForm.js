@@ -116,11 +116,13 @@ function BlogForm({ fields, className }) {
                         marginTop: "0.5rem",
                         backgroundColor: isSubmitting ? "#ccc" : "#DE0402",
                         color: "white",
-                        borderRadius: "1.5rem",
+                        borderRadius: "2rem",
                         transition: "all 0.3s",
+                        border: "2px solid #DE0402",
+
                     }}
-                    onMouseEnter={(e) => !isSubmitting && (e.target.style.backgroundColor = "#ff2d2d")}
-                    onMouseLeave={(e) => !isSubmitting && (e.target.style.backgroundColor = "#DE0402")}
+                    onMouseEnter={(e) => !isSubmitting && (e.target.style.backgroundColor = "transparent") && (e.target.style.color = "#DE0402")}
+                    onMouseLeave={(e) => !isSubmitting && (e.target.style.backgroundColor = "#DE0402") && (e.target.style.color = "white")}
                 >
                     {isSubmitting ? "Submitting..." : "Submit"}
                 </button>

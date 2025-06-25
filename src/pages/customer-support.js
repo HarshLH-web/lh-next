@@ -166,7 +166,7 @@ function Support() {
                 </div>
                 <button 
                   type="submit" 
-                  className="bg-[#DE0402] text-white px-4 py-2 rounded-full focus:outline-none"
+                  className="bg-[#DE0402] border-2 border-[#DE0402] hover:bg-transparent hover:text-[#DE0402] text-white px-4 py-[0.42rem] transition-all duration-300 rounded-full focus:outline-none"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit'}

@@ -109,8 +109,8 @@ function BecomeLiveStreamer() {
                     <p className="text-[#363636] text-base lg:text-xl mb-4">A Streamer is a person who shares their talent on live platforms like Poppo Live, Niki Live, Mimi Live, Chamet, etc. Whether it is dancing, music, comedy, cooking, or simply chatting, streamers make the experience memorable for the audience. </p>
                     <p className="text-[#363636] text-base lg:text-xl mb-8">If you love entertainment and engaging with people, streaming might be the right fit for you.</p>
                     <div className="gap-6 flex items-center justify-center lg:justify-start flex-wrap">
-                    <Link href="/apply-now" className="bg-[#DE0400] text-base lg:text-lg text-white px-6 py-2 rounded-full cursor-pointer hover:bg-[#DE0400]/80 transition-all duration-300 inline-block whitespace-nowrap">Currently Hiring</Link>
-                    <Link href="/live-streaming-tips" className="bg-[#DE0400] text-base lg:text-lg text-white px-6 py-2 rounded-full cursor-pointer hover:bg-[#DE0400]/80 transition-all duration-300 inline-block whitespace-nowrap">Get More Tips</Link>
+                    <Link href="/apply-now" className="bg-[#DE0400] border-2 border-[#DE0400] hover:bg-transparent hover:text-[#DE0400] text-base lg:text-lg text-white px-6 py-2 rounded-full cursor-pointer transition-all duration-300 inline-block whitespace-nowrap">Currently Hiring</Link>
+                    <Link href="/live-streaming-tips" className="bg-[#DE0400] border-2 border-[#DE0400] hover:bg-transparent hover:text-[#DE0400] text-base lg:text-lg text-white px-6 py-2 rounded-full cursor-pointer transition-all duration-300 inline-block whitespace-nowrap">Get More Tips</Link>
                     </div>
                 </div>
             </div>

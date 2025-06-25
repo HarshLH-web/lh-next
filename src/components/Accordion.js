@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 const AppsAccordion = () => {
-  const [activeIndex, setActiveIndex] = useState(2); // POPPO expanded by default
+  const [activeIndex, setActiveIndex] = useState(3); // POPPO expanded by default
 
   const toggleAccordion = (index) => {
     if (index !== activeIndex) {
