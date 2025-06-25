@@ -90,7 +90,7 @@ export default function Home() {
 
 
         <link rel="canonical" href="https://lhtalentagency.com/" />
-        <link rel="preload" href="/live-hosting.gif" as="image" type="image/gif" />
+        {/* <link rel="preload" href="/live-hosting.gif" as="image" type="image/gif" /> */}
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">
             {JSON.stringify(HomeSchema)}
@@ -109,7 +109,7 @@ export default function Home() {
             <h1 className="text-[35px] max-w-[300px] mx-auto sm:mx-0 sm:max-w-none sm:text-[3rem] xl:text-6xl 2xl:text-[4.25rem] leading-[1.15] sm:leading-tight uppercase font-black">
               LH Talent Agency <span className="sm:hidden">where</span> <br />
               <span className="inline-flex items-center gap-4"><span className="hidden sm:block">where</span> talent 
-                <span><Image src="/live-hosting.gif" alt="Live Icon" priority className="w-auto h-12 sm:h-16 xl:h-20 2xl:h-24 object-contain sm:mt-1" width="50" height="24" />
+                <span><Image src="/live-hosting.gif" alt="Live Icon" priority={true} className="w-auto h-12 sm:h-16 xl:h-20 2xl:h-24 object-contain sm:mt-1" width="50" height="24" />
                 </span>
               </span> <br />
               meets opportunity

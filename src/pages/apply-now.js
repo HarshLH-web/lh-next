@@ -89,13 +89,12 @@ const Apply = () => {
                   {app.name}
                 </h2>
                 </div>
-                <div className="relative">
+                <div className="relative" onClick={() => toggleDropdown(index)}>
                   <Image
                     src="/Download-icon.svg"
                     alt="download"
                     width={24}
                     height={24}
-                    onClick={() => toggleDropdown(index)}
                     className="cursor-pointer w-5 h-5 lg:w-6 lg:h-6"
                   />
                   {openDropdownIndex === index && (
