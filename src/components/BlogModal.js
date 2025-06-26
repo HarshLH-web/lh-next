@@ -18,7 +18,7 @@ const BlogModal = ({ imageSrc, imageAlt, width, className }) => {
         <Image
           src={imageSrc}
           alt={imageAlt}
-          className={`cursor-pointer pointer-events-none pt-8 pb-6 lg:py-10 w-full h-auto ${className}`}
+          className={`cursor-pointer pointer-events-none pt-2 pb-2 lg:py-6 w-full h-auto ${className}`}
           width={1000}
           height={1000}
         />
