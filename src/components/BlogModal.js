@@ -29,7 +29,7 @@ const BlogModal = ({ imageSrc, imageAlt, width, className }) => {
           id="modal"
           className="fixed inset-0 top-0 flex items-center justify-center z-99 bg-black/80 backdrop-blur-sm"
         >
-          <div className="bg-white rounded-lg shadow-md w-[90%] max-w-4xl p-1 z-99 pointer-events-none">
+          <div className="bg-white rounded-lg shadow-md w-[90%] lg:w-[60%] max-w-3xl p-1 z-99 pointer-events-none">
             <Image src={imageSrc} alt={imageAlt} className="w-full h-auto" width={1000} height={1000} />
           </div>
             <button

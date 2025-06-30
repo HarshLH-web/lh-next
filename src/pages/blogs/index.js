@@ -112,7 +112,7 @@ function Blogs() {
           <div>
             <Image src={blog.coverImage} alt={blog.title} className='w-full h-52 object-cover' width={1000} height={1000} />
           </div>
-          <div key={blog._id} className='bg-white border border-gray-200 cursor-pointer p-4 rounded-b-lg shadow-md'>
+          <div key={blog._id} className='bg-white border border-gray-200 cursor-pointer p-4 rounded-b-lg'>
             <div className='flex items-center justify-start gap-2 mb-2 flex-wrap'>
               {blog.tags.map((tag, index) => {
                 const randomBg = bgColors[Math.floor(Math.random() * bgColors.length)];

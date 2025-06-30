@@ -11,6 +11,7 @@ function BlogDetailPage({ blog }) {
     const [isTocOpen, setIsTocOpen] = useState(false);
     const [contentWithIds, setContentWithIds] = useState("");
     const [processedContent, setProcessedContent] = useState("");
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         if (!blog) return;
@@ -78,6 +79,15 @@ function BlogDetailPage({ blog }) {
         const processedHtml = processImages(tempDiv.innerHTML);
         setProcessedContent(processedHtml);
     }, [blog]);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        window.addEventListener('resize', handleResize);
+        handleResize();
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     // Function to render processed content with ImageModal components
     const renderProcessedContent = () => {
@@ -148,14 +158,16 @@ function BlogDetailPage({ blog }) {
 
             <Header />
 
-            <div id="blog-container" className="w-[90%] lg:w-[80%] mx-auto mb-48 mt-7 lg:mt-16 lg:mb-44">
-                <h1 className="text-3xl font-bold mb-4 text-center max-w-3xl mx-auto">{blog.title}</h1>
+            <div id="blog-container" className="w-[95%] lg:w-[90%] max-w-7xl mx-auto pb-48 pt-4 lg:pt-16 lg:pb-44 bg-gray-50 border-x-[1px] border-gray-200 mb-[-130px]">
+                <div className="mx-2 lg:mx-16 flex items-center justify-between h-52 lg:h-72 bg-cover bg-center bg-no-repeat rounded-xl" style={{boxShadow: 'inset 0px 0px 400px 54px rgba(0,0,0,0.66)',backgroundImage: `url(${isMobile ? blog.mobileBannerImage : blog.desktopBannerImage})`}}>
+                    <h1 className="text-3xl font-bold max-w-[44rem] mx-auto text-white text-center px-2" style={{textDecoration: "none"}}>{blog.title}</h1>
+                </div>
 
                 {tableOfContents.length > 0 && (
-                    <div className="mb-4 lg:mb-8 mt-4 lg:mt-12 px-4 pt-1 pb-2 bg-gray-200 rounded-lg">
+                    <div className="mb-4 lg:mb-8 mt-4 lg:mt-6 px-4 lg:px-6 pt-1 pb-2 bg-black/10 rounded-lg mx-2 lg:mx-16">
                         <p
-                            className="font-semibold mb-2 pt-3 text-[#DE0400] cursor-pointer flex items-center justify-between"
-                            style={{ fontSize: "1.4rem" }}
+                            className={`font-semibold mb-[2px] pt-[7px] lg:mb-2 lg:pt-3 text-[#DE0400] cursor-pointer flex items-center justify-between`}
+                            style={{ fontSize: isMobile ? "1.15rem" : "1.35rem" }}
                             onClick={() => setIsTocOpen(!isTocOpen)}
                         >
                             Table of Contents
@@ -206,7 +218,7 @@ function BlogDetailPage({ blog }) {
                     </div>
                 )}
 
-                <div className="text-gray-700">
+                <div className="text-gray-700 px-4 lg:px-16">
                     {renderProcessedContent()}
                 </div>
             </div>
