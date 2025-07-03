@@ -30,7 +30,7 @@ function Footer() {
             width={1000}
             height={64}
             /></Link>
-          <h3 className="text-4xl md:text-5xl font-bold mb-4 mt-6 lg:mt-12">Contact Us</h3>
+          <p className="text-4xl md:text-5xl font-bold mb-4 mt-6 lg:mt-12">Contact Us</p>
           <div className="w-16 h-0.5 bg-white mx-auto mb-4"></div>
   
           <div className="flex items-center justify-center space-x-3 mb-2 hover:opacity-90 transition-opacity border-2 border-white rounded-full py-2 px-4 w-fit mx-auto">
@@ -111,7 +111,7 @@ function Footer() {
 
         {/* Quick Links Section - Second on mobile */}
         <div className="order-2 lg:order-1 lg:pb-12 whitespace-nowrap lg:w-[30%]">
-          <h3 className="text-2xl font-semibold mb-2">Quick Links</h3>
+          <p className="text-2xl font-semibold mb-2">Quick Links</p>
           <div className="w-6 h-0.5 bg-white mx-2 mb-4"></div>
           <div className="flex flex-col lg:flex-row md:gap-4 xl:gap-16 justify-start lg:pr-8 xl:pr-16">
             <div className="space-y-2 flex flex-col">
@@ -142,7 +142,7 @@ function Footer() {
 
         {/* Blog Links Section - Third on mobile */}
         <div className="order-3 lg:order-2 pb-12 whitespace-nowrap lg:w-[30%]">
-          <h3 className="text-2xl font-semibold mb-2">Blog</h3>
+          <p className="text-2xl font-semibold mb-2">Blog</p>
           <div className="w-6 h-0.5 bg-white mx-2 mb-4"></div>
 
           <div className="space-y-2 flex flex-col lg:max-w-[80%]">
