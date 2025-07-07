@@ -1,4 +1,6 @@
 'use client';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Head from "next/head";
 import Image from "next/image";
 import ScrollUpButton from "../components/ScrollUp";
@@ -61,6 +63,20 @@ const HomeSchema =
 
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Check if URL has amp=1 parameter
+    if (router.query.amp === '1') {
+      router.replace('/404');
+    }
+  }, [router.query.amp, router]);
+
+  // If amp=1, don't render the page content
+  if (router.query.amp === '1') {
+    return null;
+  }
+
   return (
     <>
       <Head>

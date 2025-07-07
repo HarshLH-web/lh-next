@@ -4,19 +4,5 @@
         "source": "/blog-images/:path*",
         "destination": "https://webpanel.store/blog-images/:path*"
       }
-    ],
-    "redirects": [
-      {
-        "source": "/:path*",
-        "has": [
-          {
-            "type": "query",
-            "key": "amp",
-            "value": "1"
-          }
-        ],
-        "destination": "/404",
-        "permanent": false
-      }
     ]
   }
