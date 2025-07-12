@@ -36,6 +36,34 @@
       ]
     },
     {
+      "name": "HoneyCam",
+      "logo": "/Apply-nowPage/honeycam-logo.png",
+      "description": [
+        [
+          "Video Streaming & Live Streaming App.",
+          "Only Female Hosts can Apply.",
+          "Host from all Countries.",
+          "Agencies from all Countries."
+      ]
+      ],
+      "buttons": [
+        {
+          "text": "Start Agency",
+          "url": "https://www.honeycammcn.com/?unionId=6052&unionName=LH+Talent+Agency#/register"
+        }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/HoneyCam Host Policy-2023.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/Honeycal Agent policy-2023.pdf"
+        }
+      ]
+    },
+    {
       "name": "Taka Live",
       "logo": "/Apply-nowPage/taka-logo.png",
       "description": [
