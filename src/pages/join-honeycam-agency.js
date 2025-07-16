@@ -31,7 +31,7 @@ function JoinHoneycamAgency() {
                     
                     <div className="flex flex-col lg:flex-row">
                     <ul className="text-left list-decimal px-6 space-y-1">
-                        <li className="text-[1rem] leading-[1.25] md:text-lg text-left"><a href="https://play.google.com/store/apps/details?id=com.honeycam.app" className="underline text-blue-500">Download the HoneyCam App.</a></li>
+                        <li className="text-[1rem] leading-[1.25] md:text-lg text-left"><a href="https://play.google.com/store/apps/details?id=com.honeycam" className="underline text-blue-500">Download the HoneyCam App.</a></li>
                         <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Register &amp; create your account.</li>
                         <li className="text-[1rem] leading-[1.25] md:text-lg text-left"><a href="https://www.honeycammcn.com/?unionId=6052&unionName=LH+Talent+Agency#/register" className="underline text-blue-500">Click on the agency registration link.</a></li>
                         <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Fill in all required information:</li>
@@ -132,7 +132,7 @@ function JoinHoneycamAgency() {
                 <div className="lg:w-1/2 lg:pr-8">
                     <h2 className="text-3xl lg:text-5xl font-bold mb-4 text-black">Host Registration Process</h2>
                     <ul className="list-decimal px-6 space-y-2">
-                        <li className="text-[1rem] leading-[1.25] md:text-lg text-left"><a href="https://play.google.com/store/apps/details?id=com.honeycam.app" className="underline text-blue-500">Download the HoneyCam App.</a></li>
+                        <li className="text-[1rem] leading-[1.25] md:text-lg text-left"><a href="https://play.google.com/store/apps/details?id=com.honeycam" className="underline text-blue-500">Download the HoneyCam App.</a></li>
                         <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Sign up by creating a profile.</li>
                         <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Go to the <strong>profile</strong>.</li>
                         <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Click on <strong>&lsquo;settings&rsquo;</strong>.</li>
