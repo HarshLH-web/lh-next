@@ -36,94 +36,6 @@
       ]
     },
     {
-      "name": "HoneyCam",
-      "logo": "/Apply-nowPage/honeycam-logo.png",
-      "description": [
-        [
-          "Video Streaming & Live Streaming App.",
-          "Only Female Hosts can Apply.",
-          "Host from all Countries.",
-          "Agencies from all Countries."
-      ]
-      ],
-      "buttons": [
-        {
-          "text": "Start Agency",
-          "url": "https://www.honeycammcn.com/?unionId=6052&unionName=LH+Talent+Agency#/register"
-        }
-      ],
-      "download": [
-        {
-          "text": "Host Policy",
-          "url": "/Policies/HoneyCam Host Policy-2023.pdf"
-        },
-        {
-          "text": "Agency Policy",
-          "url": "/Policies/Honeycal Agent policy-2023.pdf"
-        }
-      ]
-    },
-    {
-      "name": "Taka Live",
-      "logo": "/Apply-nowPage/taka-logo.png",
-      "description": [
-          [
-              "Live Streaming & Video Calling App.",
-              "All Hosts can Apply.",
-              "Host from all Countries.",
-              "Agencies from all Countries."
-          ]
-      ],
-      "buttons": [
-        {
-          "text": "Start Agency",
-          "url": "https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg=="
-        }
-      ],
-      "download": [
-        {
-          "text": "Commission Structure",
-          "url": "/Policies/TAKA Commission Structure policy.pdf"
-        },
-        {
-          "text": "Agency Policy",
-          "url": "/Policies/TAKA LIVE AGENCY POLICY.pdf"
-        }
-      ]
-    },
-    {
-      "name": "Chamet",
-      "logo": "/Apply-nowPage/chamet-logo.png",
-      "description": [
-        [
-          "Video Streaming & Live Streaming App.",
-          "Only Female Hosts can Apply.",
-          "Host from all Countries.",
-          "Agencies from all Countries."
-      ]
-      ],
-      "buttons": [
-        {
-          "text": "Apply Hosting",
-          "url": "https://chametappagency.com/#host"
-        },
-        {
-          "text": "Start Agency",
-          "url": "https://chametappagency.com/#agent"
-        }
-      ],
-      "download": [
-        {
-          "text": "Host Policy",
-          "url": "/Policies/Chamet Host Policy 2024-25 (1).pdf"
-        },
-        {
-          "text": "Agency Policy",
-          "url": "/Policies/CHAMET AGENCY POLICY 2024-25  (1).pdf"
-        }
-      ]
-    },
-    {
       "name": "Niki Live",
       "logo": "/Apply-nowPage/niki-logo.png",
       "description": [
@@ -160,6 +72,66 @@
       ]
     },
     {
+      "name": "HoneyCam",
+      "logo": "/Apply-nowPage/honeycam-logo.png",
+      "description": [
+        [
+          "Video Streaming & Live Streaming App.",
+          "Only Female Hosts can Apply.",
+          "Host from all Countries.",
+          "Agencies from all Countries."
+      ]
+      ],
+      "buttons": [
+        {
+          "text": "Start Agency",
+          "url": "https://www.honeycammcn.com/?unionId=6052&unionName=LH+Talent+Agency#/register"
+        }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/HoneyCam Host Policy-2023.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/Honeycal Agent policy-2023.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Chamet",
+      "logo": "/Apply-nowPage/chamet-logo.png",
+      "description": [
+        [
+          "Video Streaming & Live Streaming App.",
+          "Only Female Hosts can Apply.",
+          "Host from all Countries.",
+          "Agencies from all Countries."
+      ]
+      ],
+      "buttons": [
+        {
+          "text": "Apply Hosting",
+          "url": "https://chametappagency.com/#host"
+        },
+        {
+          "text": "Start Agency",
+          "url": "https://chametappagency.com/#agent"
+        }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/Chamet Host Policy 2024-25 (1).pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/CHAMET AGENCY POLICY 2024-25  (1).pdf"
+        }
+      ]
+    },
+    {
       "name": "Joyo Live",
       "logo": "/Apply-nowPage/joyo-logo.png",
       "description": [
@@ -188,6 +160,34 @@
         {
           "text": "Agency Policy",
           "url": "/Policies/Joyo_Live_Agent_Policy-Website.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Taka Live",
+      "logo": "/Apply-nowPage/taka-logo.png",
+      "description": [
+          [
+              "Live Streaming & Video Calling App.",
+              "All Hosts can Apply.",
+              "Host from all Countries.",
+              "Agencies from all Countries."
+          ]
+      ],
+      "buttons": [
+        {
+          "text": "Start Agency",
+          "url": "https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg=="
+        }
+      ],
+      "download": [
+        {
+          "text": "Commission Structure",
+          "url": "/Policies/TAKA Commission Structure policy.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/TAKA LIVE AGENCY POLICY.pdf"
         }
       ]
     },
