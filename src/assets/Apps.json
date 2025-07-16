@@ -160,42 +160,6 @@
       ]
     },
     {
-      "name": "Mimi Live",
-      "logo": "/Apply-nowPage/mimi-logo.png",
-      "description": [
-        [
-          "Live Streaming App",
-          "Only Female Hosts can Apply.",
-          "Host from all Countries.",
-          "Agencies from all Countries."
-      ]
-      ],
-      "buttons": [
-        {
-          "text": "Apply Hosting",
-          "url": "https://mimiliveagent.com/host/"
-        },
-        {
-          "text": "Start Agency",
-          "url": "https://mimiliveagent.com/#agent"
-        }
-      ],
-      "download": [
-        {
-          "text": "Host Policy",
-          "url": "/Policies/MIMI LIVE HOST POLICY - WEBSITE.pdf"
-        },
-        {
-          "text": "Agency Policy",
-          "url": "/Policies/MIMI LIVE AGENCY REGISTRATION - WEBSITE.pdf"
-        },
-        {
-          "text": "Coin Seller Policy",
-          "url": "/Policies/MIMI LIVE COIN SELLER - WEBSITE.pdf"
-        }
-      ]
-    },
-    {
       "name": "Joyo Live",
       "logo": "/Apply-nowPage/joyo-logo.png",
       "description": [

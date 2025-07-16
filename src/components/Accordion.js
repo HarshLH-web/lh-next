@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 const AppsAccordion = () => {
-  const [activeIndex, setActiveIndex] = useState(3); // POPPO expanded by default
+  const [activeIndex, setActiveIndex] = useState(2); // POPPO expanded by default
 
   const toggleAccordion = (index) => {
     if (index !== activeIndex) {
@@ -13,25 +13,13 @@ const AppsAccordion = () => {
 
   const sections = [
     {
-      title: 'TAKA LIVE',
-      heading: 'TAKA LIVE',
+      title: 'HONEYCAM',
+      heading: 'HONEYCAM',
       description: 'Discover the world of fun and non-stop entertainment.',
-      agentBtnText:'Taka Agent',
-      agentBtnURL:'https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg==',
-      bgimg: '/taka-bg.png',
-      imgUrl: '/taka-logo.webp',
-    },
-    {
-      title: 'TANGO LIVE',
-      heading: 'TANGO LIVE',
-      description: 'Make connections and earn big through live streaming.',
-      hostBtnText:'',
-      // hostBtnText:'Tango Host',
-      // hostBtnURL:'https://tangoliveagent.com/',
-      agentBtnText:'Tango Agent',
-      agentBtnURL:'/blogs/tango-agency-registration',
-      bgimg: '/tango-bg.webp',
-      imgUrl: '/tango-logo.png',
+      agentBtnText:'HoneyCam Agent',
+      agentBtnURL:'https://lhtalentagency.com/join-honeycam-agency',
+      bgimg: '/honeycam-bg.png',
+      imgUrl: '/Apply-nowPage/honeycam-logo.png',
     },
     {
       title: 'NIKI LIVE',
@@ -67,15 +55,15 @@ const AppsAccordion = () => {
         imgUrl: '/Chamet-Live.webp',
     },
     {
-      title: 'MIMI LIVE',
-      heading: 'MIMI LIVE',
+      title: 'JOYO LIVE',
+      heading: 'JOYO LIVE',
       description: 'A streaming app exclusively designed for the Indian audience.',
-      hostBtnText:'Mimi Host',
-      hostBtnURL:'https://mimiliveagent.com/host/',
-      agentBtnText:'Mimi Agent',
-      agentBtnURL:'https://mimiliveagent.com/#agent',
-      bgimg: '/mimi-bg.webp',
-      imgUrl: '/Mimi-Live.webp',
+      hostBtnText:'Joyo Host',
+      hostBtnURL:'https://joyoliveagent.com/#host-registration',
+      agentBtnText:'Joyo Agent',
+      agentBtnURL:'https://joyoliveagent.com/#agency-registration',
+      bgimg: '/joyo-bg.png',
+      imgUrl: '/Apply-nowPage/joyo-logo.png',
     },
     
   ];
