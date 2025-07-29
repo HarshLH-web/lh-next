@@ -242,11 +242,15 @@ export default function Home() {
           <InView>
             {({ref, inView}) => (
               <div ref={ref} className="w-full lg:w-1/2 my-4 flex items-center justify-center">
-              <Lottie 
-                animationData={groupAnimation}
-                loop={inView}
-                autoplay={inView}
-              />
+                    <div ref={ref}>
+                      {inView && (
+                        <Lottie 
+                          animationData={groupAnimation}
+                          loop={false}
+                          
+                        />
+                      )}
+                    </div>
             </div>
             )
           }

@@ -1,15 +1,25 @@
 'use client'
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const AppsAccordion = () => {
   const [activeIndex, setActiveIndex] = useState(2); // POPPO expanded by default
+  const [isMobile, setIsMobile] = useState(false);
 
   const toggleAccordion = (index) => {
     if (index !== activeIndex) {
       setActiveIndex(index);
     }
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const sections = [
     {
@@ -22,16 +32,16 @@ const AppsAccordion = () => {
       imgUrl: '/Apply-nowPage/honeycam-logo.png',
     },
     {
-      title: 'NIKI LIVE',
-      heading: 'NIKI LIVE',
-      description: 'A fun live-streaming application with a global reach.',
-      hostBtnText:'Niki Host',
-      hostBtnURL:'https://nikiliveagent.com/#host',
-      agentBtnText:'Niki Agent',
-      agentBtnURL:'https://nikiliveagent.com/#agent',
-      bgimg: '/niki-bg.webp',
-      imgUrl: '/Niki-live.webp',
-    },
+      title: 'CHAMET',
+      heading: 'CHAMET APP',
+      description: 'Build great connections without language barriers.',
+      hostBtnText:'Chamet Host',
+      hostBtnURL:'https://chametappagency.com/#host',
+      agentBtnText:'Chamet Agent',
+      agentBtnURL:'https://chametappagency.com/#agent',
+      bgimg: '/chamet-bg.webp',
+      imgUrl: '/Chamet-Live.webp',
+  },
     {
       title: 'POPPO LIVE',
       heading: 'POPPO LIVE',
@@ -44,15 +54,15 @@ const AppsAccordion = () => {
       imgUrl: '/Poppo-Live.webp',
     },
     {
-        title: 'CHAMET',
-        heading: 'CHAMET APP',
-        description: 'Build great connections without language barriers.',
-        hostBtnText:'Chamet Host',
-        hostBtnURL:'https://chametappagency.com/#host',
-        agentBtnText:'Chamet Agent',
-        agentBtnURL:'https://chametappagency.com/#agent',
-        bgimg: '/chamet-bg.webp',
-        imgUrl: '/Chamet-Live.webp',
+      title: 'NIKI LIVE',
+      heading: 'NIKI LIVE',
+      description: 'A fun live-streaming application with a global reach.',
+      hostBtnText:'Niki Host',
+      hostBtnURL:'https://nikiliveagent.com/#host',
+      agentBtnText:'Niki Agent',
+      agentBtnURL:'https://nikiliveagent.com/#agent',
+      bgimg: '/niki-bg.webp',
+      imgUrl: '/Niki-live.webp',
     },
     {
       title: 'JOYO LIVE',
@@ -74,10 +84,11 @@ const AppsAccordion = () => {
         {sections.map((section, index) => (
           <div
             key={index}
-            className={`accordion-item flex-1 relative cursor-pointer overflow-hidden transition-all duration-300 ease-in-out border-y-[1px] border-x-0 lg:border-x-[1px] lg:border-y-0 border-transparent last:border-t-[1px] lg:last:border-[0px] lg:last:border-l-[1px] first:border-b-[1px] lg:first:border-r-[1px] lg:first:border-l-[0px] ${
+            className={`accordion-item flex-1 relative cursor-pointer overflow-hidden transition-all duration-300 ease-in-out border-y-[1px] border-x-0 lg:border-x-[1px] lg:border-y-0 border-transparent last:border-t-[1px] lg:last:border-[0px] lg:last:border-l-[1px] first:border-b-[1px] lg:first:border-r-[1px] lg:first:border-l-[0px] lg:first:border-b-[0px] ${
               activeIndex === index ? 'flex-[5] md:flex-[7]' : 'flex-1'
             }`}
-            onClick={() => toggleAccordion(index)}
+            onMouseEnter={() => toggleAccordion(index)}
+            onMouseLeave={() => toggleAccordion(index)}
           >
             <div className="relative w-full h-full">
               <Image src={section.bgimg} alt={`Image ${index + 1}`} className="w-full h-full object-cover" width={1000} height={1000} />
@@ -86,19 +97,24 @@ const AppsAccordion = () => {
             <div className="absolute inset-0 text-white flex flex-col items-center justify-center">
             
               <h3
-                className={`text-2xl md:text-3xl font-semibold whitespace-nowrap tracking-wide transition-opacity delay-300 duration-300 md:rotate-[270deg] ${
-                  activeIndex === index ? 'hidden' : 'opacity-100'
-                }`}
+                className={`text-2xl md:text-3xl font-semibold whitespace-nowrap tracking-wide transition-all delay-100 duration-0 md:rotate-[270deg]
+                ${
+                  activeIndex === index ? 'opacity-0' : 'opacity-100 mt-[275px] md:mt-[300px]'
+                }
+                `}
+                style={{
+                  marginTop: activeIndex !== index && index === 0 && isMobile ? '220px' : ''
+                }}
               >
                 {section.title}
               </h3>
-              <Image src={section.imgUrl} alt={`${section.title} - Logo`} width={65} height={65} className={`h-10 w-10 md:h-12 md:w-12 rounded-lg md:rounded-xl absolute left-6 md:bottom-8 md:left-auto  ${
-                  activeIndex === index ? 'hidden' : 'opacity-100'
+              <Image src={section.imgUrl} alt={`${section.title} - Logo`} width={65} height={65} className={`h-10 w-10 md:h-12 md:w-12 rounded-lg md:rounded-xl absolute left-6 md:bottom-8 md:left-auto transition-all delay-0 duration-100 ${
+                  activeIndex === index ? 'opacity-0' : 'opacity-100'
                 }`} />
 
               <div
-                className={`detail-content text-center transition-opacity delay-300 duration-300 ${
-                  activeIndex === index ? 'opacity-100' : 'hidden'
+                className={`detail-content text-center transition-all delay-100 duration-100 ${
+                  activeIndex === index ? 'opacity-100' : 'opacity-0'
                 }`}
               >
                 <Image src={section.imgUrl} alt={`${section.title} - Logo`} width={65} height={65} className="h-16 w-16 rounded-xl mx-auto mb-2" />
