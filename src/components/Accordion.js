@@ -84,7 +84,7 @@ const AppsAccordion = () => {
         {sections.map((section, index) => (
           <div
             key={index}
-            className={`accordion-item flex-1 relative cursor-pointer overflow-hidden transition-all duration-300 ease-in-out border-y-[1px] border-x-0 lg:border-x-[1px] lg:border-y-0 border-transparent last:border-t-[1px] lg:last:border-[0px] lg:last:border-l-[1px] first:border-b-[1px] lg:first:border-r-[1px] lg:first:border-l-[0px] lg:first:border-b-[0px] ${
+            className={`accordion-item flex-1 relative cursor-pointer overflow-hidden transition-all duration-300 ease-in-out border-y-[1px] border-x-0 lg:border-x-[1px] lg:border-y-0 border-transparent last:border-t-[1px] lg:last:border-[0px] lg:last:border-l-[1px] first:border-b-[1px] lg:first:border-r-[1px] lg:first:border-l-[0px] lg:first:border-b-[0px] first:border-t-[0px] last:border-b-[0px] ${
               activeIndex === index ? 'flex-[5] md:flex-[7]' : 'flex-1'
             }`}
             onMouseEnter={() => toggleAccordion(index)}
