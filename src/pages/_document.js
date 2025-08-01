@@ -50,10 +50,10 @@ export default function Document() {
 
       {/* WhatsApp Chatbot */}
       <Script
-        type="text/javascript"
-        src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
-        id="aisensy-wa-widget"
-        widget-id="1oCrUt"
+         type="text/javascript"
+         src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+         id="aisensy-wa-widget"
+         widget-id="aaa3rr"
       />
       </Head>
       <body className="antialiased">
