@@ -1,20 +1,10 @@
 User-agent: *
 
-Allow: /favicon.ico
-Allow: /become-live-streamer/
-Allow: /customer-support/
-
 Disallow: /2024/
 Disallow: /feed/
 Disallow: /tag/
 Disallow: /category/
-Disallow: /?amp=1/
+Disallow: /?amp=1
 
-# Block old subdomains from indexing
-Disallow: /one.lhtalentagency.com/
-Disallow: /1.lhtalentagency.com/
 
-# Block AMP URLs from indexing
-Disallow: /*?amp=1
-
-# Sitemap location Sitemap: https://lhtalentagency.com/sitemap.xml
+# Sitemap location: https://lhtalentagency.com/sitemap.xml

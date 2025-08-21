@@ -71,7 +71,7 @@ const AppsAccordion = () => {
       hostBtnText:'Joyo Host',
       hostBtnURL:'https://joyoliveagent.com/#host-registration',
       agentBtnText:'Joyo Agent',
-      agentBtnURL:'https://joyoliveagent.com/#agency-registration',
+      agentBtnURL:'/blogs/joyo-live-agency',
       bgimg: '/joyo-bg.png',
       imgUrl: '/Apply-nowPage/joyo-logo.png',
     },

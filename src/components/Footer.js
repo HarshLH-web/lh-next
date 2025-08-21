@@ -152,7 +152,7 @@ function Footer() {
               <div className="h-px bg-[#242424]"></div>
               <Link href="/blogs/how-poppo-app-agency-earn-money" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Poppo Agent Commission</Link>
               <div className="h-px bg-[#242424]"></div>
-              <Link href="/blogs/poppo-live-agency-benefits" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Poppo Live Agency Benefits</Link>
+              <Link href="/blogs/joyo-live-agency" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Joyo Live Agency Registration</Link>
               <div className="h-px bg-[#242424]"></div>
               <Link href="/blogs/how-to-trade-coins-in-poppo-live" className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline">Poppo Coin Seller</Link>
             </div>
