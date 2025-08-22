@@ -11,6 +11,12 @@ body{
   user-select: none;
 }
 
+body.no-header {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
 img{
   pointer-events: none;
 }
@@ -268,6 +274,10 @@ img{
   margin: 0 !important;
   width: 100% !important;
   height: auto !important;
+}
+
+.duoo-btn-gradient{
+  background: linear-gradient(90deg, #FF055F 0%, #FFD600 100%);
 }
 
 
