@@ -1,9 +1,66 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 const DuoAgencyRegistration = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+      // Close dropdown on outside click
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
     return (
         <>
+            {/* Get Policies */}
+           <div ref={dropdownRef} className="right-4 top-4 lg:right-10 z-20 fixed">
+      {/* Button */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className={`bg-gradient-to-b from-[#FF055F] to-[#EA7005] text-white py-2 px-3 rounded-full shadow-md flex items-center gap-2 w-10 hover:w-36 transition-all duration-300 overflow-hidden whitespace-nowrap group ${isOpen ? "w-36" : "w-10"}`}
+        >
+        {/* Icon (always visible) */}
+        <Image
+            src="/duoo/download.svg"
+            alt="Policies"
+            width={20}
+            height={20}
+            className="min-w-4 h-4"
+        />
+
+        {/* Text (hidden until hover) */}
+        <span className={`${isOpen ? "opacity-100" : "opacity-0"} group-hover:opacity-100 transition-opacity duration-300`}>
+            Get Policies
+        </span>
+    </button>
+
+
+      {/* Dropdown */}
+      {isOpen && (
+        <div className="absolute right-0 mt-2 lg:mt-3 w-48 bg-gradient-to-b from-[#FF055F] to-[#EA7005] rounded-xl shadow-lg flex flex-col py-3 px-4 gap-2 animate-fadeIn">
+          <a href="/duoo/Policies/Duoo-Host-Policy.pdf" download className="text-white hover:text-yellow-400 transition-all duration-300 text-center">
+            Host Policy
+          </a>
+          <hr className="border-white" />
+          <a href="/duoo/Policies/Duoo-Agency-Policy.pdf" download className="text-white hover:text-yellow-400 transition-all duration-300 text-center">
+            Agent Policy
+          </a>
+          <hr className="border-white" />
+          <a href="/duoo/Policies/Duoo-Coin-Seller-Policy.pdf" download className="text-white hover:text-yellow-400 transition-all duration-300 text-center">
+            Coin Seller Policy
+          </a>
+        </div>
+      )}
+            </div>
+
+            {/* Hero Section */}
             <section className="bg-gradient-to-b from-[#FF055F] to-[#EA7005] lg:bg-[url('/duoo/hero-bg.svg')] bg-contain bg-left-top bg-no-repeat min-h-[90vh]">
                 <div className="flex flex-col-reverse lg:flex-row w-[90%] lg:w-[80%] 2xl:w-[75%] mx-auto pt-12 pb-12 lg:py-0 gap-10 lg:gap-0">
                     <div className="w-full lg:w-[70%] 2xl:w-[70%] lg:min-h-[98vh] 2xl:min-h-[90vh] flex items-center justify-center">
@@ -16,7 +73,7 @@ const DuoAgencyRegistration = () => {
                             <p className="text-base lg:text-xl 2xl:text-3xl text-center font-semibold">
                             Start your journey today with the Duoo App.
                             </p>
-                            <Link href="/download-button" className="duoo-btn-gradient font-semibold text-white px-4 py-2 2xl:text-lg 2xl:px-6 rounded-full border-2 border-white lg:mt-4">Download Duoo</Link>
+                            <Link href="https://play.google.com/store/apps/details?id=com.melot.meta&referrer=inviteCode=737854066" className="duoo-btn-gradient font-semibold text-white px-4 py-2 2xl:text-lg 2xl:px-6 rounded-full border-2 border-white lg:mt-4">Download Duoo</Link>
 
                         </div>
                     </div>
@@ -26,7 +83,7 @@ const DuoAgencyRegistration = () => {
                 </div>
             </section>
 
-            {/* Duoo App Agency Registration */}
+            {/* Duoo App Agency Registration Process */}
             <section className="bg-white py-12 lg:py-16 flex flex-col items-center justify-center">
                 <div className="flex flex-col-reverse lg:flex-row w-[90%] mx-auto max-w-5xl gap-4 lg:gap-12">
                     <div className="w-full lg:w-[40%] max-w-[25rem]">
@@ -40,18 +97,18 @@ const DuoAgencyRegistration = () => {
                                 border: "none",
                                 background: "linear-gradient(to right, #FF055F 0%, #ffd60045 70% , transparent 90%, transparent 100%)",
                             }}
-                            className="mt-6 mb-4"
+                            className="mt-4 lg:mt-6 mb-4"
                         />
                         <ul className="list-decimal pl-6 space-y-1 2xl:space-y-2">
-                            <li className="text-base lg:text-lg 2xl:text-2xl">Open the Duoo Agency Registration link.</li>
-                            <li className="text-base lg:text-lg 2xl:text-2xl">Enter your phone number and click on “Get Code”.</li>
+                            <li className="text-base lg:text-lg 2xl:text-2xl">Open the Duoo <Link href="https://agent.duoo.live/#/register?parentInviteCode=019428324" className="text-blue-500 underline">Agency Registration</Link> link.</li>
+                            <li className="text-base lg:text-lg 2xl:text-2xl">Enter your phone number and click on <span className="font-semibold">“Get Code”</span>.</li>
                             <li className="text-base lg:text-lg 2xl:text-2xl">Paste the verification code that you received on your number.</li>
-                            <li className="text-base lg:text-lg 2xl:text-2xl">Enter your agent name, resident country, and click “Register”.</li>
+                            <li className="text-base lg:text-lg 2xl:text-2xl">Enter your agent name, resident country, and click <span className="font-semibold">“Register”</span>.</li>
                         </ul>
                         <p className="text-base lg:text-lg 2xl:text-xl text-left font-semibold mt-4">Inform us on <a href="https://wa.me/917065384660" className="text-blue-500 underline">WhatsApp at +917065384660</a> after completing the process.</p>
                     </div>
                 </div>
-                    <Link href="/Duoo-App-Agency" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-10 lg:mt-12 mx-auto">Register Your Duoo App Agency Now</Link>
+                    <Link href="https://agent.duoo.live/#/register?parentInviteCode=019428324" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-6 lg:mt-12 mx-auto">Register Your Duoo App Agency Now</Link>
             </section>
 
 
@@ -71,7 +128,7 @@ const DuoAgencyRegistration = () => {
 
 
             {/* Agency Commission Structure */}
-            <section className="bg-gradient-to-b from-[#FF055F] to-[#FFE100] py-12 lg:py-18">
+            <section className="bg-gradient-to-b from-[#FF055F] to-[#EA7005] py-12 lg:py-18">
                 <div className="w-[90%] mx-auto max-w-5xl text-white">
                     <h2 className="text-2xl lg:text-4xl 2xl:text-[46px] font-bold text-center">Duoo App Agency Commission Structure</h2>
                     <p className="text-base lg:text-lg 2xl:text-[20px] text-center font-normal mt-6 max-w-3xl mx-auto">Agency&apos;s Earning = Commissions from all hosts&apos; earnings + $7 bonus from each new host + 5% bonus from invited sub-agents</p>
@@ -92,7 +149,7 @@ const DuoAgencyRegistration = () => {
                     <h2 className="text-2xl lg:text-4xl 2xl:text-[46px] font-bold text-center">Additional Rewards</h2>
                     <p className="text-base lg:text-lg 2xl:text-[20px] text-center font-normal mt-3 lg:mt-6 max-w-3xl mx-auto">Agency&apos;s Earning = Commissions from all hosts&apos; earnings + $7 bonus from each new host + 5% bonus from invited sub-agents</p>
 
-                    <div className="bg-[#F0F0F0] border border-[#B3B3B3] py-4 px-6 lg:py-6 lg:px-12 rounded-3xl mt-8">
+                    <div className="bg-[#F0F0F0] border border-[#B3B3B3] py-4 px-6 lg:py-6 lg:px-12 rounded-3xl mt-6 lg:mt-8">
                         <p className="text-base lg:text-lg font-semibold">1. 5% from Sub-agent’s Invitation Bonus</p>
                         <p className="text-base lg:text-lg font-normal mt-1">The sub-agent works under your agency, and once they earn at least $100, you’ll receive a 5% bonus based on their income.</p>
                     </div>
@@ -117,10 +174,10 @@ const DuoAgencyRegistration = () => {
                     <h2 className="text-2xl lg:text-4xl 2xl:text-[52px] font-bold text-left text-white lg:w-[35%]">Duoo Host Registration</h2>
                     <Image src="/duoo/line.svg" alt="Duoo Host Registration" width={1000} height={8000} className="w-[10px] hidden lg:block" />
                     <ul className="list-decimal pl-6 space-y-1 lg:space-y-1">
-                        <li style={{color: "#ffffff"}}>Click on the Duoo App download link.</li>
+                        <li style={{color: "#ffffff"}}>Click on the Duoo App <Link href="https://play.google.com/store/apps/details?id=com.melot.meta&referrer=inviteCode=737854066" className="text-blue-400 underline">download link</Link>.</li>
                         <li style={{color: "#ffffff"}}>Sign up with your email or phone number.</li>
-                        <li style={{color: "#ffffff"}}>Fill in your details like gender and date of birth, then tap “Finish.”</li>
-                        <li style={{color: "#ffffff"}}>Go to your profile, select “To be a hostess” and tap “Go”</li>
+                        <li style={{color: "#ffffff"}}>Fill in your details like gender and date of birth, then tap <span className="font-semibold">“Finish.”</span></li>
+                        <li style={{color: "#ffffff"}}>Go to your profile, select <span className="font-semibold">“To be a hostess”</span> and tap <span className="font-semibold">“Go”</span>.</li>
                         <li style={{color: "#ffffff"}}>Add a nickname and upload a photo.</li>
                         <li style={{color: "#ffffff"}}>Complete the face verification and submit.</li> 
                     </ul>
@@ -131,7 +188,7 @@ const DuoAgencyRegistration = () => {
                     <p className="text-base lg:text-lg 2xl:text-[22px] text-center font-semibold mt-6 lg:mt-12 max-w-3xl mx-auto">You have successfully logged in as Duoo Host.</p>
 
                     <div className="flex items-center justify-center">
-                    <Link href="/download-button" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-4 lg:mt-8 mx-auto">Download Duoo</Link>
+                    <Link href="https://play.google.com/store/apps/details?id=com.melot.meta&referrer=inviteCode=737854066" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-4 lg:mt-8 mx-auto">Download Duoo</Link>
                     </div>
 
                 </div>
