@@ -52,10 +52,10 @@ const DuoAgencyRegistration = () => {
           <a href="/duoo/Policies/Duoo-Agency-Policy.pdf" download className="text-white hover:text-yellow-400 transition-all duration-300 text-center">
             Agent Policy
           </a>
-          <hr className="border-white" />
+          {/* <hr className="border-white" />
           <a href="/duoo/Policies/Duoo-Coin-Seller-Policy.pdf" download className="text-white hover:text-yellow-400 transition-all duration-300 text-center">
             Coin Seller Policy
-          </a>
+          </a> */}
         </div>
       )}
             </div>
@@ -113,15 +113,17 @@ const DuoAgencyRegistration = () => {
 
 
             {/*About Duoo App */}
-            <section className="bg-[#FDF4DE] lg:bg-white py-12 lg:pb-40 lg:pt-24">
+            <section className="bg-[#FDF4DE] lg:bg-white pt-12 lg:pb-40 lg:pt-24">
                 <div className="w-[90%] mx-auto max-w-5xl relative lg:pl-20">
                     <div className="w-full max-w-[20rem] absolute top-[-4rem] left-[-2rem] 2xl:left-[-4rem] hidden lg:block">
                         <Image src="/duoo/about-duoo.png" alt="Duo Agency Registration" width={10000} height={8000} className="w-full max-w-[25rem]" />
                     </div>
 
-                    <div className="w-full max-w-5xl flex flex-col justify-center bg-[#FDF4DE] lg:py-16 lg:pl-60 lg:pr-20 2xl:pr-24 rounded-[200px_200px_200px_0px]">
-                        <h2 className="text-2xl lg:text-5xl 2xl:text-[52px] font-bold text-center lg:text-left">About Duoo</h2>
+                    <div className="w-full max-w-5xl flex flex-col justify-center bg-[#FDF4DE] lg:py-16 lg:pl-60 lg:pr-20 2xl:pr-24 rounded-[200px_200px_200px_100px]">
+                        <h2 className="text-[1.75rem] lg:text-5xl 2xl:text-[52px] font-bold text-center lg:text-left">About Duoo</h2>
                         <p className="text-base lg:text-lg 2xl:text-[19px] text-center lg:text-left font-normal mt-3 lg:mt-6">Duoo is a new live streaming app that connects people around the world. Whether you&apos;re a singer, dancer, or just want to chat, Duoo gives you the opportunity. As a duoo host, show your talent, and earn rewards while doing what you love. Manage a team of streamers by becoming a duoo agent. Start your journey today and become a part of the Duoo App.</p>
+
+                        <Image src="/duoo/about-duoo-mobile.png" alt="Duo Agency Registration" width={10000} height={8000} className="w-72 lg:hidden pr-4 mx-auto mt-6" />
                     </div>
                 </div>
             </section>
@@ -139,6 +141,9 @@ const DuoAgencyRegistration = () => {
                     <li  style={{color: "#FFFFFF"}}><span className="font-semibold">Withdrawable hosts:</span> The hosts who earn at least 70k diamonds ($10) will be counted under the agency</li>
                     <li  style={{color: "#FFFFFF"}}><span className="font-semibold">Minimum agent withdrawal:</span> 700k diamonds ($100) per week.</li>
                     </ul>
+                </div>
+                <div className="flex items-center justify-center">
+                <Link href="https://agent.duoo.live/#/register?parentInviteCode=019428324" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-6 lg:mt-10 mx-auto">Join Duoo App Agency</Link>
                 </div>
             </section>
 
