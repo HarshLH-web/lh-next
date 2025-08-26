@@ -36,6 +36,38 @@
       ]
     },
     {
+      "name": "Duoo Live",
+      "logo": "/Apply-nowPage/duoo-logo.png",
+      "description": [
+          [
+              "Live Streaming & Video Calling App.",
+              "Only Female Hosts can Apply.",
+              "Host from all Countries.",
+              "Agencies from all Countries."
+          ]
+      ],
+      "buttons": [
+        {
+          "text": "Apply Hosting",
+          "url": "/duo-agency-registration/#duoo-host-registration"
+        },
+        {
+          "text": "Start Agency",
+          "url": "/duo-agency-registration/#duoo-agency-registration"
+        }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/duoo/Policies/Duoo-Host-Policy.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/duoo/Policies/Duoo-Agency-Policy.pdf"
+        }
+      ]
+    },
+    {
       "name": "Niki Live",
       "logo": "/Apply-nowPage/niki-logo.png",
       "description": [

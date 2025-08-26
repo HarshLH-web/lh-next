@@ -87,7 +87,7 @@ const DuoAgencyRegistration = () => {
             </section>
 
             {/* Duoo App Agency Registration Process */}
-            <section className="bg-white py-12 lg:py-16 flex flex-col items-center justify-center">
+            <section id="duoo-agency-registration" className="bg-white py-12 lg:py-16 flex flex-col items-center justify-center">
                 <div className="flex flex-col-reverse lg:flex-row w-[90%] mx-auto max-w-5xl gap-4 lg:gap-12">
                     <div className="w-full lg:w-[40%] max-w-[25rem]">
                         <Image src="/duoo/agency-reg.png" alt="Duo Agency Registration" width={10000} height={8000} className="w-full max-w-72 lg:max-w-[25rem] mx-auto" />
@@ -176,7 +176,7 @@ const DuoAgencyRegistration = () => {
 
 
             {/* Duoo Host Registration */}
-            <section className="bg-gradient-to-b from-[#FF055F] to-[#EA7005] py-12 lg:pt-24 lg:pb-16">
+            <section id="duoo-host-registration" className="bg-gradient-to-b from-[#FF055F] to-[#EA7005] py-12 lg:pt-24 lg:pb-16">
                 <div className="w-[90%] mx-auto max-w-5xl text-white">
                     <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
                     <h2 className="text-2xl lg:text-4xl 2xl:text-[52px] font-bold text-left text-white lg:w-[35%]">Duoo Host Registration</h2>
