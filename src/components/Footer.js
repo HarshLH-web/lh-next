@@ -33,31 +33,28 @@ function Footer() {
           <p className="text-4xl md:text-5xl font-bold mb-4 mt-6 lg:mt-12">Contact Us</p>
           <div className="w-16 h-0.5 bg-white mx-auto mb-4"></div>
   
-          <div className="flex items-center justify-center space-x-3 mb-2 hover:opacity-90 transition-opacity border-2 border-white rounded-full py-2 px-4 w-fit mx-auto">
+          <a href="https://api.whatsapp.com/send/?phone=7065384660&text&type=phone_number&app_absent=0" aria-label="Call us at +91 7065384660" className="flex items-center justify-center space-x-3 mb-2 hover:opacity-90 transition-opacity border-2 border-white rounded-full py-2 px-4 w-fit mx-auto">
             <span className="px-1 rounded-full">
 
               <Image src="/wa-icon.svg" alt="Whatsapp" className="w-8 h-8" width={32} height={32} />
             </span>
-            <a 
-              href="https://api.whatsapp.com/send/?phone=7065384660&text&type=phone_number&app_absent=0" 
+            <span 
               className="text-white text-lg font-semibold"
-              aria-label="Call us at +91 7065384660"
             >
               +91 7065384660
-            </a>
-            
-          </div>
-          <div className="flex items-center justify-center mb-2 hover:opacity-90 transition-opacity py-2 w-fit mx-auto space-x-1">
+            </span>
+          </a>
+
+          <a href="mailto:support@lhtalentagency.com" aria-label="Email us at support@lhtalentagency.com" className="flex items-center justify-center mb-2 hover:opacity-90 transition-opacity py-2 w-fit mx-auto space-x-1">
           <span className="rounded-full min-w-8">
               <Image src="/email.png" alt="Whatsapp" className="w-8 h-8" width={32} height={32} />
             </span>
-            <a 
-              href="mailto:support@lhtalentagency.com" 
+            <span 
               className="text-white font-semibold text-base"
             >
               support@lhtalentagency.com
-            </a>
-          </div>
+            </span>
+          </a>
           <div className=" mb-6 flex items-center justify-center text-white relative">
             <input 
               type="text" 

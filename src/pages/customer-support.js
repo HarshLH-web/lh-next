@@ -183,9 +183,9 @@ function Support() {
 
         <h3 className='text-2xl lg:text-4xl text-[#DE0402] font-bold text-center'>10AM - 6PM IST</h3>
 
-        <p className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border-[1px] border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center mt-6'><span className='font-bold'>WhatsApp:</span> <a href='https://api.whatsapp.com/send/?phone=7065384660&text&type=phone_number&app_absent=0' className='text-black'>+917065384660</a></p>
+        <a href='https://api.whatsapp.com/send/?phone=7065384660&text&type=phone_number&app_absent=0' className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border-[1px] border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center mt-6'><span className='font-bold'>WhatsApp:</span> +917065384660</a>
 
-        <p className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border-[1px] border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center'><span className='font-bold'>Email:</span> <a href='mailto:support@lhtalentagency.com' className='text-black'>support@lhtalentagency.com</a></p>
+        <a href='mailto:support@lhtalentagency.com' className='text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border-[1px] border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center'><span className='font-bold'>Email:</span> support@lhtalentagency.com</a>
       </div>
       <Footer />
     </>
