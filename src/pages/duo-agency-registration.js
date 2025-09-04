@@ -75,7 +75,7 @@ const DuoAgencyRegistration = () => {
                             </p>
                             <div className="flex gap-2 lg:gap-4">
                             <Link href="https://play.google.com/store/apps/details?id=com.melot.meta&referrer=inviteCode=737854066" className="text-sm lg:text-base 2xl:text-lg duoo-btn-gradient font-semibold text-white px-4 py-2 2xl:px-6 rounded-full border-2 border-white lg:mt-4 text-center">Download Duoo</Link>
-                            <Link href="https://agent.duoo.live/#/register?parentInviteCode=019428324" className="text-sm lg:text-base 2xl:text-lg duoo-btn-gradient font-semibold text-white px-4 py-2 2xl:px-6 rounded-full border-2 border-white lg:mt-4 text-center">Join Agency</Link>
+                            <Link href="https://agent.duoo.live/#/register?parentInviteCode=737854066" className="text-sm lg:text-base 2xl:text-lg duoo-btn-gradient font-semibold text-white px-4 py-2 2xl:px-6 rounded-full border-2 border-white lg:mt-4 text-center">Join Agency</Link>
                             </div>
 
                         </div>
@@ -103,7 +103,7 @@ const DuoAgencyRegistration = () => {
                             className="mt-4 lg:mt-6 mb-4"
                         />
                         <ul className="list-decimal pl-6 space-y-1 2xl:space-y-2">
-                            <li className="text-base lg:text-lg 2xl:text-2xl">Open the Duoo <Link href="https://agent.duoo.live/#/register?parentInviteCode=019428324" className="text-blue-500 underline">Agency Registration</Link> link.</li>
+                            <li className="text-base lg:text-lg 2xl:text-2xl">Open the Duoo <Link href="https://agent.duoo.live/#/register?parentInviteCode=737854066" className="text-blue-500 underline">Agency Registration</Link> link.</li>
                             <li className="text-base lg:text-lg 2xl:text-2xl">Enter your phone number and click on <span className="font-semibold">“Get Code”</span>.</li>
                             <li className="text-base lg:text-lg 2xl:text-2xl">Paste the verification code that you received on your number.</li>
                             <li className="text-base lg:text-lg 2xl:text-2xl">Enter your agent name, resident country, and click <span className="font-semibold">“Register”</span>.</li>
@@ -111,7 +111,7 @@ const DuoAgencyRegistration = () => {
                         <p className="text-base lg:text-lg 2xl:text-xl text-left font-semibold mt-4">Inform us on <a href="https://wa.me/917065384660" className="text-blue-500 underline">WhatsApp at +917065384660</a> after completing the process.</p>
                     </div>
                 </div>
-                    <Link href="https://agent.duoo.live/#/register?parentInviteCode=019428324" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-6 lg:mt-12 mx-auto">Register Your Duoo App Agency Now</Link>
+                    <Link href="https://agent.duoo.live/#/register?parentInviteCode=737854066" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-6 lg:mt-12 mx-auto">Register Your Duoo App Agency Now</Link>
             </section>
 
 
@@ -146,7 +146,7 @@ const DuoAgencyRegistration = () => {
                     </ul>
                 </div>
                 <div className="flex items-center justify-center">
-                <Link href="https://agent.duoo.live/#/register?parentInviteCode=019428324" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-6 lg:mt-10 mx-auto">Join Duoo App Agency</Link>
+                <Link href="https://agent.duoo.live/#/register?parentInviteCode=737854066" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-6 lg:mt-10 mx-auto">Join Duoo App Agency</Link>
                 </div>
             </section>
 
