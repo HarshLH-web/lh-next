@@ -32,6 +32,10 @@
         {
           "text": "Coin Seller Policy",
           "url": "/Policies/Poppo Coin Trading - Website .pdf"
+        },
+        {
+          "text": "Rocket Host and Star Host Policy",
+          "url": "/Policies/Poppo rocket host and star host policy - website.pdf"
         }
       ]
     },
@@ -76,7 +80,7 @@
           "All Hosts can Apply.",
           "Host from all Countries.",
           "Agencies from all Countries."
-      ]
+        ]
       ],
       "buttons": [
         {
@@ -192,6 +196,10 @@
         {
           "text": "Agency Policy",
           "url": "/Policies/Joyo_Live_Agent_Policy-Website.pdf"
+        },
+        {
+          "text": "Coin Seller Policy",
+          "url": "/Policies/Joyo_Live_Coin_seller-Website.pdf"
         }
       ]
     },
@@ -214,12 +222,16 @@
       ],
       "download": [
         {
-          "text": "Commission Structure",
-          "url": "/Policies/TAKA Commission Structure policy.pdf"
+          "text": "Host Policy",
+          "url": "/Policies/TAKA LIVE HOST POLICY.pdf"
         },
         {
           "text": "Agency Policy",
           "url": "/Policies/TAKA LIVE AGENCY POLICY.pdf"
+        },
+        {
+          "text": "Coin Seller Policy",
+          "url": "/Policies/TAKA LIVE COINSELLER POLICY.pdf"
         }
       ]
     },
@@ -243,11 +255,11 @@
       "download": [
         {
           "text": "Host Policy",
-          "url": "/Policies/Tango Agency Policy.pdf"
+          "url": "/Policies/Tango Host Policy.pdf"
         },
         {
           "text": "Agency Policy",
-          "url": "/Policies/Tango Host Policy.pdf"
+          "url": "/Policies/Tango Agency Policy.pdf"
         }
       ]
     }

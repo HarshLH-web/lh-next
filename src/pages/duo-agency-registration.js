@@ -52,10 +52,10 @@ const DuoAgencyRegistration = () => {
           <a href="/duoo/Policies/Duoo-Agency-Policy.pdf" download className="text-white hover:text-yellow-400 transition-all duration-300 text-center">
             Agent Policy
           </a>
-          {/* <hr className="border-white" />
+          <hr className="border-white" />
           <a href="/duoo/Policies/Duoo-Coin-Seller-Policy.pdf" download className="text-white hover:text-yellow-400 transition-all duration-300 text-center">
             Coin Seller Policy
-          </a> */}
+          </a>
         </div>
       )}
             </div>
