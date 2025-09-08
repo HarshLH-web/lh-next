@@ -138,7 +138,7 @@ function BlogDetailPage({ blog }) {
             <Head>
                 <title>{`${blog.metaTitle} | LH Talent Agency`}</title>
                 <meta name="description" content={blog.metaDescription} />
-                <link rel="canonical" href={`https://lhtalentagency.com/blogs/${blog.slug}`} />
+                <link rel="canonical" href={`${blog.canonicalUrl}`} />
                 <meta name="keywords" content={blog.metaKeywords?.join(", ") || ""} />
                 <meta property="og:url" content={`https://lhtalentagency.com/blogs/${blog.slug}`} />
                 <meta property="og:type" content="article" />
