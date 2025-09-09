@@ -25,7 +25,7 @@ function BecomeLiveStreamer() {
             id: 3,
             placeholder: "Enter your phone number",
             value: "phone",
-            type: "text",
+            type: "number",
             required: true,
         },
         {

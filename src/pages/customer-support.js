@@ -1,11 +1,27 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Head from 'next/head';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 function Support() {
   const [formValues, setFormValues] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [countryCodes, setCountryCodes] = useState([]);
+  const [open, setOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Close on outside click
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,11 +32,13 @@ function Support() {
       .then(response => response.json())
       .then(data => data.ip);
 
+    const fullNumber = formValues.countryCode + formValues.phone;
+
     // Prepare the form data
     const dataToSend = {
       name: formValues.name || '',
       email: formValues.email || '',
-      phone: formValues.phone || '',
+      phone: fullNumber || '',
       country: formValues.country || '',
       message: formValues.message || '',
       ip_address: ipAddress,
@@ -58,6 +76,24 @@ function Support() {
       [name]: value,
     }));
   };
+
+  const fetchCountryCode = async () => {
+    const response = await fetch('https://restcountries.com/v3.1/all?fields=name,idd');
+    const data = await response.json();
+    const formatted = data
+          .filter((c) => c.idd?.root && c.idd?.suffixes?.length)
+          .map((c) => ({
+            label: c.name.common,
+            value: `${c.idd.root}${c.idd.suffixes[0]}`,
+          }))
+          .sort((a, b) => a.label.localeCompare(b.label));
+    console.log(formatted);
+    setCountryCodes(formatted);
+  };
+
+  useEffect(() => {
+    fetchCountryCode();
+  }, []);
 
   return (
     <>
@@ -124,19 +160,79 @@ function Support() {
                   <label htmlFor="email" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4">Enter your email</label>
                 </div>
 
-                <div className="relative">
-                  <input 
-                    id="phone"
-                    type="text" 
-                    name="phone" 
-                    value={formValues.phone || ''} 
-                    onChange={handleInputChange}
-                    placeholder=" "
-                    required
-                    className="w-full py-2 px-4 rounded-full border border-gray-300 bg-white focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent peer" 
-                  />
-                  <label htmlFor="phone" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4">Enter your phone number</label>
+                <div className="flex items-center relative">
+                  {/* Custom Dropdown */}
+                  <div className="relative" ref={dropdownRef}>
+                    <div
+                      tabIndex={0}
+                      onClick={() => setOpen(!open)}
+                      onKeyDown={(e) => {
+                        if (/^[a-zA-Z]$/.test(e.key) && open) {
+                          const idx = countryCodes.findIndex((c) =>
+                            c.label.toLowerCase().startsWith(e.key.toLowerCase())
+                          );
+                          if (idx !== -1) {
+                            const el = document.getElementById(`country-option-${idx}`);
+                            el?.scrollIntoView({ block: "nearest" });
+                          }
+                        }
+                      }}
+                      className="w-20 py-2 px-3 border border-gray-300 bg-white rounded-l-full cursor-pointer flex items-center justify-between focus:ring-1 focus:ring-[#DE0402]"
+                    >
+                      <span>{formValues.countryCode || "+91"}</span>
+                      <svg
+                        className="w-4 h-4 text-gray-500 ml-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+
+                    {/* Dropdown List */}
+                    {open && (
+                      <div className="absolute left-0 mt-1 w-72 bg-white border border-gray-300 rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
+                        {countryCodes.map((country, index) => (
+                          <div
+                            id={`country-option-${index}`}
+                            key={index}
+                            onClick={() => {
+                              setFormValues({ ...formValues, countryCode: country.value });
+                              setOpen(false);
+                            }}
+                            className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                          >
+                            {country.label} {country.value}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Phone Input */}
+                  <div className="relative flex-1">
+                    <input
+                      id="phone"
+                      type="number"
+                      name="phone"
+                      value={formValues.phone || ""}
+                      onChange={handleInputChange}
+                      placeholder=" "
+                      required
+                      className="w-full py-2 px-2 rounded-r-full border border-gray-300 bg-white focus:outline-none focus:ring-1 focus:ring-[#DE0402] focus:border-transparent peer [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    />
+                    <label
+                      htmlFor="phone"
+                      className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white rounded-full px-2 peer-focus:px-2 peer-focus:text-[#DE0402] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                    >
+                      Enter your number
+                    </label>
+                  </div>
                 </div>
+
+
+
 
                 <div className="relative">
                   <input 

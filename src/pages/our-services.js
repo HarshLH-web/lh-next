@@ -5,9 +5,49 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BlogForm from "@/components/BlogForm";
 
 // Dynamically import the ScrollingText component
 const ScrollingText = dynamic(() => import("../components/TextOpacity"));
+
+const fields = [
+  {
+    id: 1,
+    placeholder: "Enter your name",
+    value: "name",
+    type: "text",
+    required: true,
+  },
+  {
+    id: 2,
+    placeholder: "Enter your phone number",
+    value: "phone",
+    type: "text",
+    required: true,
+  },
+  {
+    id: 3,
+    placeholder: "Enter your email",
+    value: "email",
+    type: "text",
+    required: true,
+  },
+  {
+    id: 4,
+    placeholder: "Enter your website link",
+    value: "website_link",
+    type: "text",
+    required: true,
+  },
+  {
+    id: 5,
+    placeholder: "Enter your message",
+    value: "message",
+    type: "textarea",
+    required: true,
+  },
+];
+
 
 function Services() {
   const [activeTab, setActiveTab] = useState(1);
@@ -234,8 +274,11 @@ function Services() {
       {/* Section 5 */}
       <div className="w-[90%] mx-auto max-w-screen-lg lg:w-[80%] px-4 py-12 lg:px-16 lg:py-12 lg:mt-12 mb-20 lg:mb-40 flex flex-col-reverse lg:flex-row items-center gap-6 lg:gap-16">
         {/* Form Container */}
-        <div className="border border-[#DFDFDF] rounded-3xl p-6 w-full lg:w-1/2 tab-gradient">
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        {/* <div className="border border-[#DFDFDF] rounded-3xl p-6 w-full lg:w-1/2 tab-gradient"> */}
+          <BlogForm fields={fields} className="py-8 px-4 lg:px-6" />
+
+
+          {/* <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="relative">
               <input 
                 id="name"
@@ -320,8 +363,8 @@ function Services() {
                 />
               </svg>
             </button>
-          </form>
-        </div>
+          </form> */}
+        {/* </div> */}
 
         {/* Text Section */}
         <div className="text-center lg:text-left lg:w-1/2">
