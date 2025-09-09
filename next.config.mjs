@@ -16,6 +16,16 @@ const nextConfig = {
         destination: "/blogs/become-poppo-live-host-and-earn-money",
         permanent: true,
       },
+      {
+        source: "/blogs/how-to-create-poppo-live-account",
+        destination: "/blogs/create-poppo-live-account",
+        permanent: true,
+      },
+      {
+        source: "/blogs/joyo-live-agency",
+        destination: "/blogs/joyo-live-agent-registration",
+        permanent: true,
+      },
     ];
   },
 };
