@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }) {
       </Head>
 
       {/* Google Tag Manager */}
-      <Script
+      {/* <Script
         id="google-tag-manager"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -58,10 +58,10 @@ export default function App({ Component, pageProps }) {
             })(window,document,'script','dataLayer','GTM-TJ2TZ9C5');
           `,
         }}
-      />
+      /> */}
 
       {/* Google Analytics */}
-      <Script
+      {/* <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-YTEVWCKCZE"
         strategy="afterInteractive"
@@ -77,7 +77,7 @@ export default function App({ Component, pageProps }) {
             gtag('config', 'G-YTEVWCKCZE');
           `,
         }}
-      />
+      /> */}
 
       <ScrollUp />
       <Component {...pageProps} />

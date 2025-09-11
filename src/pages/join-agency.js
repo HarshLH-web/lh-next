@@ -1,6 +1,6 @@
 import ImageModal from '@/components/ImageModal'
 import Image from 'next/image'
-import React, { useState, useEffect } from 'react' // Import useState and useEffect
+import React, { useState } from 'react' // Import useState
 
 function JoinChamet() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -18,36 +18,6 @@ function JoinChamet() {
         setModalImageUrl('');
         setModalImageAlt('');
     };
-
-    // Google Ads conversion tracking functions using dataLayer (GTM compatible)
-    const trackPageLoadConversion = () => {
-        if (typeof window !== 'undefined' && window.dataLayer) {
-            window.dataLayer.push({
-                'event': 'conversion',
-                'conversion_type': 'page_load',
-                'page_name': 'join-agency',
-                'conversion_value': 1.0,
-                'currency': 'USD'
-            });
-        }
-    };
-
-    const trackClickConversion = (conversionType) => {
-        if (typeof window !== 'undefined' && window.dataLayer) {
-            window.dataLayer.push({
-                'event': 'conversion',
-                'conversion_type': conversionType,
-                'page_name': 'join-agency',
-                'conversion_value': 1.0,
-                'currency': 'USD'
-            });
-        }
-    };
-
-    // Track page load conversion on component mount
-    useEffect(() => {
-        trackPageLoadConversion();
-    }, []);
 
     return (
         <>
@@ -78,20 +48,8 @@ function JoinChamet() {
                                 <li>Click on &ldquo;Register&rdquo; to complete your Agency program signup.</li>
                             </ul>
                             <div className="flex gap-4">
-                                <a 
-                                    href="https://www.dropbox.com/scl/fi/y3obi9hkwsn3gs9oc238s/Chamet-Live-Video-Chat_3.8.9_APKPure.apk?rlkey=4bcx0adrgpfomte1kyuzwe8st&st=2mhiipr0&raw=1" 
-                                    className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300"
-                                    onClick={() => trackClickConversion('download_click')}
-                                >
-                                    Download Now
-                                </a>
-                                <a 
-                                    href="https://h5.ichamet.com/webH5/inviteAgent/bind.html?companyId=3338" 
-                                    className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300"
-                                    onClick={() => trackClickConversion('register_click')}
-                                >
-                                    Register Now
-                                </a>
+                                <a href="https://www.dropbox.com/scl/fi/y3obi9hkwsn3gs9oc238s/Chamet-Live-Video-Chat_3.8.9_APKPure.apk?rlkey=4bcx0adrgpfomte1kyuzwe8st&st=2mhiipr0&raw=1" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Download Now</a>
+                                <a href="https://h5.ichamet.com/webH5/inviteAgent/bind.html?companyId=3338" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Register Now</a>
                             </div>
                         </div>
                     </div>
@@ -220,20 +178,8 @@ function JoinChamet() {
                         </div>
                     </div>
                     <div className="flex gap-4 justify-center mt-4 lg:mt-8">
-                        <a 
-                            href="https://www.dropbox.com/scl/fi/y3obi9hkwsn3gs9oc238s/Chamet-Live-Video-Chat_3.8.9_APKPure.apk?rlkey=4bcx0adrgpfomte1kyuzwe8st&st=2mhiipr0&raw=1" 
-                            className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300"
-                            onClick={() => trackClickConversion('download_click')}
-                        >
-                            Download Now
-                        </a>
-                        <a 
-                            href="https://h5.ichamet.com/webH5/inviteAgent/bind.html?companyId=3338" 
-                            className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300"
-                            onClick={() => trackClickConversion('register_click')}
-                        >
-                            Register Now
-                        </a>
+                        <a href="https://www.dropbox.com/scl/fi/y3obi9hkwsn3gs9oc238s/Chamet-Live-Video-Chat_3.8.9_APKPure.apk?rlkey=4bcx0adrgpfomte1kyuzwe8st&st=2mhiipr0&raw=1" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Download Now</a>
+                        <a href="https://h5.ichamet.com/webH5/inviteAgent/bind.html?companyId=3338" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Register Now</a>
                     </div>
                 </div>
             </section>
