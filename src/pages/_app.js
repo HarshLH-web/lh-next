@@ -61,7 +61,7 @@ export default function App({ Component, pageProps }) {
       />
 
       {/* Google Analytics */}
-      <Script
+      {/* <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-YTEVWCKCZE"
         strategy="afterInteractive"
@@ -77,7 +77,7 @@ export default function App({ Component, pageProps }) {
             gtag('config', 'G-YTEVWCKCZE');
           `,
         }}
-      />
+      /> */}
 
       <ScrollUp />
       <Component {...pageProps} />
