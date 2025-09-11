@@ -15,7 +15,7 @@ export default function Document() {
         />
 
         {/* Google Tag Manager */}
-        <Script
+        {/* <Script
         id="google-tag-manager"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -27,10 +27,10 @@ export default function Document() {
             })(window,document,'script','dataLayer','GTM-TJ2TZ9C5');
           `,
         }}
-      />
+      /> */}
 
       {/* Google Analytics */}
-      <Script
+      {/* <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-YTEVWCKCZE"
         strategy="afterInteractive"
@@ -46,7 +46,7 @@ export default function Document() {
             gtag('config', 'G-YTEVWCKCZE');
           `,
         }}
-      />
+      /> */}
 
       {/* WhatsApp Chatbot */}
       <Script
