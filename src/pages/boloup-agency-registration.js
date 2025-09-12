@@ -64,7 +64,7 @@ export default function BoloupAgencyRegistration() {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10 mx-auto w-[90%] max-w-[70rem]">
             <div className="w-full lg:w-[50%]">
                 <h2 className="text-2xl lg:text-[44px] font-bold text-left mb-3 pl-4 lg:pl-0">Why Join BoloUp</h2>
-                <Image src="/boloup/line.svg" alt="Why Join BoloUp" width={500} height={500} />
+                <Image src="/boloup/header-line.svg" alt="Why Join BoloUp" width={500} height={500} />
                 <ul className="list-decimal pl-6 pb-10 lg:pb-16 xl:pb-28 mt-5 space-y-2">
                     <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}}><span className="font-semibold">Easy Registration:</span> Signing up as an agent or host will take only a few minutes.</li>
                     <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}}><span className="font-semibold">Fast Host Invitations:</span> Invite others to join your agency via link, ID, or phone number.</li>
