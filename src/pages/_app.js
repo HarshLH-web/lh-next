@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
 
   // Body class for specific route
   useEffect(() => {
-    if (router.pathname === "/duo-agency-registration") {
+    if (router.pathname === "/duo-agency-registration" || router.pathname === "/boloup-agency-registration") {
       document.body.classList.add("no-header");
     } else {
       document.body.classList.remove("no-header");
