@@ -40,7 +40,7 @@ export default function BoloupAgencyRegistration() {
                 <Image src="/boloup/agency-registration.png" alt="Agency Registration" className="w-full h-full max-w-[24rem] 2xl:max-w-96 object-cover mx-auto" width={500} height={500} />
             </div>
             <div className="w-full lg:w-[50%] 2xl:w-[60%]">
-                <ul className="list-decimal pl-6">
+                <ul className="list-decimal pl-6 space-y-2">
                     <li className="text-base lg:text-[18px] ">Open the Agency Registration Link and download the BoloUp App.</li>
                     <li className="text-base lg:text-[18px]">Create an account using any preferred option.</li>
                     <li className="text-base lg:text-[18px]">Create your Agency name & select your gender.</li>
