@@ -92,7 +92,7 @@ export default function BoloupAgencyRegistration() {
             </div> 
         </main>
 
-
+        {/* Agency Registration */}
         <section className="relative bg-white pb-20 lg:pb-28">
             <div className="flex flex-col items-center justify-center pt-20 lg:pt-24 pb-0">
                 <h2 className="text-[28px] leading-[1.35] lg:text-[44px] font-bold text-center px-6 lg:px-0">Bolo Up Agency Registration</h2>
@@ -115,34 +115,62 @@ export default function BoloupAgencyRegistration() {
                 <a href="https://boloup.onelink.me/PDV4/lswd1lbe" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-6 lg:mt-12 lg:text-[18px] mx-4 text-center">Register Your BoloUp App Agency Now</a>
             </div>
 
-            <div className="absolute bottom-[-1px] left-[-1px] right-[-1px] z-1">
-                <Image src="/boloup/color-curve.svg" alt="Agency Registration" className="w-full" width={500} height={500} />
+            <div className="absolute bottom-[-2px] left-[-2px] right-[-1px]">
+                <Image src="/boloup/black-curve.svg" className="w-full" alt="Host Registration" width={500} height={500} />
             </div>
         </section>
 
+        {/* How to invite Sub-agents under your agency */}
+        <section className="relative bg-[#101010] text-white pt-12 lg:pt-16 pb-24 lg:pb-40">
+            <div className="flex flex-col items-center justify-center w-[90%] max-w-5xl mx-auto">
+                <h2 className="text-[28px] leading-[1.35] lg:text-[44px] font-bold text-center max-w-xl mx-auto">How to Invite Sub-agents under your agency</h2>
 
-        <div className="flex flex-col items-center justify-center text-white pt-12 lg:pt-20 lg:pb-10 relative overflow-hidden" style={{background: "linear-gradient(to bottom, #E41414 10%, #F20831 40%, #AB33C9 100%)"}}>
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-[6rem] mx-auto w-[90%] max-w-[75rem] pb-10 lg:pt-10 lg:pb-10 xl:pt-0 xl:pb-10 2xl:pb-8">
-                <div className="w-full lg:w-[50%]">
-                    <h2 className="text-[28px] leading-[1.35] lg:text-[44px] font-bold text-left mb-3 pl-4 lg:pl-0">Why Join BoloUp</h2>
-                    <Image src="/boloup/header-line.svg" alt="Why Join BoloUp" className="w-[90%] pl-4 lg:w-full lg:pl-0" width={500} height={500} />
-                    <ul className="list-decimal pl-6 pb-10 sm:pb-24 lg:pb-16 xl:pb-28 mt-5 space-y-2 lg:pr-6 xl:pr-0">
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}}><span className="font-semibold">Easy Registration:</span> Signing up as an agent or host will take only a few minutes.</li>
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}}><span className="font-semibold">Fast Host Invitations:</span> Invite others to join your agency via link, ID, or phone number.</li>
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}}><span className="font-semibold">Opportunities to Grow:</span> Bolo Up offers various ways for agents and hosts to build teams and engage with the app&apos;s features.</li>
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}}><span className="font-semibold">In-built Features:</span> Explore platform tools, activities, and engagement options.</li>
-                    </ul>
+                <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10 max-w-5xl mx-auto mt-8 lg:mt-10">
+                    <div className="w-full lg:w-[40%]">
+                        <Image src="/boloup/sub-agent-1.png" alt="Host Invite" className="w-full max-w-96" width={500} height={500} />
+                    </div>
+                    <div className="w-full lg:w-[60%]">  
+                        <h3 className="text-xl lg:text-[26px] font-semibold">Method - 1:</h3>
+                        <ul className="list-decimal pl-6 space-y-2 mt-2 lg:mt-4">
+                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Open agency dashboard.</li>
+                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Select the option of <span className="font-semibold">“Sub-agency Invite (Link)”.</span></li>
+                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Copy the invitation link and share it with your invitee.</li>
+                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >The sub-agent will click on the link and download the app.</li>
+                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >After signing in, a pop-up will show on the screen with a request to join the agency. Accept the invitation to join.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="hidden lg:block w-full lg:w-[50%]">
-                    <Image src="/boloup/join-boloup.png" alt="Why Join BoloUp Agency?" className="w-full h-full max-w-[32rem] object-cover mx-auto rotate-[-4deg] xl:rotate-[-1deg]  lg:scale-150 xl:scale-125" width={500} height={500} />
+                <hr style={{ height: "1px", border: "none", backgroundColor: "#ffffff24", width: "100%" }} className="mt-10 mb-6 lg:mb-2" />
+
+                <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-6 lg:gap-10 max-w-5xl mx-auto mt-6 lg:mt-14">
+                    <div className="w-full lg:w-[40%]">
+                        <Image src="/boloup/sub-agent-2.png" alt="Host Invite" className="w-full max-w-96" width={500} height={500} />
+                    </div>
+                    <div className="w-full lg:w-[60%]">  
+                        <h3 className="text-xl lg:text-[26px] font-semibold">Method - 2:</h3>
+                        <ul className="list-decimal pl-6 space-y-2 mt-2 lg:mt-4">
+                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Open agency dashboard.</li>
+                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Select the option of <span className="font-semibold">“Sub-agency Invite (ID)”.</span></li>
+                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Enter the ID number, the invitee verification code, and send the invite.</li>
+                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >The sub-agent will download the app and will share the ID (available in the profile section) and verification code (in the profile section, under create agency).</li>
+                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >The sub-agent will receive a request from the agency. They need to accept the invitation to join.</li>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div className="absolute bottom-[-1px] left-0 w-full">
-                <Image src="/boloup/bottom-curve.svg" className="w-full" alt="Why Join BoloUp" width={500} height={500} />
+
+            <div className="flex items-center justify-center">
+            <a href="https://boloup.onelink.me/PDV4/fkkgd929" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-8 lg:mt-12 lg:text-[18px]">Download BoloUp App</a>
             </div>
-        </div>
 
+            <div className="absolute bottom-[-2px] left-[-1px] right-[-1px]">
+                <Image src="/boloup/white-curve.svg" className="w-full" alt="Host Registration" width={500} height={500} />
+            </div>
+        </section>
+       
 
+        {/* Host Registration */}
         <section className="relative">
             <div className="flex flex-col items-center justify-center pt-12 pb-20 lg:pb-24">
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-10 w-[90%] max-w-[60rem] mx-auto">
@@ -173,72 +201,8 @@ export default function BoloupAgencyRegistration() {
             </div>
         </section>
 
-
-        <section className="relative bg-[#101010] text-white pt-12 lg:pt-20 pb-24 lg:pb-52">
-            <h2 className="text-[26px] leading-[1.35] lg:text-[44px] font-bold text-center max-w-xl mx-auto px-4">Bolo Up Agency Commission Structure</h2>
-            <div className="flex flex-col items-center justify-center gap-0 mt-8 w-[90%] max-w-5xl mx-auto">
-
-                {/* Box 1 */}
-                <div className="flex flex-col items-start justify-start gap-2 w-full border border-[#676767] bg-[#171717] rounded-t-3xl pt-6 lg:pt-7 pb-10 lg:pb-16 px-4 lg:px-10 border-b-0">
-                    <h3 className="text-xl lg:text-[26px] font-semibold">1. Commission Earnings</h3>
-                    <p className="text-lg lg:text-[20px] font-semibold">From Hired Hosts</p>
-                    <ul className="list-disc pl-6 space-y-2">
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Earn commission up to 20% on the gifts your hosts receive.</li>
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Get an extra 15% on gifts shared in party rooms.</li>
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Formula:
-                            <ul className="list-disc pl-6">
-                                <li style={{color: "#ffffff"}} >Basic Commission = Host Basic Income × Commission Rate</li>
-                                <li style={{color: "#ffffff"}} >Host Basic Income = Host Gift Income + Host Call Income</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                {/* Box 2 */}
-                <div className="mt-[-20px] flex flex-col items-start justify-start gap-2 w-full border border-[#676767] bg-[#171717] rounded-t-3xl pt-6 lg:pt-7 pb-10 lg:pb-16 px-4 lg:px-10">
-                    <h3 className="text-xl lg:text-[26px] font-semibold">2. Extra Rewards for Agents</h3>
-                    <ul className="list-disc pl-6 space-y-2">
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} ><span className="font-semibold">From Hired Hosts: </span>Earn up to $270 when upgrading, plus weekly leaderboard rewards up to $1,000 (with more agencies, earn up to $9,000 weekly).</li>
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} ><span className="font-semibold">Invite New Users: </span>Earn points and a weekly bonus up to $5,500 when new users recharge and play.</li>
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} ><span className="font-semibold">Room Profit Sharing: </span>Get up to 0.75% of total bets in your room (no limit). Top 3 ranks get extra benefits for a week.</li>
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} ><span className="font-semibold">Game Loss Rebate: </span>If you lose coins, you can get back up to $3,000 weekly.</li>
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} ><span className="font-semibold">Weekly Star Activity: </span>Light up the &quot;Weekly Star Gift&quot; to earn up to 4,900,000 diamonds (~$490) per week.</li>
-                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} ><span className="font-semibold">Host Invite Reward: </span>Invite a new host and spin to win up to $16.</li>
-                    </ul>
-                </div>
-
-                {/* Box 3 */}
-                <div className="mt-[-20px] flex flex-col items-start justify-start gap-2 w-full border border-[#676767] bg-[#171717] rounded-3xl pt-6 lg:pt-7 pb-10 lg:pb-16 px-4 lg:px-10">
-                    <h3 className="text-xl lg:text-[26px] font-semibold" style={{color: "#ffffff"}} >3. Coin Seller Opportunity</h3>
-                    <ul className="list-disc pl-6 space-y-2">
-                        <li className="text-base lg:text-[18px] font-semibold" style={{color: "#ffffff"}} >Better Exchange Rate:
-                            <ul className="list-disc pl-6 font-normal">
-                                <li style={{color: "#ffffff"}} >Highest Coin Seller Price: 1 USD = 10,000 coins</li>
-                                <li style={{color: "#ffffff"}} >In-App Purchase Price: 1 USD = 7,300 coins</li>
-                            </ul>
-                        </li>
-                        <li className="text-base lg:text-[18px] font-semibold" style={{color: "#ffffff"}} >How It Works:
-                            <ul className="list-disc pl-6 font-normal">
-                                <li style={{color: "#ffffff"}} >Trade directly with users.</li>
-                                <li style={{color: "#ffffff"}} >Users send you diamonds as gifts.</li>
-                                <li style={{color: "#ffffff"}} >Convert diamonds into coins in your trade account (10,000 diamonds = 10,000 coins).</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className="flex items-center justify-center">
-                <a href="https://boloup.onelink.me/PDV4/lswd1lbe" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-10 lg:mt-12 lg:text-[18px] mx-4 text-center">Join BoloUp App Agency Now</a>
-                </div>
-
-            <div className="absolute bottom-[-2px] left-[-1px] right-[-1px]">
-                <Image src="/boloup/white-curve.svg" className="w-full" alt="Comission Structure" width={500} height={500} />
-            </div>
-        </section>
-
-
-        <section className="relative bg-white text-black pt-12 lg:pt-16 pb-24 lg:pb-40">
+        {/* How to invite Hosts under your agency */}
+        <section className="relative bg-[#101010] text-white pt-12 lg:pt-16 pb-24 lg:pb-40">
             <div className="flex flex-col items-center justify-center w-[90%] max-w-5xl mx-auto">
                 <h2 className="text-[28px] leading-[1.25] lg:text-[44px] font-bold text-center max-w-xl mx-auto">How to invite Hosts under your agency</h2>
 
@@ -249,16 +213,16 @@ export default function BoloupAgencyRegistration() {
                     <div className="w-full lg:w-[60%]">  
                         <h3 className="text-xl lg:text-[26px] font-semibold">Method - 1:</h3>
                         <ul className="list-decimal pl-6 space-y-2 mt-2 lg:mt-4">
-                            <li className="text-base lg:text-[18px]">Open agency dashboard.</li>
-                            <li className="text-base lg:text-[18px]">Select the option of <span className="font-semibold">“Host Invite (ID / Phone No.)”.</span></li>
-                            <li className="text-base lg:text-[18px]">Enter the Host ID or phone number.</li>
-                            <li className="text-base lg:text-[18px]">Confirm the host profile. And click “Invite”.</li>
-                            <li className="text-base lg:text-[18px]">The host will receive a request from the agency. They need to accept the invitation to join the agency.</li>
+                            <li className="text-base lg:text-[18px]" style={{color:"white"}}>Open agency dashboard.</li>
+                            <li className="text-base lg:text-[18px]" style={{color:"white"}}>Select the option of <span className="font-semibold">“Host Invite (ID / Phone No.)”.</span></li>
+                            <li className="text-base lg:text-[18px]" style={{color:"white"}}>Enter the Host ID or phone number.</li>
+                            <li className="text-base lg:text-[18px]" style={{color:"white"}}>Confirm the host profile. And click “Invite”.</li>
+                            <li className="text-base lg:text-[18px]" style={{color:"white"}}>The host will receive a request from the agency. They need to accept the invitation to join the agency.</li>
                         </ul>
                     </div>
                 </div>
                 
-                <hr style={{ height: "1px", border: "none", backgroundColor: "#00000024", width: "100%" }} className="mt-6 mb-4" />
+                <hr style={{ height: "1px", border: "none", backgroundColor: "#ffffff24", width: "100%" }} className="mt-10 mb-6 lg:mb-2" />
 
 
                 <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-6 lg:gap-10 max-w-5xl mx-auto mt-6 lg:mt-14">
@@ -268,60 +232,11 @@ export default function BoloupAgencyRegistration() {
                     <div className="w-full lg:w-[60%]">  
                         <h3 className="text-xl lg:text-[26px] font-semibold">Method - 2:</h3>
                         <ul className="list-decimal pl-6 space-y-2 mt-2 lg:mt-4">
-                            <li className="text-base lg:text-[18px]">Open agency dashboard.</li>
-                            <li className="text-base lg:text-[18px]">Click on the <span className="font-semibold">“Host Invite (Link)”.</span></li>
-                            <li className="text-base lg:text-[18px]">Copy the invite link and share it with your host.</li>
-                            <li className="text-base lg:text-[18px]">The host must download BoloUp and create an account to become your host.</li>
-                            <li className="text-base lg:text-[18px]">After signing, the host will receive a request from the agency. They need to accept the invitation to join the agency.</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div className="flex items-center justify-center">
-            <a href="https://boloup.onelink.me/PDV4/fkkgd929" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-8 lg:mt-12 lg:text-[18px]">Download BoloUp App</a>
-            </div>
-
-            <div className="absolute bottom-[-2px] left-[-1px] right-[-1px]">
-            <Image src="/boloup/black-curve.svg" className="w-full" alt="Host Registration" width={500} height={500} />
-            </div>
-        </section>
-
-
-        <section className="relative bg-[#101010] text-white pt-12 lg:pt-16 pb-24 lg:pb-40">
-            <div className="flex flex-col items-center justify-center w-[90%] max-w-5xl mx-auto">
-                <h2 className="text-[28px] leading-[1.35] lg:text-[44px] font-bold text-center max-w-xl mx-auto">How to Invite Sub-agents under your agency</h2>
-
-                <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10 max-w-5xl mx-auto mt-8 lg:mt-10">
-                    <div className="w-full lg:w-[40%]">
-                        <Image src="/boloup/sub-agent-1.png" alt="Host Invite" className="w-full max-w-96" width={500} height={500} />
-                    </div>
-                    <div className="w-full lg:w-[60%]">  
-                        <h3 className="text-xl lg:text-[26px] font-semibold">Method - 1:</h3>
-                        <ul className="list-decimal pl-6 space-y-2 mt-2 lg:mt-4">
-                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Open agency dashboard.</li>
-                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Select the option of <span className="font-semibold">“Sub-agency Invite (Link)”.</span></li>
-                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Copy the invitation link and share it with your invitee.</li>
-                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >The sub-agent will click on the link and download the app.</li>
-                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >After signing in, a pop-up will show on the screen with a request to join the agency. Accept the invitation to join.</li>
-                        </ul>
-                    </div>
-                </div>
-                <hr style={{ height: "1px", border: "none", backgroundColor: "#ffffff24", width: "100%" }} className="mt-6 mb-4" />
-
-                <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-6 lg:gap-10 max-w-5xl mx-auto mt-6 lg:mt-14">
-                    <div className="w-full lg:w-[40%]">
-                        <Image src="/boloup/sub-agent-2.png" alt="Host Invite" className="w-full max-w-96" width={500} height={500} />
-                    </div>
-                    <div className="w-full lg:w-[60%]">  
-                        <h3 className="text-xl lg:text-[26px] font-semibold">Method - 2:</h3>
-                        <ul className="list-decimal pl-6 space-y-2 mt-2 lg:mt-4">
-                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Open agency dashboard.</li>
-                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Select the option of <span className="font-semibold">“Sub-agency Invite (ID)”.</span></li>
-                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >Enter the ID number, the invitee verification code, and send the invite.</li>
-                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >The sub-agent will download the app and will share the ID (available in the profile section) and verification code (in the profile section, under create agency).</li>
-                            <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}} >The sub-agent will receive a request from the agency. They need to accept the invitation to join.</li>
+                            <li className="text-base lg:text-[18px]" style={{color:"white"}}>Open agency dashboard.</li>
+                            <li className="text-base lg:text-[18px]" style={{color:"white"}}>Click on the <span className="font-semibold">“Host Invite (Link)”.</span></li>
+                            <li className="text-base lg:text-[18px]" style={{color:"white"}}>Copy the invite link and share it with your host.</li>
+                            <li className="text-base lg:text-[18px]" style={{color:"white"}}>The host must download BoloUp and create an account to become your host.</li>
+                            <li className="text-base lg:text-[18px]" style={{color:"white"}}>After signing, the host will receive a request from the agency. They need to accept the invitation to join the agency.</li>
                             
                         </ul>
                     </div>
@@ -338,23 +253,112 @@ export default function BoloupAgencyRegistration() {
         </section>
 
 
+        {/* Agency Commission Structure */}
+        <section className="relative bg-white text-black pt-12 lg:pt-16 pb-24 lg:pb-36">
+            <h2 className="text-[26px] leading-[1.35] lg:text-[44px] font-bold text-center max-w-xl mx-auto px-4">Bolo Up Agency Commission Structure</h2>
+            <div className="flex flex-col items-center justify-center gap-0 mt-8 w-[90%] max-w-5xl mx-auto">
 
-    <section className="relative bg-white text-black pt-14 lg:pt-10 pb-20 lg:pb-28">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10 w-[90%] max-w-5xl mx-auto">
-            <div className="w-full lg:w-[40%]">
-                <Image src="/boloup/rules.svg" className="w-72 mx-auto lg:w-full" alt="Rules" width={500} height={500} />
-            </div>    
-            <div className="w-full lg:w-[60%]">
-                <h2 className="text-[28px] leading-[1.35] lg:text-[44px] font-bold text-left pl-2 lg:pl-0">Platform Rules</h2>
-                <ul className="list-decimal pl-6 space-y-2 mt-4">
-                    <li className="text-base lg:text-[18px]">All hosts must be at least 18 years old or above.</li>
-                    <li className="text-base lg:text-[18px]">Content must not include nudity, hate speech, illegal activities, or false/misleading information.</li>
-                    <li className="text-base lg:text-[18px]">Agencies are responsible for monitoring their hosts and ensuring they follow the platform rules.</li>
-                    <li className="text-base lg:text-[18px]">Recruiting hosts from other agencies or promoting any third-party platforms is strictly prohibited.</li>
-                </ul>
+                {/* Box 1 */}
+                <div className="flex flex-col items-start justify-start gap-2 w-full border border-[#c4c4c4] bg-[#ebebeb] rounded-t-3xl pt-6 lg:pt-7 pb-10 lg:pb-16 px-4 lg:px-10 border-b-0">
+                    <h3 className="text-xl lg:text-[26px] font-semibold">1. Commission Earnings</h3>
+                    <p className="text-lg lg:text-[20px] font-semibold">From Hired Hosts</p>
+                    <ul className="list-disc pl-6 space-y-2">
+                        <li className="text-base lg:text-[18px]" >Earn commission up to 20% on the gifts your hosts receive.</li>
+                        <li className="text-base lg:text-[18px]" >Get an extra 15% on gifts shared in party rooms.</li>
+                        <li className="text-base lg:text-[18px]" >Formula:
+                            <ul className="list-disc pl-6">
+                                <li>Basic Commission = Host Basic Income × Commission Rate</li>
+                                <li>Host Basic Income = Host Gift Income + Host Call Income</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Box 2 */}
+                <div className="mt-[-20px] flex flex-col items-start justify-start gap-2 w-full border border-[#c4c4c4] bg-[#ebebeb] rounded-t-3xl pt-6 lg:pt-7 pb-10 lg:pb-16 px-4 lg:px-10">
+                    <h3 className="text-xl lg:text-[26px] font-semibold">2. Extra Rewards for Agents</h3>
+                    <ul className="list-disc pl-6 space-y-2">
+                        <li className="text-base lg:text-[18px]"><span className="font-semibold">From Hired Hosts: </span>Earn up to $270 when upgrading, plus weekly leaderboard rewards up to $1,000 (with more agencies, earn up to $9,000 weekly).</li>
+                        <li className="text-base lg:text-[18px]"><span className="font-semibold">Invite New Users: </span>Earn points and a weekly bonus up to $5,500 when new users recharge and play.</li>
+                        <li className="text-base lg:text-[18px]"><span className="font-semibold">Room Profit Sharing: </span>Get up to 0.75% of total bets in your room (no limit). Top 3 ranks get extra benefits for a week.</li>
+                        <li className="text-base lg:text-[18px]"><span className="font-semibold">Game Loss Rebate: </span>If you lose coins, you can get back up to $3,000 weekly.</li>
+                        <li className="text-base lg:text-[18px]"><span className="font-semibold">Weekly Star Activity: </span>Light up the &quot;Weekly Star Gift&quot; to earn up to 4,900,000 diamonds (~$490) per week.</li>
+                        <li className="text-base lg:text-[18px]"><span className="font-semibold">Host Invite Reward: </span>Invite a new host and spin to win up to $16.</li>
+                    </ul>
+                </div>
+
+                {/* Box 3 */}
+                <div className="mt-[-20px] flex flex-col items-start justify-start gap-2 w-full border border-[#c4c4c4] bg-[#ebebeb] rounded-3xl pt-6 lg:pt-7 pb-10 lg:pb-16 px-4 lg:px-10">
+                    <h3 className="text-xl lg:text-[26px] font-semibold">3. Coin Seller Opportunity</h3>
+                    <ul className="list-disc pl-6 space-y-2">
+                        <li className="text-base lg:text-[18px] font-semibold">Better Exchange Rate:
+                            <ul className="list-disc pl-6 font-normal">
+                                <li>Highest Coin Seller Price: 1 USD = 10,000 coins</li>
+                                <li>In-App Purchase Price: 1 USD = 7,300 coins</li>
+                            </ul>
+                        </li>
+                        <li className="text-base lg:text-[18px] font-semibold">How It Works:
+                            <ul className="list-disc pl-6 font-normal">
+                                <li>Trade directly with users.</li>
+                                <li>Users send you diamonds as gifts.</li>
+                                <li>Convert diamonds into coins in your trade account (10,000 diamonds = 10,000 coins).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>    
-    </section>
+
+            <div className="flex items-center justify-center">
+                <a href="https://boloup.onelink.me/PDV4/lswd1lbe" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-10 lg:mt-12 lg:text-[18px] mx-4 text-center">Join BoloUp App Agency Now</a>
+                </div>
+
+            <div className="absolute bottom-[-2px] left-[-1px] right-[-1px]">
+                <Image src="/boloup/color-curve.svg" className="w-full" alt="Comission Structure" width={500} height={500} />
+            </div>
+        </section>
+
+
+        {/* Why Join BoloUp */}
+        <div className="flex flex-col items-center justify-center text-white pt-12 lg:pt-20 lg:pb-10 relative overflow-hidden" style={{background: "linear-gradient(to bottom, #E41414 10%, #F20831 40%, #AB33C9 100%)"}}>
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-[6rem] mx-auto w-[90%] max-w-[75rem] pb-10 lg:pt-10 lg:pb-10 xl:pt-0 xl:pb-10 2xl:pb-8">
+                <div className="w-full lg:w-[50%]">
+                    <h2 className="text-[28px] leading-[1.35] lg:text-[44px] font-bold text-left mb-3 pl-4 lg:pl-0">Why Join BoloUp</h2>
+                    <Image src="/boloup/header-line.svg" alt="Why Join BoloUp" className="w-[90%] pl-4 lg:w-full lg:pl-0" width={500} height={500} />
+                    <ul className="list-decimal pl-6 pb-10 sm:pb-24 lg:pb-16 xl:pb-28 mt-5 space-y-2 lg:pr-6 xl:pr-0">
+                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}}><span className="font-semibold">Easy Registration:</span> Signing up as an agent or host will take only a few minutes.</li>
+                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}}><span className="font-semibold">Fast Host Invitations:</span> Invite others to join your agency via link, ID, or phone number.</li>
+                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}}><span className="font-semibold">Opportunities to Grow:</span> Bolo Up offers various ways for agents and hosts to build teams and engage with the app&apos;s features.</li>
+                        <li className="text-base lg:text-[18px]" style={{color: "#ffffff"}}><span className="font-semibold">In-built Features:</span> Explore platform tools, activities, and engagement options.</li>
+                    </ul>
+                </div>
+                <div className="hidden lg:block w-full lg:w-[50%]">
+                    <Image src="/boloup/join-boloup.png" alt="Why Join BoloUp Agency?" className="w-full h-full max-w-[32rem] object-cover mx-auto rotate-[-4deg] xl:rotate-[-1deg]  lg:scale-150 xl:scale-125" width={500} height={500} />
+                </div>
+            </div>
+            <div className="absolute bottom-[-1px] left-0 w-full">
+                <Image src="/boloup/bottom-curve.svg" className="w-full" alt="Why Join BoloUp" width={500} height={500} />
+            </div>
+        </div>
+
+        {/* Platform Rules */}
+        <section className="relative bg-white text-black pt-14 lg:pt-10 pb-20 lg:pb-28">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10 w-[90%] max-w-5xl mx-auto">
+                <div className="w-full lg:w-[40%]">
+                    <Image src="/boloup/rules.svg" className="w-72 mx-auto lg:w-full" alt="Rules" width={500} height={500} />
+                </div>    
+                <div className="w-full lg:w-[60%]">
+                    <h2 className="text-[28px] leading-[1.35] lg:text-[44px] font-bold text-left pl-2 lg:pl-0">Platform Rules</h2>
+                    <ul className="list-decimal pl-6 space-y-2 mt-4">
+                        <li className="text-base lg:text-[18px]">All hosts must be at least 18 years old or above.</li>
+                        <li className="text-base lg:text-[18px]">Content must not include nudity, hate speech, illegal activities, or false/misleading information.</li>
+                        <li className="text-base lg:text-[18px]">Agencies are responsible for monitoring their hosts and ensuring they follow the platform rules.</li>
+                        <li className="text-base lg:text-[18px]">Recruiting hosts from other agencies or promoting any third-party platforms is strictly prohibited.</li>
+                    </ul>
+                </div>
+            </div>    
+        </section>
+
+
 
 
     </div>
