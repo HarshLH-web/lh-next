@@ -39,7 +39,8 @@ function JoinChamet() {
                         <div>
                             <h3 className="text-2xl lg:text-3xl font-bold text-[#3B0447] leading-[1.25] lg:leading-[1.25] mb-2 md:mb-4">How to Register as a Partner</h3>
                             <ul className="list-decimal pl-6 space-y-2 text-lg mb-6">
-                                <li>Open the Partner <a href="https://h5.ichamet.com/webH5/inviteAgent/bind.html?companyId=3338" className="text-[#9e00c2]">Registration Link</a>.</li>
+                                {/* <li>Open the Partner <a href="https://h5.ichamet.com/webH5/inviteAgent/bind.html?companyId=3338" className="text-[#9e00c2]">Registration Link</a>.</li> */}
+                                <li>Open the Partner Registration Link</li>
                                 <li>Enter Your <strong>E-Mail ID or Phone Number</strong><span className="text-sm"> (Email-ID is recommended for easier recovery)</span></li>
                                 <li>Click &ldquo;Send&rdquo; to receive verification code.</li>
                                 <li>Enter the <strong>Verification Code</strong> received.</li>
@@ -48,8 +49,8 @@ function JoinChamet() {
                                 <li>Click on &ldquo;Register&rdquo; to complete your Agency program signup.</li>
                             </ul>
                             <div className="flex gap-4">
-                                <a href="https://www.dropbox.com/scl/fi/y3obi9hkwsn3gs9oc238s/Chamet-Live-Video-Chat_3.8.9_APKPure.apk?rlkey=4bcx0adrgpfomte1kyuzwe8st&st=2mhiipr0&raw=1" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Download Now</a>
-                                <a href="https://h5.ichamet.com/webH5/inviteAgent/bind.html?companyId=3338" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Register Now</a>
+                                {/* <a href="https://www.dropbox.com/scl/fi/y3obi9hkwsn3gs9oc238s/Chamet-Live-Video-Chat_3.8.9_APKPure.apk?rlkey=4bcx0adrgpfomte1kyuzwe8st&st=2mhiipr0&raw=1" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Download Now</a>
+                                <a href="https://h5.ichamet.com/webH5/inviteAgent/bind.html?companyId=3338" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Register Now</a> */}
                             </div>
                         </div>
                     </div>
@@ -178,8 +179,8 @@ function JoinChamet() {
                         </div>
                     </div>
                     <div className="flex gap-4 justify-center mt-4 lg:mt-8">
-                        <a href="https://www.dropbox.com/scl/fi/y3obi9hkwsn3gs9oc238s/Chamet-Live-Video-Chat_3.8.9_APKPure.apk?rlkey=4bcx0adrgpfomte1kyuzwe8st&st=2mhiipr0&raw=1" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Download Now</a>
-                        <a href="https://h5.ichamet.com/webH5/inviteAgent/bind.html?companyId=3338" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Register Now</a>
+                        {/* <a href="https://www.dropbox.com/scl/fi/y3obi9hkwsn3gs9oc238s/Chamet-Live-Video-Chat_3.8.9_APKPure.apk?rlkey=4bcx0adrgpfomte1kyuzwe8st&st=2mhiipr0&raw=1" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Download Now</a>
+                        <a href="https://h5.ichamet.com/webH5/inviteAgent/bind.html?companyId=3338" className="text-white bg-[#9e00c2] px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300">Register Now</a> */}
                     </div>
                 </div>
             </section>
