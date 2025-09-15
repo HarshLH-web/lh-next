@@ -30,12 +30,12 @@ export default function Document() {
       />
 
       {/* Google Analytics - Change to beforeInteractive */}
-      <Script
+      {/* <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-YTEVWCKCZE"
         strategy="beforeInteractive" // CHANGE THIS
-      />
-      <Script
+      /> */}
+      {/* <Script
         id="google-analytics"
         strategy="beforeInteractive" // CHANGE THIS
         dangerouslySetInnerHTML={{
@@ -46,7 +46,7 @@ export default function Document() {
             gtag('config', 'G-YTEVWCKCZE');
           `,
         }}
-      />
+      /> */}
 
       {/* WhatsApp Chatbot */}
       <Script
