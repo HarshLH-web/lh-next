@@ -8,16 +8,16 @@ export default function Document() {
       <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       <meta name="application-name" content="LH Talent Agency" />
 
-       {/* Google Search Console */}
-       <meta
-          name="google-site-verification"
-          content="sPEeyO__WBU1GTqCRekZi7s0oqdCAc_zua75xcF6IDM"
-        />
+        {/* Google Search Console */}
+        <meta
+            name="google-site-verification"
+            content="sPEeyO__WBU1GTqCRekZi7s0oqdCAc_zua75xcF6IDM"
+          />
 
-        {/* Google Tag Manager */}
+        {/* Google Tag Manager - Change to beforeInteractive */}
         <Script
         id="google-tag-manager"
-        strategy="beforeInteractive"
+        strategy="beforeInteractive" // CHANGE THIS
         dangerouslySetInnerHTML={{
           __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -29,15 +29,15 @@ export default function Document() {
         }}
       />
 
-      {/* Google Analytics */}
+      {/* Google Analytics - Change to beforeInteractive */}
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-YTEVWCKCZE"
-        strategy="beforeInteractive"
+        strategy="beforeInteractive" // CHANGE THIS
       />
       <Script
         id="google-analytics"
-        strategy="beforeInteractive"
+        strategy="beforeInteractive" // CHANGE THIS
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -50,10 +50,11 @@ export default function Document() {
 
       {/* WhatsApp Chatbot */}
       <Script
-           type="text/javascript"
-           src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
-           id="aisensy-wa-widget"
-           widget-id="aaa383"
+            type="text/javascript"
+            src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+            id="aisensy-wa-widget"
+            widget-id="aaa383"
+            strategy="beforeInteractive" // CHANGE THIS
       />
       </Head>
       <body className="antialiased">
