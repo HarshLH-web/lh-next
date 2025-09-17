@@ -26,6 +26,11 @@ const nextConfig = {
         destination: "/blogs/joyo-live-agent-registration",
         permanent: true,
       },
+      {
+        source: "/blogs/simple-tips-to-start-live-streaming",
+        destination: "/blogs/start-live-streaming-tips",
+        permanent: true,
+      },
     ];
   },
 };
