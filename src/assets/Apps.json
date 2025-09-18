@@ -40,6 +40,42 @@
       ]
     },
     {
+      "name": "Boloup Live",
+      "logo": "/Apply-nowPage/boloup-logo.png",
+      "description": [
+          [
+              "Live Streaming & Video Calling App.",
+              "All Hosts can Apply.",
+              "Host from all Countries.",
+              "Agencies from all Countries."
+          ]
+      ],
+      "buttons": [
+        {
+          "text": "Apply Hosting",
+          "url": "boloup-agency-registration#host-registration"
+        },
+        {
+          "text": "Start Agency",
+          "url": "boloup-agency-registration#agency-registration"
+        }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/Boloup-App-host-policy.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/Boloup-App-agency-policy.pdf"
+        },
+        {
+          "text": "Star Host & Live Performer Policy",
+          "url": "/Policies/Boloup-App-star-host_s-idol_live-perfomer-policy.pdf"
+        }
+      ]
+    },
+    {
       "name": "Duoo Live",
       "logo": "/Apply-nowPage/duoo-logo.png",
       "description": [

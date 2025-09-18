@@ -93,7 +93,7 @@ export default function BoloupAgencyRegistration() {
         </main>
 
         {/* Agency Registration */}
-        <section className="relative bg-white pb-20 lg:pb-28">
+        <section className="relative bg-white pb-20 lg:pb-28 scroll-mt-20" id="agency-registration">
             <div className="flex flex-col items-center justify-center pt-20 lg:pt-24 pb-0">
                 <h2 className="text-[28px] leading-[1.35] lg:text-[44px] font-bold text-center px-6 lg:px-0">Bolo Up Agency Registration</h2>
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10 mt-4 lg:mt-8 w-[90%] max-w-[60rem] mx-auto">
@@ -171,7 +171,7 @@ export default function BoloupAgencyRegistration() {
        
 
         {/* Host Registration */}
-        <section className="relative">
+        <section className="relative scroll-mt-20" id="host-registration">
             <div className="flex flex-col items-center justify-center pt-12 pb-20 lg:pb-24">
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-10 w-[90%] max-w-[60rem] mx-auto">
                     <div>
