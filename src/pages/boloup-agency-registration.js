@@ -105,7 +105,7 @@ export default function BoloupAgencyRegistration() {
                             <li className="text-base lg:text-[18px] ">Open the <a href="https://boloup.onelink.me/PDV4/lswd1lbe" className="text-blue-500 underline">Agency Registration Link</a> and <a href="https://boloup.onelink.me/PDV4/fkkgd929" className="text-blue-500 underline">Download</a> the BoloUp App.</li>
                             <li className="text-base lg:text-[18px]">Create an account using any preferred option.</li>
                             <li className="text-base lg:text-[18px]">Create your Agency name & select your gender.</li>
-                            <li className="text-base lg:text-[18px]">Submit the required details.</li>
+                            {/* <li className="text-base lg:text-[18px]">Submit the required details.</li> */}
                             <li className="text-base lg:text-[18px]">Accept the agency registration request from Admin.</li>
                             <li className="text-base lg:text-[18px]">Now you have your agency dashboard to start working on the BoloUp App.</li>
                             <li className="text-base lg:text-[18px]">Complete the face authentication process.</li>
