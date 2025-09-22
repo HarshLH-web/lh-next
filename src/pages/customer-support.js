@@ -4,7 +4,9 @@ import Head from 'next/head';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 function Support() {
-  const [formValues, setFormValues] = useState({});
+  const [formValues, setFormValues] = useState({
+    countryCode: "+91" // Initialize with default country code
+  });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [countryCodes, setCountryCodes] = useState([]);
   const [open, setOpen] = useState(false);
@@ -27,12 +29,15 @@ function Support() {
     e.preventDefault();
     setIsSubmitting(true);
     
+    // Ensure country code is set (use default +91 if not selected)
+    const countryCode = formValues.countryCode || "+91";
+    
     // Get IP address
     const ipAddress = await fetch('https://api.ipify.org?format=json')
       .then(response => response.json())
       .then(data => data.ip);
 
-    const fullNumber = formValues.countryCode + formValues.phone;
+    const fullNumber = countryCode + formValues.phone;
 
     // Prepare the form data
     const dataToSend = {

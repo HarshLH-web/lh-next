@@ -46,6 +46,10 @@ function BlogForm({ fields, className }) {
     useEffect(() => {
         const initialValues = {};
         fields.forEach((field) => {
+            // Set default country code for phone field
+            if (field.value === "phone") {
+                initialValues.countryCode = "+91"; // Set default country code
+            }
             initialValues[field.value] = ""; // Initialize with empty strings
         });
         setFormValues(initialValues);
@@ -65,9 +69,13 @@ function BlogForm({ fields, className }) {
             // Prepare form data with combined phone number
             const submitData = { ...formValues };
             
-            // If phone field exists, combine country code with phone number
-            if (submitData.phone && submitData.countryCode) {
-                submitData.phone = `${submitData.countryCode}${submitData.phone}`;
+            // Validate and combine phone number with country code
+            if (submitData.phone) {
+                // Ensure country code is set (use default +91 if not selected)
+                const countryCode = submitData.countryCode || "+91";
+                
+                // Combine country code with phone number
+                submitData.phone = `${countryCode}${submitData.phone}`;
                 // Remove the separate countryCode field as it's now combined
                 delete submitData.countryCode;
             }
