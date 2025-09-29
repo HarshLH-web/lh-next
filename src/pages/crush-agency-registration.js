@@ -66,7 +66,7 @@ export default function CrushAgencyRegistration() {
             <section className="crush-bg pt-16 pb-8 lg:pt-0">
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-12 lg:ml-[10%]">
                     <div className="w-full lg:w-[30%]">
-                        <Image src="/crush/crush.png" alt="Crush Agency Registration" className="w-full h-full object-cover max-w-40 lg:max-w-64 xl:max-w-72 2xl:max-w-80 mx-auto lg:mx-0 2xl:mx-auto" width={1000} height={1000} />
+                        <Image src="/crush/crush.png" alt="Crush Agency Registration" className="w-full h-full object-cover max-w-36 lg:max-w-64 xl:max-w-72 2xl:max-w-80 mx-auto lg:mx-0 2xl:mx-auto" width={1000} height={1000} />
                     </div>
                     <div className="w-full lg:w-[70%] pb-8 lg:py-12 2xl:py-40 2xl:bg-contain bg-left bg-no-repeat relative lg:bg-[url('/crush/bg-2.svg')] xl:bg-[url('/crush/bg-3.svg')] 2xl:bg-[url('/crush/bg-2.svg')]  bg-cover ">
 
@@ -89,9 +89,10 @@ export default function CrushAgencyRegistration() {
             <section id="crush-live-agency-registration-process" className="bg-white pb-12 pt-20 lg:py-16">
                 <div className="w-[90%] mx-auto max-w-4xl">
                     <h2 className="text-2xl lg:text-4xl 2xl:text-[52px] font-bold text-left lg:text-center">Crush Live Agency Registration</h2>
-                    <div className="flex flex-col-reverse gap-12 mt-4 lg:mt-10">
+                    <div className="flex flex-col-reverse gap-6 lg:gap-12 mt-4 lg:mt-10">
                         <div>
-                            <Image src="/crush/agency-reg.png" alt="Crush Agency Registration" className="w-full h-full object-cover max-w-full xl:max-w-4xl" width={1000} height={1000} />
+                            <Image src="/crush/agency-reg.png" alt="Crush Agency Registration" className="hidden lg:block w-full h-full object-cover max-w-full xl:max-w-4xl" width={1000} height={1000} />
+                            <Image src="/crush/agency-reg-phone.png" unoptimized alt="Crush Agency Registration" className="block lg:hidden w-full h-full object-cover max-w-full xl:max-w-4xl" width={1000} height={1000} />
                         </div>
                         <div>
                             <ul className="list-decimal pl-6 space-y-1 lg:space-y-2">
@@ -106,10 +107,10 @@ export default function CrushAgencyRegistration() {
                         </div>
                     </div>
                     <div className="flex items-center justify-center gap-2 mt-4 lg:mt-6">
-                        <Image src="/crush/tick.svg" alt="Crush Agency Registration" className="w-12 h-12" width={100} height={100} />
+                        <Image src="/crush/tick.svg" alt="Crush Agency Registration" className="w-10 lg:w-12 h-10 lg:h-12" width={100} height={100} />
                         <p className="text-base lg:text-lg 2xl:text-[20px] font-bold leading-tight">You have successfully become a Crush Live Agent.</p>
                     </div>
-                    <div className="flex items-center justify-center lg:mb-8">
+                    <div className="flex items-center justify-center mt-2 mb-4 lg:mb-8">
                         <a href="https://crush.live/crush-live-app" className="bg-transparent border-2 border-[#000000a8] text-[#000000a8] px-4 lg:px-8 py-3 rounded-lg mt-4 lg:mt-6 lg:text-[18px] mx-auto">Download Crush Live</a>
                     </div>
                 </div>
