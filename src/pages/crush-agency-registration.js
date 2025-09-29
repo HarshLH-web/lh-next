@@ -76,8 +76,9 @@ export default function CrushAgencyRegistration() {
                         <h1 className="text-3xl lg:text-[42px] font-bold gradient-heading paytone-one w-fit py-2 lg:leading-[1.15] mx-auto lg:mx-0 lg:pr-16 text-center lg:text-left">Become a Crush Live Agent</h1>
                         <p className="text-base lg:text-[18px] 2xl:text-[20px] leading-tight text-center lg:text-left">Join the new Crush Live App and start your journey as a registered Crush Live Agent today!</p>
                         <p className="text-base lg:text-[18px] 2xl:text-[20px] leading-tight text-center lg:text-left">Whether you’re ready to manage your own team or show your talent as a host, Crush Live is offering new opportunities to connect, grow, and earn.</p>
-                        <div className="flex items-center justify-center lg:justify-start">
-                        <a href="https://crush.live/crush-live-app" className="bg-transparent border-2 border-white text-white px-4 lg:px-8 py-3 rounded-lg mt-4 lg:mt-12 lg:text-[18px]">Download Crush Live</a>
+                        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1" className="text-center w-full sm:w-fit bg-transparent border-2 border-white hover:bg-white text-white hover:text-gray-700 transition-colors duration-300 px-4 lg:px-8 py-3 rounded-lg mt-4 lg:mt-12 lg:text-[18px]">Download Crush Live</a>
+                        <a href="https://invite.crushfun.live/agent?invitationCode=TZXQGL5F" className="text-center w-full sm:w-fit bg-transparent border-2 border-white hover:bg-white text-white hover:text-gray-700 transition-colors duration-300 px-4 lg:px-8 py-3 rounded-lg mt-0 lg:mt-12 lg:text-[18px]">Join Agency</a>
                         </div>
                     </div>
                     </div>
@@ -96,10 +97,10 @@ export default function CrushAgencyRegistration() {
                         </div>
                         <div>
                             <ul className="list-decimal pl-6 space-y-1 lg:space-y-2">
-                                <li>Download the Crush Live app.</li>
+                                <li><a href="https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1" className="text-blue-700 underline">Download the Crush Live app.</a></li>
                                 <li>Sign in using your preferred option.</li>
                                 <li>Set up the profile with basic details.</li>
-                                <li>Open the agency registration link.</li>
+                                <li>Open the <a href="https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1" className="text-blue-700 underline"> agency registration link.</a></li>
                                 <li>Enter your ID (from the profile section) and click “code”.</li>
                                 <li>Check the in-app message for the verification code.</li>
                                 <li>Enter the code and confirm.</li>
@@ -111,7 +112,7 @@ export default function CrushAgencyRegistration() {
                         <p className="text-base lg:text-lg 2xl:text-[20px] font-bold leading-tight">You have successfully become a Crush Live Agent.</p>
                     </div>
                     <div className="flex items-center justify-center mt-2 mb-4 lg:mb-8">
-                        <a href="https://crush.live/crush-live-app" className="bg-transparent border-2 border-[#000000a8] text-[#000000a8] px-4 lg:px-8 py-3 rounded-lg mt-4 lg:mt-6 lg:text-[18px] mx-auto">Download Crush Live</a>
+                        <a href="https://invite.crushfun.live/agent?invitationCode=TZXQGL5F" className="bg-transparent border-2 border-[#575757] hover:bg-[#575757] text-[#575757] hover:text-white transition-colors duration-300 px-4 lg:px-8 py-3 rounded-lg mt-4 lg:mt-6 lg:text-[18px] mx-auto">Become Crush Live Agent</a>
                     </div>
                 </div>
             </section>
@@ -151,7 +152,7 @@ export default function CrushAgencyRegistration() {
                     <Image src="/crush/commission-structure.svg" alt="Crush Live Agency Commission Structure" className="w-full h-full object-cover sm:max-w-lg mx-auto lg:max-w-3xl mt-6 lg:mt-10 mb-4" width={1000} height={1000} />
                 </div>
                 <div className="flex items-center justify-center lg:mb-8">
-                        <a href="https://crush.live/crush-live-app" className="bg-transparent border-2 border-[#000000a8] text-[#000000a8] px-4 lg:px-8 py-3 rounded-lg mt-4 lg:mt-6 lg:text-[18px] mx-auto">Download Crush Live</a>
+                        <a href="https://invite.crushfun.live/agent?invitationCode=TZXQGL5F" className="bg-transparent border-2 border-[#575757] hover:bg-[#575757] text-[#575757] hover:text-white transition-colors duration-300 px-4 lg:px-8 py-3 rounded-lg mt-4 lg:mt-6 lg:text-[18px] mx-auto">Join Crush Agency</a>
                     </div>
             </section>
 
@@ -178,7 +179,7 @@ export default function CrushAgencyRegistration() {
                     <Image src="/crush/earning-opportunities.svg" alt="Crush Live Agency Earning Opportunities" className="w-full h-full object-cover sm:max-w-lg mx-auto lg:max-w-3xl mt-8 lg:mt-16 mb-6" width={1000} height={1000} />
                 </div>
                 <div className="flex items-center justify-center lg:mb-8">
-                    <a href="https://crush.live/crush-live-app" className="bg-transparent border-2 border-white text-white px-4 lg:px-8 py-3 rounded-lg lg:mt-12 lg:text-[18px]">Download Crush Live</a>
+                    <a href="https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1" className="bg-transparent border-2 border-white hover:bg-white text-white hover:text-gray-700 transition-colors duration-300 px-4 lg:px-8 py-3 rounded-lg lg:mt-12 lg:text-[18px]">Download Crush Live</a>
                 </div>
             </section>
 
@@ -193,17 +194,17 @@ export default function CrushAgencyRegistration() {
                         <div>
                             <h2 className="text-2xl lg:text-4xl 2xl:text-[44px] font-bold text-left mb-4">Crush Live Agency Registration</h2>
                             <ul className="list-disc pl-6 space-y-1 lg:space-y-2">
-                                <li >Download the Crush Live app using this link.</li>
-                                <li >Sign in using your preferred option.</li>
-                                <li >Set up your profile with your nickname, birth date, and gender.</li>
-                                <li >Go to the in-app message section and check for the agency invitation.</li>
-                                <li >Accept the invitation request to join the agency.</li>
+                                <li><a href="https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1" className="text-blue-700 underline">Download the Crush Live app using this link.</a></li>
+                                <li>Sign in using your preferred option.</li>
+                                <li>Set up your profile with your nickname, birth date, and gender.</li>
+                                <li>Go to the in-app message section and check for the agency invitation.</li>
+                                <li>Accept the invitation request to join the agency.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div className="flex items-center justify-center lg:mb-8 mt-4 lg:mt-6">
-                        <a href="https://crush.live/crush-live-app" className="bg-transparent border-2 border-[#000000a8] text-[#000000a8] px-4 lg:px-8 py-3 rounded-lg mt-4 lg:mt-6 lg:text-[18px] mx-auto">Download Crush Live</a>
+                        <a href="https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1" className="bg-transparent border-2 border-[#575757] hover:bg-[#575757] text-[#575757] hover:text-white transition-colors duration-300  px-4 lg:px-8 py-3 rounded-lg mt-4 lg:mt-6 lg:text-[18px] mx-auto">Download Crush Live</a>
                     </div>
             </section>  
 
@@ -245,7 +246,7 @@ export default function CrushAgencyRegistration() {
                     </div>
                 </div>
                 <div className="flex items-center justify-center lg:mb-8 mt-6 lg:mt-8">
-                    <a href="https://crush.live/crush-live-app" className="bg-transparent border-2 border-white text-white px-4 lg:px-8 py-3 rounded-lg lg:mt-12 lg:text-[18px]">Download Crush Live</a>
+                    <a href="https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1" className="bg-transparent border-2 border-white hover:bg-white text-white hover:text-gray-700 transition-colors duration-300 px-4 lg:px-8 py-3 rounded-lg lg:mt-12 lg:text-[18px]">Download Crush Live</a>
                 </div>
             </section>
 
