@@ -78,10 +78,10 @@ export default function BoloupAgencyRegistration() {
                     Registrations at Bolo Up Agency are open now. Whether you want to become an agent or a host, now it’s the time to get started. Build your team, grow your network, and explore exciting features on the BoloUp app.
                     </p>
                     <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start lg:items-start gap-4 w-full mt-4 lg:mt-6">
-                    <a href="https://boloup.onelink.me/PDV4/fkkgd929" className="bg-[url('/boloup/border.svg')] bg-contain bg-center bg-no-repeat rounded-lg px-8 py-2">
+                    <a href="https://boloup.onelink.me/PDV4/dib2l0jy" className="bg-[url('/boloup/border.svg')] bg-contain bg-center bg-no-repeat rounded-lg px-8 py-2">
                     <span className="text-white rounded-lg">Download App</span>
                     </a>
-                    <a href="https://boloup.onelink.me/PDV4/lswd1lbe" className="bg-[url('/boloup/border.svg')] bg-contain bg-center bg-no-repeat rounded-lg px-8 py-2">
+                    <a href="https://boloup.onelink.me/PDV4/dib2l0jy" className="bg-[url('/boloup/border.svg')] bg-contain bg-center bg-no-repeat rounded-lg px-8 py-2">
                     <span className="text-white rounded-lg">Register Now</span>
                     </a>
                     </div>
@@ -102,7 +102,7 @@ export default function BoloupAgencyRegistration() {
                     </div>
                     <div className="w-full lg:w-[50%] 2xl:w-[60%]">
                         <ul className="list-decimal pl-6 space-y-2">
-                            <li className="text-base lg:text-[18px] ">Open the <a href="https://boloup.onelink.me/PDV4/lswd1lbe" className="text-blue-500 underline">Agency Registration Link</a> and <a href="https://boloup.onelink.me/PDV4/fkkgd929" className="text-blue-500 underline">Download</a> the BoloUp App.</li>
+                            <li className="text-base lg:text-[18px] ">Open the <a href="https://boloup.onelink.me/PDV4/dib2l0jy" className="text-blue-500 underline">Agency Registration Link</a> and <a href="https://boloup.onelink.me/PDV4/dib2l0jy" className="text-blue-500 underline">Download</a> the BoloUp App.</li>
                             <li className="text-base lg:text-[18px]">Create an account using any preferred option.</li>
                             <li className="text-base lg:text-[18px]">Create your Agency name & select your gender.</li>
                             {/* <li className="text-base lg:text-[18px]">Submit the required details.</li> */}
@@ -112,7 +112,7 @@ export default function BoloupAgencyRegistration() {
                         </ul>
                     </div>
                 </div>
-                <a href="https://boloup.onelink.me/PDV4/lswd1lbe" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-6 lg:mt-12 lg:text-[18px] mx-4 text-center relative z-10">Register Your BoloUp App Agency Now</a>
+                <a href="https://boloup.onelink.me/PDV4/dib2l0jy" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-6 lg:mt-12 lg:text-[18px] mx-4 text-center relative z-10">Register Your BoloUp App Agency Now</a>
             </div>
 
             <div className="absolute bottom-[-2px] left-[-2px] right-[-1px]">
@@ -161,7 +161,7 @@ export default function BoloupAgencyRegistration() {
             </div>
 
             <div className="flex items-center justify-center">
-            <a href="https://boloup.onelink.me/PDV4/fkkgd929" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-8 lg:mt-12 lg:text-[18px] relative z-10">Download BoloUp App</a>
+            <a href="https://boloup.onelink.me/PDV4/dib2l0jy" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-8 lg:mt-12 lg:text-[18px] relative z-10">Download BoloUp App</a>
             </div>
 
             <div className="absolute bottom-[-2px] left-[-1px] right-[-1px]">
@@ -191,7 +191,7 @@ export default function BoloupAgencyRegistration() {
                         </div>
                         <div className="flex flex-col items-center justify-center gap-2 mt-6 lg:mt-10">
                         <p className="text-lg lg:text-[20px] font-semibold">Get more details on Bolo Up Host</p>
-                        <a href="https://boloup.onelink.me/PDV4/fkkgd929" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg lg:text-[18px] relative z-10">Download BoloUp App</a>
+                        <a href="https://boloup.onelink.me/PDV4/mekpm61f" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg lg:text-[18px] relative z-10">Download BoloUp App</a>
                         </div>
                     </div>
                 </div>
@@ -244,7 +244,7 @@ export default function BoloupAgencyRegistration() {
             </div>
 
             <div className="flex items-center justify-center">
-            <a href="https://boloup.onelink.me/PDV4/fkkgd929" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-8 lg:mt-12 lg:text-[18px] relative z-10">Download BoloUp App</a>
+            <a href="https://boloup.onelink.me/PDV4/mekpm61f" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-8 lg:mt-12 lg:text-[18px] relative z-10">Download BoloUp App</a>
             </div>
 
             <div className="absolute bottom-[-2px] left-[-1px] right-[-1px]">
@@ -309,7 +309,7 @@ export default function BoloupAgencyRegistration() {
             </div>
 
             <div className="flex items-center justify-center">
-                <a href="https://boloup.onelink.me/PDV4/lswd1lbe" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-10 lg:mt-12 lg:text-[18px] mx-4 text-center relative z-10">Join BoloUp App Agency Now</a>
+                <a href="https://boloup.onelink.me/PDV4/dib2l0jy" className="bg-gradient-to-r from-[#FF005E] via-[#F89B07] to-[#D124A4] text-white px-4 lg:px-8 py-3 rounded-lg mt-10 lg:mt-12 lg:text-[18px] mx-4 text-center relative z-10">Join BoloUp App Agency Now</a>
                 </div>
 
             <div className="absolute bottom-[-2px] left-[-1px] right-[-1px]">
