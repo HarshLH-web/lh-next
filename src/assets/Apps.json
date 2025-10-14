@@ -144,6 +144,42 @@
       ]
     },
     {
+      "name": "Crush Live",
+      "logo": "/Apply-nowPage/crush-logo.png",
+      "description": [
+          [
+              "Live Streaming & Video Calling App.",
+              "All Hosts can Apply.",
+              "Host from all Countries.",
+              "Agencies from all Countries."
+          ]
+      ],
+      "buttons": [
+        {
+          "text": "Apply Hosting",
+          "url": "crush-agency-registration#crush-live-host-registration-process"
+        },
+        {
+          "text": "Start Agency",
+          "url": "crush-agency-registration#crush-live-agency-registration-process"
+        }
+      ],
+      "download": [
+        {
+          "text": "Host Policy",
+          "url": "/Policies/Boloup-App-host-policy.pdf"
+        },
+        {
+          "text": "Agency Policy",
+          "url": "/Policies/Boloup-App-agency-policy.pdf"
+        },
+        {
+          "text": "Star Host & Live Performer Policy",
+          "url": "/Policies/Boloup-App-star-host_s-idol_live-perfomer-policy.pdf"
+        }
+      ]
+    },
+    {
       "name": "Boloup Live",
       "logo": "/Apply-nowPage/boloup-logo.png",
       "description": [

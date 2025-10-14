@@ -243,7 +243,7 @@ export default function CrushAgencyRegistration() {
                             <Image src="/crush/host-reg.png" alt="Crush Agency Registration" className="w-full h-full object-cover max-w-full sm:max-w-lg lg:max-w-xl xl:max-w-2xl" width={1000} height={1000} />
                         </div>
                         <div>
-                            <h2 className="text-2xl lg:text-4xl 2xl:text-[44px] font-bold text-left mb-4">Crush Live Agency Registration</h2>
+                            <h2 className="text-2xl lg:text-4xl 2xl:text-[44px] font-bold text-left mb-4">Crush Live Host Registration</h2>
                             <ul className="list-disc pl-6 space-y-1 lg:space-y-2">
                                 <li><a href="https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1" className="text-blue-700 underline">Download the Crush Live app using this link.</a></li>
                                 <li>Sign in using your preferred option.</li>
