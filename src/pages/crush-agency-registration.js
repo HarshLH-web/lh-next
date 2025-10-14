@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function CrushAgencyRegistration() {
 
+    const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        }
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
 
     const whyCrushLive = [
         {   
@@ -63,6 +76,44 @@ export default function CrushAgencyRegistration() {
     ]
     return (
         <>
+                {/* Get Policies */}
+                <div ref={dropdownRef} className="right-4 top-4 lg:right-10 z-20 fixed">
+            {/* Button */}
+            <button
+                onClick={() => setIsOpen(!isOpen)}
+                className={`bg-gradient-to-b from-[#FF055F] to-[#EA7005] text-white py-2 px-3 rounded-full shadow-md flex items-center gap-2 w-10 hover:w-36 transition-all duration-300 overflow-hidden whitespace-nowrap group ${isOpen ? "w-36" : "w-10"}`}
+                >
+                {/* Icon (always visible) */}
+                <Image
+                    src="/duoo/download.svg"
+                    alt="Policies"
+                    width={20}
+                    height={20}
+                    className="min-w-4 h-4"
+                />
+
+                {/* Text (hidden until hover) */}
+                <span className={`${isOpen ? "opacity-100" : "opacity-0"} group-hover:opacity-100 transition-opacity duration-300`}>
+                    Get Policies
+                </span>
+            </button>
+
+
+            {/* Dropdown */}
+            {isOpen && (
+                <div className="absolute right-0 mt-2 lg:mt-3 w-48 bg-gradient-to-b from-[#FF055F] to-[#EA7005] rounded-xl shadow-lg flex flex-col py-3 px-4 gap-2 animate-fadeIn">
+                <a href="/Policies/Crush-Live-Host-Policy.pdf" download className="text-white hover:text-yellow-400 transition-all duration-300 text-center">
+                    Host Policy
+                </a>
+                <hr className="border-white" />
+                <a href="/Policies/Crush-Live-Agent-Policy.pdf" download className="text-white hover:text-yellow-400 transition-all duration-300 text-center">
+                    Agent Policy
+                </a>
+                </div>
+            )}
+        </div>
+
+
             <section className="crush-bg pt-16 pb-8 lg:pt-0">
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-12 lg:ml-[10%]">
                     <div className="w-full lg:w-[30%]">
