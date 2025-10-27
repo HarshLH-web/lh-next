@@ -82,6 +82,7 @@ function Blogs() {
       <meta property="og:url" content="https://lhtalentagency.com/blogs" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="LH Talent Agency Blog: Tips for Streamers" />
+      <meta property="og:site_name" content="LH Talent Agency" />
       <meta property="og:description" content="LH Talent Agency's blog page provides you with all the needed information with updated details, insights, and tips about the live streaming industry. Explore Now!" />
       <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
 

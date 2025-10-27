@@ -60,6 +60,7 @@ function BecomeLiveStreamer() {
       <meta property="og:url" content="https://lhtalentagency.com/become-live-streamer" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Join LH Talent Agency as a Live Streamer: Unlock Your Potential" />
+      <meta property="og:site_name" content="LH Talent Agency" />
       <meta property="og:description" content="Want to become a live streamer? Join LH Talent Agency for expert guidance and exciting opportunities to enhance your streaming career." />
       <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
 

@@ -46,6 +46,7 @@ const Apply = () => {
         <meta property="og:url" content="https://lhtalentagency.com/apply-now" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Apply Now | LH Talent Agency: Start Your Streaming Career" />
+        <meta property="og:site_name" content="LH Talent Agency" />
         <meta property="og:description" content="Ready to take the next step? Unlock the world of opportunities in live-streaming and content creation. Apply to join LH Talent Agency today!" />
         <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
 

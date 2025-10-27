@@ -74,6 +74,7 @@ function StreamingTips() {
         <meta property="og:url" content="https://lhtalentagency.com/live-streaming-tips" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Streaming Tips | LH Talent Agency: Enhance Your Streaming" />
+        <meta property="og:site_name" content="LH Talent Agency" />
         <meta property="og:description" content="Discover valuable streaming tips and best practices from LH Talent Agency to improve your live content and engage with your audience effectively." />
         <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
 

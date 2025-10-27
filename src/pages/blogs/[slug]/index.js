@@ -143,6 +143,7 @@ function BlogDetailPage({ blog }) {
                 <meta property="og:url" content={`https://lhtalentagency.com/blogs/${blog.slug}`} />
                 <meta property="og:type" content="article" />
                 <meta property="og:title" content={blog.metaTitle} />
+                <meta property="og:site_name" content="LH Talent Agency" />
                 <meta property="og:description" content={blog.metaDescription} />
                 <meta property="og:image" content={blog.coverImage} />
                 <meta name="twitter:card" content="summary_large_image" />
