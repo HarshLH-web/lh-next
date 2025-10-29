@@ -5,6 +5,19 @@ import { useEffect, useRef, useState } from "react";
 const DuoAgencyRegistration = () => {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        country: "",
+        role: "",
+        appId: "",
+        date: "",
+        website: "",
+    });
+    const [ipAddress, setIpAddress] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitMessage, setSubmitMessage] = useState("");
 
       // Close dropdown on outside click
   useEffect(() => {
@@ -16,6 +29,66 @@ const DuoAgencyRegistration = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  // Fetch Client IP Address automatically
+  useEffect(() => {
+    async function fetchIp() {
+      try {
+        const res = await fetch("https://api.ipify.org?format=json");
+        const data = await res.json();
+        setIpAddress(data?.ip || "");
+      } catch (e) {
+        setIpAddress("");
+      }
+    }
+    fetchIp();
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitMessage("");
+    setIsSubmitting(true);
+    try {
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        country: formData.country,
+        role: formData.role,
+        app_id: formData.appId,
+        website_link: "https://lhtalentagency.com/duo-agency-registration",
+        ip_address: ipAddress,
+      };
+
+      const response = await fetch("https://webpanel.store/api/duodata", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      setSubmitMessage("Submitted successfully. We'll reach out soon.");
+      setFormData({ name: "", email: "", phone: "", country: "", role: "", appId: "", date: "", website: "" });
+      setTimeout(() => {
+        setSubmitMessage("");
+      }, 3000);
+    } catch (err) {
+      setSubmitMessage("Submission failed. Please try again.");
+      setTimeout(() => {
+        setSubmitMessage("");
+      }, 3000);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
     return (
         <>
@@ -74,7 +147,7 @@ const DuoAgencyRegistration = () => {
                             Start your journey today with the Duoo App.
                             </p>
                             <div className="flex gap-2 lg:gap-4">
-                            <Link href="https://play.google.com/store/apps/details?id=com.melot.meta&referrer=inviteCode=737854066" className="text-sm lg:text-base 2xl:text-lg duoo-btn-gradient font-semibold text-white px-4 py-2 2xl:px-6 rounded-full border-2 border-white lg:mt-4 text-center">Download Duoo</Link>
+                            <Link href="https://www.dropbox.com/scl/fi/ldm5n9v4f7xbvs2x4xgzm/duoo.apk?rlkey=46b5lfihxv5jbjfswwnppiytm&st=zvf15dzu&dl=1" className="text-sm lg:text-base 2xl:text-lg duoo-btn-gradient font-semibold text-white px-4 py-2 2xl:px-6 rounded-full border-2 border-white lg:mt-4 text-center">Download Duoo</Link>
                             <Link href="https://agent.duoo.live/#/register?parentInviteCode=737854066" className="text-sm lg:text-base 2xl:text-lg duoo-btn-gradient font-semibold text-white px-4 py-2 2xl:px-6 rounded-full border-2 border-white lg:mt-4 text-center">Join Agency</Link>
                             </div>
 
@@ -113,6 +186,53 @@ const DuoAgencyRegistration = () => {
                 </div>
                     <Link href="https://agent.duoo.live/#/register?parentInviteCode=737854066" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-6 lg:mt-12 mx-auto">Register Your Duoo App Agency Now</Link>
             </section>
+
+            {/* Duoo Agency Interest Form */}
+            <section className="bg-white pb-10">
+                <div className="w-[90%] mx-auto max-w-4xl">
+                    <h2 className="text-2xl lg:text-4xl font-bold text-center">Share Your Details</h2>
+                    <p className="text-base lg:text-lg text-center mt-2">Fill the form and we will contact you.</p>
+
+                    <form onSubmit={handleSubmit} className="bg-[#F7F7F7] mt-6 p-4 lg:p-6 rounded-2xl border border-[#E5E5E5]">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <div>
+                                <label className="block text-sm font-medium mb-1">Name</label>
+                                <input name="name" value={formData.name} onChange={handleChange} required type="text" placeholder="Your name" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium mb-1">Email</label>
+                                <input name="email" value={formData.email} onChange={handleChange} required type="email" placeholder="you@example.com" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium mb-1">Phone</label>
+                                <input name="phone" value={formData.phone} onChange={handleChange} required type="tel" placeholder="+1 555 123 4567" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium mb-1">Country</label>
+                                <input name="country" value={formData.country} onChange={handleChange} required type="text" placeholder="Country" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium mb-1">Role</label>
+                                <input name="role" value={formData.role} onChange={handleChange} required type="text" placeholder="Agent / Host / Other" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium mb-1">App ID</label>
+                                <input name="appId" value={formData.appId} onChange={handleChange} required type="text" placeholder="Your App ID" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col items-center gap-3 mt-4 lg:mt-8">
+                            <button type="submit" disabled={isSubmitting} className="duoo-btn-gradient text-white font-semibold px-5 py-2 rounded-full disabled:opacity-70">
+                                {isSubmitting ? "Submitting..." : "Submit"}
+                            </button>
+                            {submitMessage ? (
+                                <span className="text-sm text-center transition-all duration-300">{submitMessage}</span>
+                            ) : null}
+                        </div>
+                    </form>
+                </div>
+            </section>
+
 
 
             {/*About Duoo App */}
@@ -182,7 +302,7 @@ const DuoAgencyRegistration = () => {
                     <h2 className="text-2xl lg:text-4xl 2xl:text-[52px] font-bold text-left text-white lg:w-[35%]">Duoo Host Registration</h2>
                     <Image src="/duoo/line.svg" alt="Duoo Host Registration" width={1000} height={8000} className="w-[10px] hidden lg:block" />
                     <ul className="list-decimal pl-6 space-y-1 lg:space-y-1">
-                        <li style={{color: "#ffffff"}}>Click on the Duoo App <Link href="https://play.google.com/store/apps/details?id=com.melot.meta&referrer=inviteCode=737854066" className="text-blue-400 underline">download link</Link>.</li>
+                        <li style={{color: "#ffffff"}}>Click on the Duoo App <Link href="https://www.dropbox.com/scl/fi/ldm5n9v4f7xbvs2x4xgzm/duoo.apk?rlkey=46b5lfihxv5jbjfswwnppiytm&st=zvf15dzu&dl=1" className="text-blue-400 underline">download link</Link>.</li>
                         <li style={{color: "#ffffff"}}>Sign up with your email or phone number.</li>
                         <li style={{color: "#ffffff"}}>Fill in your details like gender and date of birth, then tap <span className="font-semibold">“Finish.”</span></li>
                         <li style={{color: "#ffffff"}}>Go to your profile, select <span className="font-semibold">“To be a hostess”</span> and tap <span className="font-semibold">“Go”</span>.</li>
@@ -196,7 +316,7 @@ const DuoAgencyRegistration = () => {
                     <p className="text-base lg:text-lg 2xl:text-[22px] text-center font-semibold mt-6 lg:mt-12 max-w-3xl mx-auto">You have successfully logged in as Duoo Host.</p>
 
                     <div className="flex items-center justify-center">
-                    <Link href="https://play.google.com/store/apps/details?id=com.melot.meta&referrer=inviteCode=737854066" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-4 lg:mt-8 mx-auto">Download Duoo</Link>
+                    <Link href="https://www.dropbox.com/scl/fi/ldm5n9v4f7xbvs2x4xgzm/duoo.apk?rlkey=46b5lfihxv5jbjfswwnppiytm&st=zvf15dzu&dl=1" className="duoo-btn-gradient font-semibold text-white px-4 py-2 lg:px-8 2xl:text-lg 2xl:px-12 rounded-full border-2 border-white mt-4 lg:mt-8 mx-auto">Download Duoo</Link>
                     </div>
 
                 </div>
