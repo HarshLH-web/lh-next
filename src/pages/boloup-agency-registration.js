@@ -184,8 +184,9 @@ export default function BoloupAgencyRegistration() {
                             <ul className="list-decimal pl-6 space-y-2">
                             <li className="text-base lg:text-[18px] leading-tight">Open the host registration link.</li>
                             <li className="text-base lg:text-[18px] leading-tight">Download the BoloUp App and create your account.</li>
-                            <li className="text-base lg:text-[18px] leading-tight">Once created, you will receive an invitation link from us.</li>
-                            <li className="text-base lg:text-[18px] leading-tight">Accept the invitation link to join the agency.</li>
+                            <li className="text-base lg:text-[18px] leading-tight">Then, go to your profile section and click on <span className="font-semibold">“Become Host”</span>.</li>
+                            <li className="text-base lg:text-[18px] leading-tight">Enter the Agency ID <span className="font-semibold">“2019466”</span> to join as a Bolo Up Host.</li>
+                            <li className="text-base lg:text-[18px] leading-tight">Submit the details.</li>
                             </ul>
                         </div>
                         </div>
