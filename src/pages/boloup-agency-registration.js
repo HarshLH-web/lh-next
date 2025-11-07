@@ -165,7 +165,7 @@ export default function BoloupAgencyRegistration() {
             </div>
 
             <div className="absolute bottom-[-2px] left-[-1px] right-[-1px]">
-                <Image src="/boloup/white-curve.svg" className="w-full" alt="Host Registration" width={500} height={500} />
+                <Image src="/boloup/white-curve-2.svg" className="w-full" alt="Host Registration" width={500} height={500} />
             </div>
         </section>
        
@@ -177,16 +177,18 @@ export default function BoloupAgencyRegistration() {
                     <div>
                         <h2 className="text-[28px] leading-[1.35] lg:text-[44px] font-bold text-center mb-2">Bolo Up Host Registration</h2>
                         <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10 mt-6 lg:mt-7">
-                        <div>
+                        <div className="w-full lg:w-[40%]">
                             <Image src="/boloup/host-registration.png" alt="Host Registration" className="w-full h-full object-cover" width={500} height={500} />
                         </div>
-                        <div>
+                        <div className="w-full lg:w-[60%]">
                             <ul className="list-decimal pl-6 space-y-2">
-                            <li className="text-base lg:text-[18px] leading-tight">Open the host registration link.</li>
+                            <li className="text-base lg:text-[18px] leading-tight">Open the <a href="https://boloup.onelink.me/PDV4/mekpm61f" className="text-blue-500 underline">host registration link</a>.</li>
                             <li className="text-base lg:text-[18px] leading-tight">Download the BoloUp App and create your account.</li>
                             <li className="text-base lg:text-[18px] leading-tight">Then, go to your profile section and click on <span className="font-semibold">“Become Host”</span>.</li>
                             <li className="text-base lg:text-[18px] leading-tight">Enter the Agency ID <span className="font-semibold">“2019466”</span> to join as a Bolo Up Host.</li>
                             <li className="text-base lg:text-[18px] leading-tight">Submit the details.</li>
+                            <li className="text-base lg:text-[18px] leading-tight">You will receive the invitation request from<span className="font-semibold"> LH Talent Agency.</span></li>
+                            <li className="text-base lg:text-[18px] leading-tight">Accept the invitation request twice to join.</li>
                             </ul>
                         </div>
                         </div>
