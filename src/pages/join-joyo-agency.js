@@ -70,7 +70,7 @@ function joinJoyoCommunity() { // Renamed function for broader appeal
                 <li>Tap on <span className="font-bold">“Start the Journey”</span>.</li>
                 <li>Go to your profile section in the app.</li>
                 <li>Tap on <span className="font-bold">“Verification”</span>, then <span className="font-bold">“Join Community Program”</span>.</li> {/* Rephrased "Join Agency" */}
-                <li>Enter the community invitation code <span className="font-bold">“S1ISDF”</span> and tap <span className="font-bold">“Confirm”</span>.</li> {/* Rephrased "agency invitation code" */}
+                <li>Enter the community invitation code <span className="font-bold">“4E9UPB”</span> and tap <span className="font-bold">“Confirm”</span>.</li> {/* Rephrased "agency invitation code" */}
               </ul>
             </div>
           </div>
