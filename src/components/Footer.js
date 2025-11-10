@@ -19,10 +19,10 @@ function Footer() {
 
   return (
     <footer className="bg-[#0B0B0B] text-white pt-10 pb-5 lg:border-b-4 border-[#DE0402] mt-32">
-      <div className="w-full lg:w-[95%] max-w-screen-2xl mx-auto flex flex-col lg:flex-row lg:justify-center gap-8 px-6">
+      <div className="w-full lg:w-[100%] max-w-[90rem] mx-auto flex flex-col lg:flex-row lg:justify-center gap-8 px-6 lg:px-0 xl:px-6">
         {/* Contact Section - First on mobile */}
         <div className='order-1 lg:order-3 text-center relative lg:w-[30%]'>
-        <div className="bg-[#DE0402] lg:p-9 xl:p-12 rounded-3xl lg:rounded-b-none lg:rounded-t-[2.5rem] -mt-24 md:-mt-20 pt-20 lg:absolute bottom-[-61px] h-[27rem]">
+        <div className="bg-[#DE0402] lg:p-9 xl:p-12 rounded-3xl lg:rounded-b-none lg:rounded-t-[2.5rem] -mt-24 md:-mt-20 pt-20 lg:absolute bottom-[-61px] h-[27rem] lg:right-0">
             <Link href="/"><Image 
             src="/logo.png" 
             alt="LH Talent Agency - Logo"
