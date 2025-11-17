@@ -345,10 +345,10 @@ function Header() {
                 isSupportOpen ? 'block' : 'hidden'
               } absolute top-9 -left-14 w-48 bg-gradient-to-b from-[#FEFEFC] to-[#F9F6E3] rounded-[0rem_0rem_1rem_1rem] mt-2 text-black overflow-hidden z-10`}
             >
-              <Link href="/customer-support" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap" onClick={() => setIsSupportOpen(false)}>
+              <Link href="/customer-support" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap text-center transition-all duration-300" onClick={() => setIsSupportOpen(false)}>
                 Customer Support
               </Link>
-              <Link href="/asked-questions" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap" onClick={() => setIsSupportOpen(false)}>
+              <Link href="/asked-questions" className="block px-6 py-3 text-base hover:text-white hover:bg-[#DE0402] whitespace-nowrap text-center transition-all duration-300" onClick={() => setIsSupportOpen(false)}>
                 FAQ
               </Link>
             </div>
