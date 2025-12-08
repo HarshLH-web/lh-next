@@ -178,7 +178,7 @@ function BecomeAnAgent() {
                     LH Talent Agency is an independent talent management company and is not owned by or affiliated with Bigo, Tango, Poppo, or other streaming platforms. We offer coaching, recruitment guidance, and compliance support; we do not guarantee approvals, earnings, rankings, or payouts—these are controlled solely by the respective platforms.
                 </p>
                 <p className="text-sm lg:text-base text-gray-800 text-center mt-2">
-                    Operated by: LH Talent Agency | IFZA Business Park, Building A1, Dubai Silicon Oasis, Dubai, UAE | Support: <a href="mailto:support@lhtalentagency.com" className="underline text-[#DE0402]">support@lhtalentagency.com</a>
+                    Operated by: LH Talent Agency | B-24 Shri Chand Park Matiala, Uttam Nagar, Delhi 110059 India | Support: <a href="mailto:support@lhtalentagency.com" className="underline text-[#DE0402]">support@lhtalentagency.com</a>
                 </p>
             </section>
 

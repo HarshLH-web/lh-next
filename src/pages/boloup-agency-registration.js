@@ -440,7 +440,7 @@ export default function BoloupAgencyRegistration() {
                 <div className="border-t border-[#DE0402] pt-4 mt-6">
                     <p className="text-sm lg:text-base text-[#363636] text-center">
                         <strong className="text-[#1C1B1B]">Operated by:</strong> LH Talent Agency<br />
-                        IFZA Business Park, Building A1, Dubai Silicon Oasis, Dubai, UAE<br />
+                        B-24 Shri Chand Park Matiala, Uttam Nagar, Delhi 110059 India<br />
                         <strong className="text-[#1C1B1B]">Support:</strong> <a href="mailto:support@lhtalentagency.com" className="underline text-[#DE0402] hover:text-[#1C1B1B] transition-colors">support@lhtalentagency.com</a> | 
                         <a href="https://wa.me/917065384660" className="underline text-[#DE0402] hover:text-[#1C1B1B] transition-colors ml-2">WhatsApp: +917065384660</a>
                     </p>
