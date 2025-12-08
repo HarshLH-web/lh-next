@@ -118,8 +118,12 @@ export default function Home() {
         </Head>
       <ScrollUpButton />
       <Header />
+      {/* CHANGE 1: Added Top Disclaimer Banner for Compliance */}
+      <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-base fixed top-20 lg:top-24 w-full z-50">
+        <p>DISCLAIMER: This is an independent talent agency website and is NOT the official Bolo Up application or platform.</p>
+      </div>
       <main className="h-auto w-full main">
-        <div className="flex flex-col lg:flex-row w-[90%] xl:w-[80%] pb-8 mx-auto h-full pt-16 lg:pt-40 lg:pb-0">
+        <div className="flex flex-col lg:flex-row w-[90%] xl:w-[80%] pb-8 mx-auto h-full pt-28 lg:pt-40 lg:pb-0">
           {/* Banner Text */}
           <div className="w-full lg:w-3/5 flex flex-col justify-center text-center lg:text-left 2xl:pl-12 gap-4 mb-8">
             <h1 className="text-[35px] max-w-[300px] mx-auto sm:mx-0 sm:max-w-none sm:text-[3rem] xl:text-6xl 2xl:text-[4.25rem] leading-[1.15] sm:leading-tight uppercase font-black">

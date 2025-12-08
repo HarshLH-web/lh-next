@@ -55,7 +55,8 @@ function Footer() {
               support@lhtalentagency.com
             </span>
           </a>
-          <div className=" mb-6 flex items-center justify-center text-white relative">
+          <p className="text-white px-4 lg:px-2 2xl:px-0 font-semibold">Address: B-24 Shri Chand Park Matiala, Uttam Nagar, Delhi 110059 India</p>
+          {/* <div className=" mb-6 flex items-center justify-center text-white relative">
             <input 
               type="text" 
               placeholder="Search..." 
@@ -75,7 +76,7 @@ function Footer() {
             </button>
 
 
-          </div>
+          </div> */}
 
             <div className="w-full text-center absolute bottom-1 left-0 py-4 lg:bg-[#AD0303]">
               <div className="flex justify-center space-x-4">
