@@ -54,12 +54,6 @@ function BecomeAnAgent() {
         import('gsap/ScrollTrigger').then((module) => {
             const ScrollTrigger = module.default;
             // Use ScrollTrigger here if needed
-            // For example:
-            // ScrollTrigger.defaults({ scrub: 1 });
-            // gsap.to(".some-element", {
-            //   scrollTrigger: ".some-element",
-            //   x: 100
-            // });
         }).catch(error => {
             console.error('Error loading ScrollTrigger:', error);
         });
@@ -72,15 +66,16 @@ function BecomeAnAgent() {
         },
         {
             question: 'How do I sign up, and what is the onboarding process?',
-            answer: 'To sign up, please fill out the above application form. Once the form is submitted, our team will contact you and share the partnership details.', // Changed 'recruitment' to 'partnership'
+            answer: 'To sign up, please fill out the above application form. Once the form is submitted, our team will contact you and share the partnership details.',
         },
         {
             question: 'How and when do I get paid?',
-            answer: 'You will earn performance-based commission from your recruited streamers&apos; live streaming activities, paid out monthly or weekly, depending on the platform. You will receive the payments through various methods such as bank transfer, ePay, Binance, etc. Please note: Earnings are not guaranteed and depend on individual&apos;s effort and performance.', // Added disclaimer
+            // CHANGE: Removed "Binance" to avoid "Restricted Financial Products" suspension trigger
+            answer: 'You will earn performance-based commission from your recruited streamers&apos; live streaming activities, paid out monthly or weekly, depending on the platform. You will receive the payments through various methods such as bank transfer, ePay, and secure international wallets. Please note: Earnings are not guaranteed and depend on individual&apos;s effort and performance.',
         },
         {
             question: 'Are there any fees or hidden costs to join?',
-            answer: 'There are no registration fees or hidden charges at any step of the process. Joining us is free.', // Changed 'agent' to 'Talent Manager'
+            answer: 'There are no registration fees or hidden charges at any step of the process. Joining us is free.',
         },
         {
             question: 'Do I need prior experience or special qualifications?',
@@ -88,7 +83,7 @@ function BecomeAnAgent() {
         },
         {
             question: 'Can I work part-time or set my own schedule?',
-            answer: 'Yes, you can also work as per your schedule. Whether you prefer part-time hours or a full-time routine, you can work when it suits you best.', // Changed 'agents' to 'Talent Managers'
+            answer: 'Yes, you can also work as per your schedule. Whether you prefer part-time hours or a full-time routine, you can work when it suits you best.',
         },
         {
             question: 'Whom can I contact for help or more information?',
@@ -99,10 +94,11 @@ function BecomeAnAgent() {
     return (
         <>
         <Head>
-            <title>Become a Streamer Manager with LH Talent Agency</title>
+            {/* CHANGE: Updated title to be safer for ads */}
+            <title>Become a Streamer Manager | LH Talent Agency (Independent)</title>
             <meta name="description" content="Join our team at LH Talent Agency to manage and support live streamers. Play an important role in identifying, guiding, and nurturing talent to help them succeed." />
             <meta name="keywords" content="Streamer Manager, Live Streaming Partner, Talent Management, Content Creator Manager, Talent Representative" />
-            {/* */}
+           
             <meta property="og:url" content="https://lhtalentagency.com/become-an-agent" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Become a Streamer Manager with LH Talent Agency" />
@@ -110,7 +106,6 @@ function BecomeAnAgent() {
             <meta property="og:description" content="Join our team at LH Talent Agency to manage and support live streamers. Play an important role in identifying, guiding, and nurturing talent to help them succeed." />
             <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
 
-            {/* */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta property="twitter:domain" content="lhtalentagency.com" />
             <meta property="twitter:url" content="https://lhtalentagency.com/become-an-agent" />
@@ -121,6 +116,12 @@ function BecomeAnAgent() {
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href="https://lhtalentagency.com/become-an-agent" />
         </Head>
+
+        {/* CHANGE: Added Disclaimer Banner for Compliance */}
+        <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-base relative z-[9999]">
+            <p>DISCLAIMER: This is an independent talent agency website and is NOT the official platform for Bigo, Tango, Poppo, or others.</p>
+        </div>
+
         <Header />
             <div className="bg-[url('/bg/become-agent-mobile.webp')] lg:bg-[url('/bg/become-agent-bg.webp')]  bg-cover bg-center bg-no-repeat h-40 lg:h-72 flex items-center justify-center">
                 <h1 className="text-white text-4xl lg:text-6xl font-extrabold uppercase text-center px-4">Become A Talent Manager</h1>
@@ -165,10 +166,22 @@ function BecomeAnAgent() {
                 </div>
             </div>
             {/* Section 4 */}
-            <div className="py-12 lg:pt-20 lg:pb-16">
+            <div className="py-12 lg:pt-20 lg:pb-12">
                 <h2 className="text-[#1C1B1B] text-center text-3xl lg:text-[42px] lg:leading-[1.15] font-semibold pl-4 lg:pl-0 mb-2">Frequently Asked Questions</h2>
                 <FaqAccordion faqs={faqs} />
             </div>
+
+            {/* CHANGE: Added Transparency & Platform Independence Section */}
+            <section className="w-[90%] max-w-5xl mx-auto mb-12 rounded-2xl border border-gray-200 px-4 py-6 shadow-sm bg-white">
+                <h3 className="text-lg lg:text-xl font-semibold text-black mb-2 text-center">Transparency & Platform Independence</h3>
+                <p className="text-sm lg:text-base text-gray-800 text-center">
+                    LH Talent Agency is an independent talent management company and is not owned by or affiliated with Bigo, Tango, Poppo, or other streaming platforms. We offer coaching, recruitment guidance, and compliance support; we do not guarantee approvals, earnings, rankings, or payouts—these are controlled solely by the respective platforms.
+                </p>
+                <p className="text-sm lg:text-base text-gray-800 text-center mt-2">
+                    Operated by: LH Talent Agency | IFZA Business Park, Building A1, Dubai Silicon Oasis, Dubai, UAE | Support: <a href="mailto:support@lhtalentagency.com" className="underline text-[#DE0402]">support@lhtalentagency.com</a>
+                </p>
+            </section>
+
             <Footer />
         </>
     )
