@@ -117,10 +117,7 @@ function BecomeAnAgent() {
             <link rel="canonical" href="https://lhtalentagency.com/become-an-agent" />
         </Head>
 
-        {/* CHANGE: Added Disclaimer Banner for Compliance */}
-        <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-base relative z-[9999]">
-            <p>DISCLAIMER: This is an independent talent agency website and is NOT the official platform for Bigo, Tango, Poppo, or others.</p>
-        </div>
+
 
         <Header />
             <div className="bg-[url('/bg/become-agent-mobile.webp')] lg:bg-[url('/bg/become-agent-bg.webp')]  bg-cover bg-center bg-no-repeat h-40 lg:h-72 flex items-center justify-center">
@@ -141,6 +138,10 @@ function BecomeAnAgent() {
                 <BlogForm fields={fields} className=" py-8 px-4 lg:px-6" />
                 </div>
             </div>
+    {/* CHANGE: Added Disclaimer Banner for Compliance */}
+        <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-base">
+            <p>DISCLAIMER: This is an independent talent agency website and is NOT the official platform for Bigo, Tango, Poppo, or others.</p>
+        </div>
 
             {/* Section 2 */}
             <div className="py-12 lg:py-20 collaboration-section">
