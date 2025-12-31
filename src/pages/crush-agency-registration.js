@@ -7,6 +7,19 @@ export default function CrushAgencyRegistration() {
 
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        country: "",
+        role: "",
+        appId: "",
+        date: "",
+        website: "",
+    });
+    const [ipAddress, setIpAddress] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitMessage, setSubmitMessage] = useState("");
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -17,6 +30,66 @@ export default function CrushAgencyRegistration() {
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
+
+     // Fetch Client IP Address automatically
+  useEffect(() => {
+    async function fetchIp() {
+      try {
+        const res = await fetch("https://api.ipify.org?format=json");
+        const data = await res.json();
+        setIpAddress(data?.ip || "");
+      } catch (e) {
+        setIpAddress("");
+      }
+    }
+    fetchIp();
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitMessage("");
+    setIsSubmitting(true);
+    try {
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        country: formData.country,
+        role: formData.role,
+        app_id: formData.appId,
+        website_link: "https://lhtalentagency.com/crush-agency-registration",
+        ip_address: ipAddress,
+      };
+
+      const response = await fetch("https://webpanel.store/api/crushdata", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      setSubmitMessage("Submitted successfully. We'll reach out soon.");
+      setFormData({ name: "", email: "", phone: "", country: "", role: "", appId: "", date: "", website: "" });
+      setTimeout(() => {
+        setSubmitMessage("");
+      }, 3000);
+    } catch (err) {
+      setSubmitMessage("Submission failed. Please try again.");
+      setTimeout(() => {
+        setSubmitMessage("");
+      }, 3000);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
     const whyCrushLive = [
         {   
@@ -166,6 +239,52 @@ export default function CrushAgencyRegistration() {
                         <a href="https://invite.crushfun.live/agent?invitationCode=TZXQGL5F" className="bg-transparent border-2 border-[#575757] hover:bg-[#575757] text-[#575757] hover:text-white transition-colors duration-300 px-4 lg:px-8 py-3 rounded-lg mt-4 lg:mt-6 lg:text-[18px] mx-auto">Become Crush Live Agent</a>
                     </div>
                 </div>
+
+            {/* Crush Agency Interest Form */}
+            <section className="bg-white pt-10 pb-10">
+                <div className="w-[90%] mx-auto max-w-4xl">
+                    <h2 className="text-2xl lg:text-4xl font-bold text-center">Share Your Details</h2>
+                    <p className="text-base lg:text-lg text-center mt-2">Fill the form and we will contact you.</p>
+
+                    <form onSubmit={handleSubmit} className="bg-[#F7F7F7] mt-6 p-4 lg:p-6 rounded-2xl border border-[#E5E5E5]">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <div>
+                                <label className="block text-sm font-medium mb-1">Name</label>
+                                <input name="name" value={formData.name} onChange={handleChange} required type="text" placeholder="Your name" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium mb-1">Email</label>
+                                <input name="email" value={formData.email} onChange={handleChange} required type="email" placeholder="you@example.com" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium mb-1">Phone</label>
+                                <input name="phone" value={formData.phone} onChange={handleChange} required type="tel" placeholder="+1 555 123 4567" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium mb-1">Country</label>
+                                <input name="country" value={formData.country} onChange={handleChange} required type="text" placeholder="Country" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium mb-1">Role</label>
+                                <input name="role" value={formData.role} onChange={handleChange} required type="text" placeholder="Agent / Host / Other" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium mb-1">App ID</label>
+                                <input name="appId" value={formData.appId} onChange={handleChange} required type="text" placeholder="Your App ID" className="w-full rounded-lg border border-[#D5D5D5] px-3 py-2 outline-none" />
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col items-center gap-3 mt-4 lg:mt-8">
+                            <button type="submit" disabled={isSubmitting} className="duoo-btn-gradient text-white font-semibold px-5 py-2 rounded-full disabled:opacity-70">
+                                {isSubmitting ? "Submitting..." : "Submit"}
+                            </button>
+                            {submitMessage ? (
+                                <span className="text-sm text-center transition-all duration-300">{submitMessage}</span>
+                            ) : null}
+                        </div>
+                    </form>
+                </div>
+            </section>
             </section>
 
             {/* Why Crush Live */}
