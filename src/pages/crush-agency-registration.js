@@ -224,7 +224,7 @@ export default function CrushAgencyRegistration() {
                                 <li><a href="https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1" className="text-blue-700 underline">Download the Crush Live app.</a></li>
                                 <li>Sign in using your preferred option.</li>
                                 <li>Set up the profile with basic details.</li>
-                                <li>Open the <a href="https://invite.crushfun.live/invite?inviteCode=23929095&languages=auto&imageType=1" className="text-blue-700 underline"> agency registration link.</a></li>
+                                <li>Open the <a href="https://invite.crushfun.live/agent?invitationCode=TZXQGL5F" className="text-blue-700 underline"> agency registration link.</a></li>
                                 <li>Enter your ID (from the profile section) and click “code”.</li>
                                 <li>Check the in-app message for the verification code.</li>
                                 <li>Enter the code and confirm.</li>
