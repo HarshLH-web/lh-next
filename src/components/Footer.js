@@ -160,7 +160,7 @@ function Footer() {
       {/* Copyright and Social Links - Last on both mobile and desktop */}
       <div className="border-t border-gray-800 pt-4 text-center lg:text-left lg:pl-[20%] order-4">
         <p className="text-sm text-gray-500">
-          &copy; 2025 LH Talent Agency. All rights reserved.
+          &copy; 2026 LH Talent Agency. All rights reserved.
         </p>
       </div>
     </footer>

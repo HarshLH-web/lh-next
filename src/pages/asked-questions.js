@@ -95,7 +95,7 @@ function Faq() {
     <Head>
       <title>FAQs | Live Hosting Agency: Answers to Your Streaming Questions</title>
       <meta name="description" content="Find answers to frequently asked questions about LH Talent Agency's services and opportunities. Get the information you need to succeed in the live-streaming industry." />
-      <meta name="keywords" content="What is live streaming? How to Become a live-streaming Agent? How can i earn money through live streaming in 2025? What are the benefits of working as a host or Agent?" />
+      <meta name="keywords" content="What is live streaming? How to Become a live-streaming Agent? How can i earn money through live streaming in 2026? What are the benefits of working as a host or Agent?" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://lhtalentagency.com/asked-questions" />
       {/* <!-- Facebook Meta Tags --> */}
