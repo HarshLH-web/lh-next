@@ -23,13 +23,15 @@ const AppsAccordion = () => {
 
   const sections = [
     {
-      title: 'HONEYCAM',
-      heading: 'HONEYCAM',
+      title: 'TAKA LIVE',
+      heading: 'TAKA LIVE',
       description: 'Discover the world of fun and non-stop entertainment.',
-      agentBtnText:'HoneyCam Agent',
-      agentBtnURL:'https://lhtalentagency.com/join-honeycam-agency',
+      hostBtnText:'Taka Live Host',
+      hostBtnURL:'https://os8.me/Hwi33i',
+      agentBtnText:'Taka Live Agent',
+      agentBtnURL:'https://os8.me/CCyaYf',
       bgimg: '/honeycam-bg.png',
-      imgUrl: '/Apply-nowPage/honeycam-logo.png',
+      imgUrl: '/Apply-nowPage/taka-logo.png',
     },
     {
       title: 'CHAMET',
@@ -65,15 +67,15 @@ const AppsAccordion = () => {
       imgUrl: '/Niki-live.webp',
     },
     {
-      title: 'JOYO LIVE',
-      heading: 'JOYO LIVE',
-      description: 'A streaming app exclusively designed for the Indian audience.',
-      hostBtnText:'Joyo Host',
-      hostBtnURL:'https://joyoliveagent.com/#host-registration',
-      agentBtnText:'Joyo Agent',
-      agentBtnURL:'/blogs/joyo-live-agency',
+      title: 'CRUSH LIVE',
+      heading: 'CRUSH LIVE',
+      description: 'A streaming app with video calling features.',
+      hostBtnText:'Crush Live Host',
+      hostBtnURL:'/crush-agency-registration#crush-live-host-registration-process',
+      agentBtnText:'Crush Live Agent',
+      agentBtnURL:'/crush-agency-registration#crush-live-agency-registration-process',
       bgimg: '/joyo-bg.png',
-      imgUrl: '/Apply-nowPage/joyo-logo.png',
+      imgUrl: '/Apply-nowPage/crush-logo.png',
     },
     
   ];

@@ -40,6 +40,38 @@
       ]
     },
     {
+      "name": "Hala Live",
+      "logo": "/Apply-nowPage/hala-logo.png",
+      "description": [
+          [
+              "PK and Party Rooms (Audio).",
+              "All Hosts can Apply.",
+              "Host from all Countries.",
+              "Agencies from all Countries."
+          ]
+      ],
+      "buttons": [
+        {
+          "text": "Apply Hosting",
+          "url": "/blogs/become-poppo-live-host-and-earn-money"
+        },
+        {
+          "text": "Start Agency",
+          "url": "https://poppoagencyregistration.com/register/become-poppo-agent"
+        }
+      ],
+      "download": [
+        {
+          "text": "Hala Live Host Policy",
+          "url": "/Policies/Hala-Host-Policy.pdf"
+        },
+        {
+          "text": "Hala Live Agency Policy",
+          "url": "/Policies/Hala-Agency-Policy.pdf"
+        }
+      ]
+    },
+    {
       "name": "Niki Live",
       "logo": "/Apply-nowPage/niki-logo.png",
       "description": [
@@ -104,42 +136,6 @@
         {
           "text": "Agency Policy",
           "url": "/Policies/CHAMET AGENCY POLICY 2024-25  (1).pdf"
-        }
-      ]
-    },
-    {
-      "name": "Joyo Live",
-      "logo": "/Apply-nowPage/joyo-logo.png",
-      "description": [
-        [
-          "Live Streaming App.",
-          "All Hosts can Apply.",
-          "Host from all Countries.",
-          "Agencies from all Countries."
-      ]
-      ],
-      "buttons": [
-        {
-          "text": "Apply Hosting",
-          "url": "https://joyoliveagent.com/#host-registration"
-        },
-        {
-          "text": "Start Agency",
-          "url": "https://joyoliveagent.com/#agency-registration"
-        }
-      ],
-      "download": [
-        {
-          "text": "Host Policy",
-          "url": "/Policies/Joyo_Live_Host_Policy-Website.pdf"
-        },
-        {
-          "text": "Agency Policy",
-          "url": "/Policies/Joyo_Live_Agent_Policy-Website.pdf"
-        },
-        {
-          "text": "Coin Seller Policy",
-          "url": "/Policies/Joyo_Live_Coin_seller-Website.pdf"
         }
       ]
     },
@@ -288,8 +284,12 @@
       ],
       "buttons": [
         {
+          "text": "Apply Hosting",
+          "url": "https://os8.me/Hwi33i"
+        },
+        {
           "text": "Start Agency",
-          "url": "https://os8.me/b3zDKc?label=IjU2NjcyMTE3Ml8wIg=="
+          "url": "hthttps://os8.me/CCyaYf"
         }
       ],
       "download": [
